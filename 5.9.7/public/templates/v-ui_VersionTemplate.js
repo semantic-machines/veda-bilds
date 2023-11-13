@@ -1,0 +1,31 @@
+"use strict";
+
+System.register(["jquery"], function (_export, _context) {
+  "use strict";
+
+  var $, post, html;
+  return {
+    setters: [function (_jquery) {
+      $ = _jquery.default;
+    }],
+    execute: function () {
+      _export("post", post = function post(individual, template, container, mode, extra) {
+        template = $(template);
+        container = $(container);
+        setTimeout(function () {
+          var renderedTemplates = $("[resource$='" + individual.id.substring(2) + "']");
+          renderedTemplates.each(function () {
+            var renderedTemplate = $(this);
+            renderedTemplate.find('a, button').addClass('disabled').attr('disabled', 'disabled');
+            if (renderedTemplate.parent().prop('id') === 'main') {
+              var sheet = renderedTemplate.children('.sheet').first();
+              template.removeClass('hidden').prependTo(sheet.length ? sheet : renderedTemplate);
+            }
+          });
+        }, 300);
+      });
+      _export("html", html = "\n  <div class=\"alert alert-warning hidden clearfix\">\n    <style scoped>\n      p > span:not(:first-child) {\n        padding-left: 0.5em;\n        padding-right: 0.5em;\n      }\n      p > span:first-child {\n        padding-right: 0.5em;\n      }\n    </style>\n    <p class=\"pull-left\">\n      <span about=\"v-s:VersionAlert\" property=\"rdfs:label\"></span>\n      <span about=\"@\" rel=\"v-s:actualVersion\">\n        <a href=\"#/@\" class=\"alert-link\"> &uarr; <span about=\"v-s:actualVersion\" property=\"rdfs:label\"></span> </a>\n      </span>\n    </p>\n    <p class=\"pull-right\">\n      <span about=\"@\" rel=\"v-s:previousVersion\">\n        <a href=\"#/@\" class=\"alert-link\"> &larr; <span about=\"v-s:previousVersion\" property=\"rdfs:label\"></span> </a>\n      </span>\n      <span about=\"@\" rel=\"v-s:nextVersion\">\n        <a href=\"#/@\" class=\"alert-link\"> <span about=\"v-s:nextVersion\" property=\"rdfs:label\"></span> &rarr; </a>\n      </span>\n    </p>\n  </div>\n");
+    }
+  };
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyIkIiwiX2pxdWVyeSIsImRlZmF1bHQiLCJleGVjdXRlIiwiX2V4cG9ydCIsInBvc3QiLCJpbmRpdmlkdWFsIiwidGVtcGxhdGUiLCJjb250YWluZXIiLCJtb2RlIiwiZXh0cmEiLCJzZXRUaW1lb3V0IiwicmVuZGVyZWRUZW1wbGF0ZXMiLCJpZCIsInN1YnN0cmluZyIsImVhY2giLCJyZW5kZXJlZFRlbXBsYXRlIiwiZmluZCIsImFkZENsYXNzIiwiYXR0ciIsInBhcmVudCIsInByb3AiLCJzaGVldCIsImNoaWxkcmVuIiwiZmlyc3QiLCJyZW1vdmVDbGFzcyIsInByZXBlbmRUbyIsImxlbmd0aCIsImh0bWwiXSwic291cmNlcyI6WyIuLi8uLi9vbnRvbG9neS9zeXN0ZW0tY29yZS90ZW1wbGF0ZXMvdi11aV9WZXJzaW9uVGVtcGxhdGUuanMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0ICQgZnJvbSAnanF1ZXJ5JztcblxuZXhwb3J0IGNvbnN0IHBvc3QgPSBmdW5jdGlvbiAoaW5kaXZpZHVhbCwgdGVtcGxhdGUsIGNvbnRhaW5lciwgbW9kZSwgZXh0cmEpIHtcbiAgdGVtcGxhdGUgPSAkKHRlbXBsYXRlKTtcbiAgY29udGFpbmVyID0gJChjb250YWluZXIpO1xuXG4gIHNldFRpbWVvdXQoZnVuY3Rpb24gKCkge1xuICAgIGNvbnN0IHJlbmRlcmVkVGVtcGxhdGVzID0gJChcIltyZXNvdXJjZSQ9J1wiICsgaW5kaXZpZHVhbC5pZC5zdWJzdHJpbmcoMikgKyBcIiddXCIpO1xuICAgIHJlbmRlcmVkVGVtcGxhdGVzLmVhY2goZnVuY3Rpb24gKCkge1xuICAgICAgY29uc3QgcmVuZGVyZWRUZW1wbGF0ZSA9ICQodGhpcyk7XG4gICAgICByZW5kZXJlZFRlbXBsYXRlLmZpbmQoJ2EsIGJ1dHRvbicpLmFkZENsYXNzKCdkaXNhYmxlZCcpLmF0dHIoJ2Rpc2FibGVkJywgJ2Rpc2FibGVkJyk7XG4gICAgICBpZiAocmVuZGVyZWRUZW1wbGF0ZS5wYXJlbnQoKS5wcm9wKCdpZCcpID09PSAnbWFpbicpIHtcbiAgICAgICAgY29uc3Qgc2hlZXQgPSByZW5kZXJlZFRlbXBsYXRlLmNoaWxkcmVuKCcuc2hlZXQnKS5maXJzdCgpO1xuICAgICAgICB0ZW1wbGF0ZS5yZW1vdmVDbGFzcygnaGlkZGVuJykucHJlcGVuZFRvKHNoZWV0Lmxlbmd0aCA/IHNoZWV0IDogcmVuZGVyZWRUZW1wbGF0ZSk7XG4gICAgICB9XG4gICAgfSk7XG4gIH0sIDMwMCk7XG59O1xuXG5leHBvcnQgY29uc3QgaHRtbCA9IGBcbiAgPGRpdiBjbGFzcz1cImFsZXJ0IGFsZXJ0LXdhcm5pbmcgaGlkZGVuIGNsZWFyZml4XCI+XG4gICAgPHN0eWxlIHNjb3BlZD5cbiAgICAgIHAgPiBzcGFuOm5vdCg6Zmlyc3QtY2hpbGQpIHtcbiAgICAgICAgcGFkZGluZy1sZWZ0OiAwLjVlbTtcbiAgICAgICAgcGFkZGluZy1yaWdodDogMC41ZW07XG4gICAgICB9XG4gICAgICBwID4gc3BhbjpmaXJzdC1jaGlsZCB7XG4gICAgICAgIHBhZGRpbmctcmlnaHQ6IDAuNWVtO1xuICAgICAgfVxuICAgIDwvc3R5bGU+XG4gICAgPHAgY2xhc3M9XCJwdWxsLWxlZnRcIj5cbiAgICAgIDxzcGFuIGFib3V0PVwidi1zOlZlcnNpb25BbGVydFwiIHByb3BlcnR5PVwicmRmczpsYWJlbFwiPjwvc3Bhbj5cbiAgICAgIDxzcGFuIGFib3V0PVwiQFwiIHJlbD1cInYtczphY3R1YWxWZXJzaW9uXCI+XG4gICAgICAgIDxhIGhyZWY9XCIjL0BcIiBjbGFzcz1cImFsZXJ0LWxpbmtcIj4gJnVhcnI7IDxzcGFuIGFib3V0PVwidi1zOmFjdHVhbFZlcnNpb25cIiBwcm9wZXJ0eT1cInJkZnM6bGFiZWxcIj48L3NwYW4+IDwvYT5cbiAgICAgIDwvc3Bhbj5cbiAgICA8L3A+XG4gICAgPHAgY2xhc3M9XCJwdWxsLXJpZ2h0XCI+XG4gICAgICA8c3BhbiBhYm91dD1cIkBcIiByZWw9XCJ2LXM6cHJldmlvdXNWZXJzaW9uXCI+XG4gICAgICAgIDxhIGhyZWY9XCIjL0BcIiBjbGFzcz1cImFsZXJ0LWxpbmtcIj4gJmxhcnI7IDxzcGFuIGFib3V0PVwidi1zOnByZXZpb3VzVmVyc2lvblwiIHByb3BlcnR5PVwicmRmczpsYWJlbFwiPjwvc3Bhbj4gPC9hPlxuICAgICAgPC9zcGFuPlxuICAgICAgPHNwYW4gYWJvdXQ9XCJAXCIgcmVsPVwidi1zOm5leHRWZXJzaW9uXCI+XG4gICAgICAgIDxhIGhyZWY9XCIjL0BcIiBjbGFzcz1cImFsZXJ0LWxpbmtcIj4gPHNwYW4gYWJvdXQ9XCJ2LXM6bmV4dFZlcnNpb25cIiBwcm9wZXJ0eT1cInJkZnM6bGFiZWxcIj48L3NwYW4+ICZyYXJyOyA8L2E+XG4gICAgICA8L3NwYW4+XG4gICAgPC9wPlxuICA8L2Rpdj5cbmA7XG4iXSwibWFwcGluZ3MiOiI7Ozs7Ozs7O01BQU9BLENBQUMsR0FBQUMsT0FBQSxDQUFBQyxPQUFBO0lBQUE7SUFBQUMsT0FBQSxXQUFBQSxDQUFBO01BQUFDLE9BQUEsU0FFS0MsSUFBSSxHQUFHLFNBQVBBLElBQUlBLENBQWFDLFVBQVUsRUFBRUMsUUFBUSxFQUFFQyxTQUFTLEVBQUVDLElBQUksRUFBRUMsS0FBSyxFQUFFO1FBQzFFSCxRQUFRLEdBQUdQLENBQUMsQ0FBQ08sUUFBUSxDQUFDO1FBQ3RCQyxTQUFTLEdBQUdSLENBQUMsQ0FBQ1EsU0FBUyxDQUFDO1FBRXhCRyxVQUFVLENBQUMsWUFBWTtVQUNyQixJQUFNQyxpQkFBaUIsR0FBR1osQ0FBQyxDQUFDLGNBQWMsR0FBR00sVUFBVSxDQUFDTyxFQUFFLENBQUNDLFNBQVMsQ0FBQyxDQUFDLENBQUMsR0FBRyxJQUFJLENBQUM7VUFDL0VGLGlCQUFpQixDQUFDRyxJQUFJLENBQUMsWUFBWTtZQUNqQyxJQUFNQyxnQkFBZ0IsR0FBR2hCLENBQUMsQ0FBQyxJQUFJLENBQUM7WUFDaENnQixnQkFBZ0IsQ0FBQ0MsSUFBSSxDQUFDLFdBQVcsQ0FBQyxDQUFDQyxRQUFRLENBQUMsVUFBVSxDQUFDLENBQUNDLElBQUksQ0FBQyxVQUFVLEVBQUUsVUFBVSxDQUFDO1lBQ3BGLElBQUlILGdCQUFnQixDQUFDSSxNQUFNLEVBQUUsQ0FBQ0MsSUFBSSxDQUFDLElBQUksQ0FBQyxLQUFLLE1BQU0sRUFBRTtjQUNuRCxJQUFNQyxLQUFLLEdBQUdOLGdCQUFnQixDQUFDTyxRQUFRLENBQUMsUUFBUSxDQUFDLENBQUNDLEtBQUssRUFBRTtjQUN6RGpCLFFBQVEsQ0FBQ2tCLFdBQVcsQ0FBQyxRQUFRLENBQUMsQ0FBQ0MsU0FBUyxDQUFDSixLQUFLLENBQUNLLE1BQU0sR0FBR0wsS0FBSyxHQUFHTixnQkFBZ0IsQ0FBQztZQUNuRjtVQUNGLENBQUMsQ0FBQztRQUNKLENBQUMsRUFBRSxHQUFHLENBQUM7TUFDVCxDQUFDO01BQUFaLE9BQUEsU0FFWXdCLElBQUk7SUFBQTtFQUFBO0FBQUEifQ==

@@ -1,0 +1,25 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix v-s: <http://semantic-machines.com/veda/veda-schema/> .
+@prefix v-ui: <http://semantic-machines.com/veda/veda-ui/> .
+@prefix s-wf: <http://semantic-machines.com/veda/simple-workflow/> .
+@prefix v-wf: <http://semantic-machines.com/veda/veda-workflow/> .
+@prefix cfg: <http://semantic-machines.com/veda/config/> .
+@prefix v-ft: <http://semantic-machines.com/veda/veda-function-tasks/> .
+
+<http://semantic-machines.com/veda/veda-internal-document-startForm>
+  rdf:type owl:Ontology ;
+  rdfs:label "Онтология системы Veda. Внутренний документ. Стартовая форма."@ru ;
+  rdfs:label "Veda system ontology. Internal document. Start form."@en ;
+#  owl:versionInfo "1.3" ;
+  v-s:loadPriority 6 ;
+.
+# Start form -----------------------------------------------------------
+v-s:InternalDocument_ComplexRouteStartForm_Template
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон стартовых данных комплексного маршрута Внутренний документ"@ru ;
+  rdfs:label "InternalDocument complex route start form template"@en ;
+  v-ui:template "v-s_InternalDocument_ComplexRouteStartForm_Template.js" ;
+.

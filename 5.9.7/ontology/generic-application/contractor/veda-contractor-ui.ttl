@@ -1,0 +1,48 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix v-s: <http://semantic-machines.com/veda/veda-schema/> .
+@prefix v-ui: <http://semantic-machines.com/veda/veda-ui/> .
+@prefix d: <http://semantic-machines.com/veda/veda-data/> .
+
+
+<http://semantic-machines.com/veda/veda-contractor-ui>
+  rdf:type owl:Ontology ;
+  rdfs:label "Онтология системы Veda. Контрагент. Интерфейс."@ru ;
+  rdfs:label "Veda system ontology. Contractor. UI."@en ;
+#  owl:versionInfo "1.3" ;
+  v-s:loadPriority 6 ;
+.
+
+v-s:TS_Contractor
+  rdf:type v-ui:TemplateSpecification;
+  v-s:loadPriority "15"^^xsd:integer;
+  v-ui:defaultTemplate v-s:ContractorTemplate;
+  v-ui:forClass v-s:Contractor
+.
+v-s:CS_Contractor
+  rdf:type v-s:ClassSpecification ;
+  rdfs:label "Спецификация класса v-s:Contractor "@ru, "Class specification v-s:Contractor "@en;
+  v-ui:forClass v-s:Contractor ;
+  v-s:shelfLife 9999;
+  v-s:listPropertie v-s:attachment, v-s:hasComment, v-s:hasContractorLock ;
+  v-ui:defaultTemplate v-s:ContractorTemplate;
+  v-s:loadPriority 15 ;
+.
+v-s:ContractorTemplate
+  rdf:type v-ui:ClassTemplate ;
+  v-ui:forClass v-s:Contractor ;
+  rdfs:label "Шаблон для класса v-s:Contractor"@ru ;
+  rdfs:label "Template for v-s:Contractor class"@en ;
+  v-ui:template "v-s_ContractorTemplate.js" ;
+.
+v-s:ContractParticipantTemplate
+  rdf:type v-ui:ClassTemplate ;
+  v-ui:forClass v-s:ContractParticipantCustomer ;
+  v-ui:forClass v-s:ContractParticipantSupplier ;
+  v-ui:forClass v-s:ContractParticipantStakeholder ;
+  rdfs:label "Шаблон для класса v-s:ContractParticipantCustomer ContractParticipantSupplier"@ru ;
+  rdfs:label "Template for v-s:ContractParticipantCustomer ContractParticipantSupplier class"@en ;
+  v-ui:template "v-s_ContractParticipantTemplate.js" ;
+.

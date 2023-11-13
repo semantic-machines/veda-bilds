@@ -1,0 +1,33 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix v-s: <http://semantic-machines.com/veda/veda-schema/> .
+@prefix v-ui: <http://semantic-machines.com/veda/veda-ui/> .
+@prefix s-wfb: <http://semantic-machines.com/veda/simple-workflow-base/> .
+@prefix s-wf: <http://semantic-machines.com/veda/simple-workflow/> .
+@prefix v-wf: <http://semantic-machines.com/veda/veda-workflow/> .
+@prefix td: <http://semantic-machines.com/veda/test-data/> .
+@prefix d: <http://semantic-machines.com/veda/veda-data/>.
+@prefix cfg: <http://semantic-machines.com/veda/config/> .
+@prefix v-ft: <http://semantic-machines.com/veda/veda-function-tasks/> .
+
+
+<http://semantic-machines.com/veda/veda-correspondence-startForm>
+  rdf:type owl:Ontology ;
+  rdfs:label "Онтология системы Veda. Корреспонденция. Стартовая форма."@ru ;
+  rdfs:label "Veda system ontology. Correspondence. Start form."@en ;
+  v-s:loadPriority 20 ;
+.
+v-s:IncomingLetter_ComplexRouteStartForm_Template
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон стартовых данных комплексного маршрута Входящее письмо"@ru ;
+  rdfs:label "IncomingLetter complex route start form template"@en ;
+  v-ui:template "v-s_IncomingLetter_ComplexRouteStartForm_Template.js" ;
+.
+v-s:OutgoingLetter_ComplexRouteStartForm_Template
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон стартовых данных комплексного маршрута Исходящее письмо"@ru ;
+  rdfs:label "OutgoingLetter complex route start form template"@en ;
+  v-ui:template "v-s_OutgoingLetter_ComplexRouteStartForm_Template.js" ;
+.

@@ -1,0 +1,1357 @@
+@prefix d: <http://semantic-machines.com/veda/veda-data/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix v-s: <http://semantic-machines.com/veda/veda-schema/> .
+@prefix mnd-s: <http://semantic-machines.com/veda/mondi-schema/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://semantic-machines.com/veda/veda-individual-SafetyWorkAction>
+  rdf:type owl:Ontology ;
+  rdfs:label "Онтология Veda. Справочник Мероприятия обеспечивающие безопасность выполнения работ"@ru ;
+  rdfs:label "Veda system ontology. Dictionary - SafetyWorkAction"@en ;
+  v-s:loadPriority 10 ;
+.
+
+
+#-------------------------------------------------- Рабочие операции ---
+v-s:WorkingOperations
+  rdf:type owl:Class ;
+  rdfs:subClassOf v-s:UserThing ;
+  rdfs:label "Рабочие операции"@ru ;
+  rdfs:label "Working operations"@en ;
+.
+
+d:WorkingOperations_1_1
+  a v-s:WorkingOperations;
+  rdfs:label "Рабочие операции"^^xsd:string.
+d:WorkingOperations_1_1_1
+  a v-s:WorkingOperations;
+  v-s:parentUnit d:WorkingOperations_1_1;
+  rdfs:label "управление транспортными средствами, погрузчиками, мобильными подъемниками"^^xsd:string.
+d:WorkingOperations_1_1_2
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:WorkingOperations_1_1;
+  rdfs:label "работа с горячей средой (пар, горячая вода, горячие твердые вещества и жидкости)"^^xsd:string.
+d:WorkingOperations_1_1_3
+  a v-s:WorkingOperations;
+  v-s:parentUnit d:WorkingOperations_1_1;
+  rdfs:label "работа с водой/веществами под давлением 200 бар и более"^^xsd:string.
+d:WorkingOperations_1_1_4
+  a v-s:WorkingOperations;
+  v-s:parentUnit d:WorkingOperations_1_1;
+  rdfs:label "сварка, склейка, спайка, резка, шлифовка при помощи электроинструмента"^^xsd:string.
+d:WorkingOperations_1_1_5
+  a v-s:WorkingOperations;
+  v-s:parentUnit d:WorkingOperations_1_1;
+  rdfs:label "распиловка, сверловка (не являются огневыми работами)"^^xsd:string.
+d:WorkingOperations_1_1_6
+  a v-s:WorkingOperations;
+  v-s:parentUnit d:WorkingOperations_1_1;
+  rdfs:label "манипуляции с острыми предметами (ножи, иглы, лезвия и т.д.)"^^xsd:string.
+d:WorkingOperations_1_1_7
+  a v-s:WorkingOperations;
+  v-s:parentUnit d:WorkingOperations_1_1;
+  rdfs:label "работа с техническими газами (не является огневым видом работ)"^^xsd:string.
+d:WorkingOperations_1_1_8
+  a v-s:WorkingOperations;
+  v-s:parentUnit d:WorkingOperations_1_1;
+  rdfs:label "работа с источниками излучения (ионизирующего, радиационного, рентгеновского)"^^xsd:string.
+d:WorkingOperations_1_1_9
+  a v-s:WorkingOperations;
+  v-s:parentUnit d:WorkingOperations_1_1;
+  rdfs:label "диагностика: электрическая часть, механическая часть"^^xsd:string.
+d:WorkingOperations_1_1_10
+  a v-s:WorkingOperations;
+  v-s:parentUnit d:WorkingOperations_1_1;
+  rdfs:label "работа на открытом воздухе (солнце, дождь, мороз, ветер)"^^xsd:string.
+d:WorkingOperations_1_1_11
+  a v-s:WorkingOperations;
+  v-s:parentUnit d:WorkingOperations_1_1;
+  rdfs:label "работа с гидравлической, пневматической системой"^^xsd:string.
+d:WorkingOperations_1_1_12
+  a v-s:WorkingOperations;
+  v-s:parentUnit d:WorkingOperations_1_1;
+  rdfs:label "работа вблизи высоковольтных кабелей, кабельных полок, высоковольтных линий"^^xsd:string.
+d:WorkingOperations_1_1_13
+  a v-s:WorkingOperations;
+  v-s:parentUnit d:WorkingOperations_1_1;
+  rdfs:label "другие рабочие операции"^^xsd:string.
+d:WorkingOperations_1_1_14
+  a v-s:WorkingOperations;
+  v-s:parentUnit d:WorkingOperations_1_1;
+  rdfs:label "работа на высоте с использованием лесов, лестниц, площадок"^^xsd:string.
+d:WorkingOperations_1_1_15
+  a v-s:WorkingOperations;
+  v-s:parentUnit d:WorkingOperations_1_1;
+  rdfs:label "погрузка, разгрузка, транспортировка, штабелирование материалов"^^xsd:string.
+d:WorkingOperations_1_1_16
+  a v-s:WorkingOperations;
+  v-s:parentUnit d:WorkingOperations_1_1;
+  rdfs:label "одновременная работа на одном участке нескольких бригад"^^xsd:string.
+d:WorkingOperations_1_1_17
+  a v-s:WorkingOperations;
+  v-s:parentUnit d:WorkingOperations_1_1;
+  rdfs:label "работа в условиях ограниченной видимости"^^xsd:string.
+d:WorkingOperations_1_1_18
+  a v-s:WorkingOperations;
+  v-s:parentUnit d:WorkingOperations_1_1;
+  rdfs:label "работа внутри емкости, котлована, колодца"^^xsd:string.
+d:WorkingOperations_1_1_19
+  a v-s:WorkingOperations;
+  v-s:parentUnit d:WorkingOperations_1_1;
+  rdfs:label "выполнение газоопасных работ"^^xsd:string.
+d:WorkingOperations_1_1_20
+  a v-s:WorkingOperations;
+  v-s:parentUnit d:WorkingOperations_1_1;
+  rdfs:label "работа в электроустановках"^^xsd:string.
+d:WorkingOperations_1_1_21
+  a v-s:WorkingOperations;
+  v-s:parentUnit d:WorkingOperations_1_1;
+  rdfs:label "работа с горючими или взрывоопасными веществами"^^xsd:string.
+d:WorkingOperations_1_1_22
+  a v-s:WorkingOperations;
+  v-s:parentUnit d:WorkingOperations_1_1;
+  rdfs:label "работа с химикатами"^^xsd:string.
+d:WorkingOperations_1_1_23
+  a v-s:WorkingOperations;
+  v-s:parentUnit d:WorkingOperations_1_1;
+  rdfs:label "работа c электрооборудованием (не электроустановка)"^^xsd:string.
+d:WorkingOperations_1_1_24
+  a v-s:WorkingOperations;
+  v-s:parentUnit d:WorkingOperations_1_1;
+  rdfs:label "ручная чистка/промывка водой"^^xsd:string.
+d:WorkingOperations_1_1_25
+  a v-s:WorkingOperations;
+  v-s:parentUnit d:WorkingOperations_1_1;
+  rdfs:label "механическая очистка"^^xsd:string.
+d:WorkingOperations_1_1_26
+  a v-s:WorkingOperations;
+  v-s:parentUnit d:WorkingOperations_1_1;
+  rdfs:label "работа в условиях повышенного шума"^^xsd:string.
+d:WorkingOperations_1_1_27
+  a v-s:WorkingOperations;
+  v-s:parentUnit d:WorkingOperations_1_1;
+  rdfs:label "затяжка/ослабление резьбовых соединений"^^xsd:string.
+
+
+
+
+#-------------------------------------------------- Основные риски ---
+v-s:WorkPermitMainRisks
+  rdf:type owl:Class ;
+  rdfs:subClassOf v-s:UserThing ;
+  rdfs:label "Основные риски"@ru ;
+  rdfs:label "WorkPermit Main Risks"@en ;
+.
+
+d:WorkPermitMainRisks_1_2
+  a v-s:WorkPermitMainRisks;
+  rdfs:label "Основные риски"^^xsd:string.
+d:WorkPermitMainRisks_1_2_1
+  a v-s:WorkPermitMainRisks;
+  v-s:parentUnit d:WorkPermitMainRisks_1_2;
+  rdfs:label "падение человека с высоты"^^xsd:string.
+d:WorkPermitMainRisks_1_2_2
+  a v-s:WorkPermitMainRisks;
+  v-s:parentUnit d:WorkPermitMainRisks_1_2;
+  rdfs:label "падение с высоты предметов"^^xsd:string.
+d:WorkPermitMainRisks_1_2_3
+  a v-s:WorkPermitMainRisks;
+  v-s:parentUnit d:WorkPermitMainRisks_1_2;
+  rdfs:label "удар электрическим током"^^xsd:string.
+d:WorkPermitMainRisks_1_2_4
+  a v-s:WorkPermitMainRisks;
+  v-s:parentUnit d:WorkPermitMainRisks_1_2;
+  rdfs:label "захват между точками прижима валов машины, оборудования"^^xsd:string.
+d:WorkPermitMainRisks_1_2_5
+  a v-s:WorkPermitMainRisks;
+  v-s:parentUnit d:WorkPermitMainRisks_1_2;
+  rdfs:label "удар движущимися частями машин, оборудования"^^xsd:string.
+d:WorkPermitMainRisks_1_2_6
+  a v-s:WorkPermitMainRisks;
+  v-s:parentUnit d:WorkPermitMainRisks_1_2;
+  rdfs:label "падение груза/крана при погрузочно-разгрузочных работах"^^xsd:string.
+d:WorkPermitMainRisks_1_2_7
+  a v-s:WorkPermitMainRisks;
+  v-s:parentUnit d:WorkPermitMainRisks_1_2;
+  rdfs:label "обрыв стропов"^^xsd:string.
+d:WorkPermitMainRisks_1_2_8
+  a v-s:WorkPermitMainRisks;
+  v-s:parentUnit d:WorkPermitMainRisks_1_2;
+  rdfs:label "несогласованность действий"^^xsd:string.
+d:WorkPermitMainRisks_1_2_9
+  a v-s:WorkPermitMainRisks;
+  v-s:parentUnit d:WorkPermitMainRisks_1_2;
+  rdfs:label "неконтролируемое начало движения (вращения) машины, оборудование"^^xsd:string.
+d:WorkPermitMainRisks_1_2_10
+  a v-s:WorkPermitMainRisks;
+  v-s:parentUnit d:WorkPermitMainRisks_1_2;
+  rdfs:label "наезд транспортного средства на пешехода"^^xsd:string.
+d:WorkPermitMainRisks_1_2_11
+  a v-s:WorkPermitMainRisks;
+  v-s:parentUnit d:WorkPermitMainRisks_1_2;
+  rdfs:label "столкновение транспортных средств"^^xsd:string.
+d:WorkPermitMainRisks_1_2_12
+  a v-s:WorkPermitMainRisks;
+  v-s:parentUnit d:WorkPermitMainRisks_1_2;
+  rdfs:label "химические ожоги"^^xsd:string.
+d:WorkPermitMainRisks_1_2_13
+  a v-s:WorkPermitMainRisks;
+  v-s:parentUnit d:WorkPermitMainRisks_1_2;
+  rdfs:label "термические ожоги"^^xsd:string.
+d:WorkPermitMainRisks_1_2_14
+  a v-s:WorkPermitMainRisks;
+  v-s:parentUnit d:WorkPermitMainRisks_1_2;
+  rdfs:label "воздействие на персонал асбеста"^^xsd:string.
+d:WorkPermitMainRisks_1_2_15
+  a v-s:WorkPermitMainRisks;
+  v-s:parentUnit d:WorkPermitMainRisks_1_2;
+  rdfs:label "возгорание/пожар"^^xsd:string.
+d:WorkPermitMainRisks_1_2_16
+  a v-s:WorkPermitMainRisks;
+  v-s:parentUnit d:WorkPermitMainRisks_1_2;
+  rdfs:label "угроза выброса энергии (воздух, пар, вода, химикаты и т.д.)"^^xsd:string.
+d:WorkPermitMainRisks_1_2_17
+  a v-s:WorkPermitMainRisks;
+  v-s:parentUnit d:WorkPermitMainRisks_1_2;
+  rdfs:label "шланги под давлением, представляющие угрозу при разгерметизации"^^xsd:string.
+d:WorkPermitMainRisks_1_2_18
+  a v-s:WorkPermitMainRisks;
+  v-s:parentUnit d:WorkPermitMainRisks_1_2;
+  rdfs:label "травма глаз"^^xsd:string.
+d:WorkPermitMainRisks_1_2_19
+  a v-s:WorkPermitMainRisks;
+  v-s:parentUnit d:WorkPermitMainRisks_1_2;
+  rdfs:label "травмы конечностей (перелом, ушиб, сдавливание)"^^xsd:string.
+d:WorkPermitMainRisks_1_2_20
+  a v-s:WorkPermitMainRisks;
+  v-s:parentUnit d:WorkPermitMainRisks_1_2;
+  rdfs:label "порез"^^xsd:string.
+d:WorkPermitMainRisks_1_2_21
+  a v-s:WorkPermitMainRisks;
+  v-s:parentUnit d:WorkPermitMainRisks_1_2;
+  rdfs:label "тепловой удар"^^xsd:string.
+d:WorkPermitMainRisks_1_2_22
+  a v-s:WorkPermitMainRisks;
+  v-s:parentUnit d:WorkPermitMainRisks_1_2;
+  rdfs:label "подскальзывание"^^xsd:string.
+d:WorkPermitMainRisks_1_2_23
+  a v-s:WorkPermitMainRisks;
+  v-s:parentUnit d:WorkPermitMainRisks_1_2;
+  rdfs:label "воздействие радиации"^^xsd:string.
+d:WorkPermitMainRisks_1_2_24
+  a v-s:WorkPermitMainRisks;
+  v-s:parentUnit d:WorkPermitMainRisks_1_2;
+  rdfs:label "обморожение"^^xsd:string.
+d:WorkPermitMainRisks_1_2_25
+  a v-s:WorkPermitMainRisks;
+  v-s:parentUnit d:WorkPermitMainRisks_1_2;
+  rdfs:label "потеря слуха"^^xsd:string.
+d:WorkPermitMainRisks_1_2_26
+  a v-s:WorkPermitMainRisks;
+  v-s:parentUnit d:WorkPermitMainRisks_1_2;
+  rdfs:label "отравление, интоксикация, асфиксия, удушье, обморок, утопление"^^xsd:string.
+d:WorkPermitMainRisks_1_2_27
+  a v-s:WorkPermitMainRisks;
+  v-s:parentUnit d:WorkPermitMainRisks_1_2;
+  rdfs:label "другие риски"^^xsd:string.
+
+
+#--------------------------------------------------Мероприятия обеспечивающие безопасное выполнение работ--
+v-s:SafetyWorkAction
+  rdf:type owl:Class ;
+  rdfs:subClassOf v-s:UserThing ;
+  rdfs:label "Мероприятия обеспечивающие безопасное выполнение работ"@ru ;
+  rdfs:label "Actions to safety work"@en ;
+.
+
+d:SafetyWorkAction_1_3
+  a v-s:SafetyWorkAction;
+  rdfs:label "Общие меры безопасности"^^xsd:string.
+d:SafetyWorkAction_1_3_1
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_1_3;
+  rdfs:label "работы вести в соответствии с ППР, ТК и инструкцией"^^xsd:string.
+d:SafetyWorkAction_1_3_2
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_1_3;
+  rdfs:label "установить защиту электрических кабелей/оборудования"^^xsd:string.
+d:SafetyWorkAction_1_3_3
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_1_3;
+  rdfs:label "разместить знаки по безопасности, указательные плакаты"^^xsd:string.
+d:SafetyWorkAction_1_3_4
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_1_3;
+  rdfs:label "использовать рацию, систему условных сигналов"^^xsd:string.
+d:SafetyWorkAction_1_3_5
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_1_3;
+  rdfs:label "использовать исправный, проверенный инструмент"^^xsd:string.
+d:SafetyWorkAction_1_3_6
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_1_3;
+  rdfs:label "установить жесткое ограждение опасной зоны, исключен доступ посторонних лиц"^^xsd:string.
+d:SafetyWorkAction_1_3_7
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_1_3;
+  rdfs:label "использовать специнструмент при работе в электроустановках"^^xsd:string.
+d:SafetyWorkAction_1_3_8
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_1_3;
+  rdfs:label "использовать искробезопасный инструмент"^^xsd:string.
+d:SafetyWorkAction_1_3_9
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_1_3;
+  rdfs:label "обозначить опасную зону сигнальной лентой"^^xsd:string.
+d:SafetyWorkAction_1_3_10
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_1_3;
+  rdfs:label "установить дополнительное освещение"^^xsd:string.
+d:SafetyWorkAction_1_3_11
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_1_3;
+  rdfs:label "допустить к работе обученный и аттестованный персонал"^^xsd:string.
+d:SafetyWorkAction_1_3_12
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_1_3;
+  rdfs:label "пролить водой места производства работ"^^xsd:string.
+d:SafetyWorkAction_1_3_13
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_1_3;
+  rdfs:label "провести проверку отсутствия в стенах/перекрытиях или непосредственно за ними скрытых инженерных коммуникаций"^^xsd:string.
+d:SafetyWorkAction_1_3_14
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_1_3;
+  rdfs:label "применяется исправный диэлектрический изолирующий ручной инструмент"^^xsd:string.
+d:SafetyWorkAction_1_3_15
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_1_3;
+  rdfs:label "применять верстак с тисками при работе с УШМ"^^xsd:string.
+d:SafetyWorkAction_1_3_16
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_1_3;
+  rdfs:label "назначить наблюдающего"^^xsd:string.
+
+d:SafetyWorkAction_1_3_17
+  v-s:deleted true;
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_1_3;
+  rdfs:label "* применять СИЗ, заполнить раздел 2"^^xsd:string.
+d:SafetyWorkAction_1_3_18
+  v-s:deleted true;
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_1_3;
+  rdfs:label "* при передаче территории по акту-допуску заполнить раздел 3"^^xsd:string.
+d:SafetyWorkAction_1_3_19
+  v-s:deleted true;
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_1_3;
+  rdfs:label "* при одновременной работе нескольких бригад на одном участке заполнить пункты раздела 4"^^xsd:string.
+d:SafetyWorkAction_1_3_20
+  v-s:deleted true;
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_1_3;
+  rdfs:label "* при работах на высоте заполнить раздел 6"^^xsd:string.
+d:SafetyWorkAction_1_3_21
+  v-s:deleted true;
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_1_3;
+  rdfs:label "* при погрузочно-разгрузочных работах заполнить раздел 7"^^xsd:string.
+d:SafetyWorkAction_1_3_22
+  v-s:deleted true;
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_1_3;
+  rdfs:label "* при огневых работах заполнить раздел 8"^^xsd:string.
+d:SafetyWorkAction_1_3_23
+  v-s:deleted true;
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_1_3;
+  rdfs:label "* при изоляции энергии заполнить раздел 9"^^xsd:string.
+d:SafetyWorkAction_1_3_24
+  v-s:deleted true;
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_1_3;
+  rdfs:label "* при выполнении работ: земляных, с оборудованием высокого давления, водолазных, по демонтажу зданий и сооружений, на электрооборудовании с напряжением 380В и выше, с асбестом, в замкнутом заполнить приложение А"^^xsd:string.
+
+
+
+d:SafetyWorkAction_6
+  v-s:deleted true;
+  a v-s:SafetyWorkAction;
+  rdfs:label "Работа на высоте или вблизи не огражденных перепадов по высоте"^^xsd:string.
+
+d:SafetyWorkAction_6_1
+  a v-s:SafetyWorkAction;
+  rdfs:label "Общие требования"^^xsd:string.
+d:SafetyWorkAction_6_1_1
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_6_1;
+  rdfs:label "Предоставить безопасный доступ к месту, проведения работ на высоте"^^xsd:string.
+d:SafetyWorkAction_6_1_2
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_6_1;
+  rdfs:label "Обеспечить безопасность рабочей зоны с риском падения предметов"^^xsd:string.
+d:SafetyWorkAction_6_1_3
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_6_1;
+  rdfs:label "Предусмотреть надзор, ограждение для исключения воздействия на окружающих"^^xsd:string.
+d:SafetyWorkAction_6_1_4
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_6_1;
+  rdfs:label "Согласовать план спасательных работ"^^xsd:string.
+d:SafetyWorkAction_6_1_5
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_6_1;
+  rdfs:label "Определить руководителем работ места крепления страховочного фала"^^xsd:string.
+
+d:SafetyWorkAction_6_2
+  a v-s:SafetyWorkAction;
+  rdfs:label "Личная безопасность"^^xsd:string.
+d:SafetyWorkAction_6_2_1
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_6_2;
+  rdfs:label "Провести визуальный осмотр страховочной привязи"^^xsd:string.
+d:SafetyWorkAction_6_2_2
+  a v-s:SafetyWorkAction;
+  v-s:deleted true;
+  v-s:parentUnit d:SafetyWorkAction_6_2;
+  rdfs:label "Cтраховочная привязь оснащена полным комплектом элементов"^^xsd:string.
+d:SafetyWorkAction_6_2_3
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_6_2;
+  rdfs:label "Каски оснащены подбородным ремнем с 4-мя точками крепления"^^xsd:string.
+
+d:SafetyWorkAction_6_3
+  a v-s:SafetyWorkAction;
+  rdfs:label "Работа на лесах"^^xsd:string.
+d:SafetyWorkAction_6_3_1
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_6_3;
+  rdfs:label "Заполнить акт приемки лесов выше 4-х метров"^^xsd:string.
+d:SafetyWorkAction_6_3_2
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_6_3;
+  rdfs:label "Заполнить чек-лист на леса"^^xsd:string.
+d:SafetyWorkAction_6_3_3
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_6_3;
+  rdfs:label "Провести регистрацию лесов в журнале"^^xsd:string.
+d:SafetyWorkAction_6_3_4
+  v-s:deleted true;
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_6_3;
+  rdfs:label "Имеется в наличие СИЗ от падения?"^^xsd:string.
+d:SafetyWorkAction_6_3_5
+  v-s:deleted true;
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_6_3;
+  rdfs:label "Вывешены таблички на леса?"^^xsd:string.
+
+d:SafetyWorkAction_6_4
+  a v-s:SafetyWorkAction;
+  rdfs:label "Подъемники (вышки)"^^xsd:string.
+d:SafetyWorkAction_6_4_1
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_6_4;
+  rdfs:label "Провести проверку с записью в журнале подъемника, вышки"^^xsd:string.
+d:SafetyWorkAction_6_4_2
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_6_4;
+  rdfs:label "Персоналу иметь при себе удостоверения на право эксплуатации вышки, подъемника"^^xsd:string.
+d:SafetyWorkAction_6_4_3
+  v-s:deleted true;
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_6_4;
+  rdfs:label "Используются СИЗ от падения?"^^xsd:string.
+d:SafetyWorkAction_6_4_4
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_6_4;
+  rdfs:label "Определить точки крепления в люльке"^^xsd:string.
+d:SafetyWorkAction_6_4_5
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_6_4;
+  rdfs:label "Подъемники, вышки сертифицированы и зарегистрированы в Ростехнадзоре"^^xsd:string.
+d:SafetyWorkAction_6_4_6
+  v-s:deleted true;
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_6_4;
+  rdfs:label "Мобильная платформа соответствует выполняемому виду работ?"^^xsd:string.
+
+d:SafetyWorkAction_6_5
+  a v-s:SafetyWorkAction;
+  rdfs:label "Лестница/стремянка"^^xsd:string.
+d:SafetyWorkAction_6_5_1
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_6_5;
+  rdfs:label "Провести осмотр, лестницы/стремянки на повреждения"^^xsd:string.
+d:SafetyWorkAction_6_5_2
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_6_5;
+  rdfs:label "Обеспечить присутствие напарника при работе с лестницы"^^xsd:string.
+d:SafetyWorkAction_6_5_3
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_6_5;
+  rdfs:label "Произвести фиксацию лестницы или стремянки, исключающую их падение"^^xsd:string.
+    
+d:SafetyWorkAction_6_6
+  a v-s:SafetyWorkAction;
+  rdfs:label "Работы на крыше"^^xsd:string.
+d:SafetyWorkAction_6_6_1
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_6_6;
+  rdfs:label "Максимальная статическая нагрузка крыши соответствует выполняемой работе и нагрузке на нее"^^xsd:string.
+d:SafetyWorkAction_6_6_2
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_6_6;
+  rdfs:label "Край крыши имеет жесткое ограждение"^^xsd:string.
+d:SafetyWorkAction_6_6_3
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_6_6;
+  rdfs:label "Применять СИЗ от падения"^^xsd:string.
+d:SafetyWorkAction_6_6_4
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_6_6;
+  rdfs:label "Имеется безопасный доступ на крышу"^^xsd:string.
+
+d:SafetyWorkAction_7
+  a v-s:SafetyWorkAction;
+  rdfs:label "Погрузочно-разгрузочные работы, выполняемые грузоподъемными механизмами"^^xsd:string.
+d:SafetyWorkAction_7_1
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_7;
+  rdfs:label "Грузоподъемность стропов/СГП достаточна для подъема перемещаемого груза"^^xsd:string.
+d:SafetyWorkAction_7_2
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_7;
+  rdfs:label "Проверить исправное состояние стропов/СГП"^^xsd:string.
+d:SafetyWorkAction_7_3
+  v-s:deleted true;
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_7;
+  rdfs:label "Оборудованы ли все крюки предохранительными замками?"^^xsd:string.
+d:SafetyWorkAction_7_4
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_7;
+  rdfs:label "Оградить зону возможного падения груза"^^xsd:string.
+d:SafetyWorkAction_7_5
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_7;
+  rdfs:label "Назначить наблюдающего"^^xsd:string.
+d:SafetyWorkAction_7_6
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_7;
+  rdfs:label "Груз направить с помощью оттяжки"^^xsd:string.
+d:SafetyWorkAction_7_7
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_7;
+  rdfs:label "Груз направить с помощью шеста"^^xsd:string.
+d:SafetyWorkAction_7_8
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_7;
+  rdfs:label "Обеспечить безопасный доступ к месту погрузочно-разгрузочных работ"^^xsd:string.
+d:SafetyWorkAction_7_9
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_7;
+  rdfs:label "ТК или ППР на погрузочно-разгрузочные работы"^^xsd:string.
+
+d:SafetyWorkAction_8
+  a v-s:SafetyWorkAction;
+  rdfs:label "Огневые работы"^^xsd:string.
+d:SafetyWorkAction_8_1
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_8;
+  rdfs:label "Провести очистку рабочего места от горючих материалов"^^xsd:string.
+d:SafetyWorkAction_8_2
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_8;
+  rdfs:label "Применять огнестойкие негорючие укрывные материалы"^^xsd:string.
+d:SafetyWorkAction_8_3
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_8;
+  rdfs:label "Первичные средства пожаротушения"^^xsd:string.
+d:SafetyWorkAction_8_4
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_8;
+  rdfs:label "Назначить наблюдающего в зоне производства работ"^^xsd:string.
+d:SafetyWorkAction_8_5
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_8;
+  rdfs:label "Определить пути эвакуации"^^xsd:string.
+d:SafetyWorkAction_8_6
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_8;
+  rdfs:label "Зона является взрывоопасной"^^xsd:string.
+d:SafetyWorkAction_8_7
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_8;
+  rdfs:label "Пожарную сигнализацию, систему пожаротушения отключить, отключение согласованно"^^xsd:string.
+d:SafetyWorkAction_8_8
+  v-s:deleted true;
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_8;
+  rdfs:label "Работники выполняющие огневые работы имеют талон-допуск?"^^xsd:string.
+
+d:SafetyWorkAction_8_dop
+  a v-s:SafetyWorkAction;
+  rdfs:label "Дополнительные меры при Огневых работах"^^xsd:string.
+d:SafetyWorkAction_8_dop1
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_8_dop;
+  rdfs:label "Осуществлять контроль за состоянием парогазовоздушной среды в технологическом оборудовании"^^xsd:string.
+d:SafetyWorkAction_8_dop2
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_8_dop;
+  rdfs:label "Провентилировать помещения, в которых возможно скопление горючих газов, паров ГЖ"^^xsd:string.
+d:SafetyWorkAction_8_dop3
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_8_dop;
+  rdfs:label "Плотно закрыть все двери, соединяющие помещения, в которых проводятся ОР, с другими помещениями, открыть окна"^^xsd:string.
+d:SafetyWorkAction_8_dop4
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_8_dop;
+  rdfs:label "Следить за разлетом искр; на нижележащей отметке (этаже) назначить наблюдателя и обеспечить огнетушителем"^^xsd:string.
+d:SafetyWorkAction_8_dop5
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_8_dop;
+  rdfs:label "Назначить дополнительного наблюдающего (-их)"^^xsd:string.
+d:SafetyWorkAction_8_dop6
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_8_dop;
+  rdfs:label "Обеспечить наблюдающего дополнительным огнетушителем (указывается тип огнетушителя)"^^xsd:string.
+
+d:SafetyWorkAction_9
+  a v-s:SafetyWorkAction;
+  rdfs:label "Блокировка энергии"^^xsd:string.
+d:SafetyWorkAction_9_1
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_9;
+  rdfs:label "Работы с блокировкой энергии"^^xsd:string.
+d:SafetyWorkAction_9_1_1
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_9_1;
+  rdfs:label "Работникам вывесить индивидуальные замки на рейку"^^xsd:string.
+d:SafetyWorkAction_9_1_2
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_9_1;
+  rdfs:label "Определить все источники энергии"^^xsd:string.
+d:SafetyWorkAction_9_1_3
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_9_1;
+  rdfs:label "Заблокировать все источники энергии"^^xsd:string.
+d:SafetyWorkAction_9_1_4
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_9_1;
+  rdfs:label "Остаточные опасные вещества и газы удалить из трубопроводов и дренажей и т.д."^^xsd:string.
+d:SafetyWorkAction_9_1_5
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_9_1;
+  rdfs:label "Установить заглушки безопасности на трубопроводах содержащих опасные вещества"^^xsd:string.
+d:SafetyWorkAction_9_2
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_9;
+  rdfs:label "Работы без блокировки энергии"^^xsd:string.
+d:SafetyWorkAction_9_2_1
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_9_2;
+  rdfs:label "Не возможно выполнить операцию применяя стандартную процедуру по блокировке энергии LOTO"^^xsd:string.
+d:SafetyWorkAction_9_2_2
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_9_2;
+  rdfs:label "ТК на выполняемые работы, к перечню работ без выполнения блокировки энергии"^^xsd:string.
+d:SafetyWorkAction_9_2_3
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_9_2;
+  rdfs:label "Работы выполнять в присутствии руководителя работ"^^xsd:string.
+
+d:SafetyWorkAction_10
+  a v-s:SafetyWorkAction;
+  rdfs:label "Земляные работы (вскрытие грунта на глубину более 0,4 метра)"^^xsd:string.
+d:SafetyWorkAction_10_1
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_10;
+  rdfs:label "Извлеченный грунт располагать минимум на 1 метр от места проведения работ (котлована)"^^xsd:string.
+d:SafetyWorkAction_10_2
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_10;
+  rdfs:label "Определить и обозначить расстояние размещения тяжелой техники от места проведения работ"^^xsd:string.
+d:SafetyWorkAction_10_3
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_10;
+  rdfs:label "Реализовать мероприятия для защиты от обрушения стенок котлована"^^xsd:string.
+d:SafetyWorkAction_10_4
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_10;
+  rdfs:label "В зону работ техники не допускать персонал"^^xsd:string.
+d:SafetyWorkAction_10_5
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_10;
+  rdfs:label "Обеспечить освещение зоны ограждений котлована/траншеи в темное время суток"^^xsd:string.
+d:SafetyWorkAction_10_6
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_10;
+  rdfs:label "Оформить разрешение на выполнение земляных работ"^^xsd:string.
+d:SafetyWorkAction_10_7
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_10;
+  rdfs:label "Обеспечить безопасный доступ в котлован/траншею"^^xsd:string.
+d:SafetyWorkAction_10_8
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_10;
+  rdfs:label "Установить жесткое ограждение котлована/траншей, при перепаде по высоте более 1,8 м, ограничить доступ в опасную зону"^^xsd:string.
+
+d:SafetyWorkAction_11
+  a v-s:SafetyWorkAction;
+  rdfs:label "Работа с оборудованием высокого давления 200 бар и более"^^xsd:string.
+d:SafetyWorkAction_11_1
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_11;
+  rdfs:label "Оборудование высокого давления и все его детали осмотреть на повреждения"^^xsd:string.
+d:SafetyWorkAction_11_2
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_11;
+  rdfs:label "Соединительные муфты шлангов оснастить средствами защиты от биений"^^xsd:string.
+d:SafetyWorkAction_11_3
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_11;
+  rdfs:label "Оператор контролирует работу пусковых механизмов педалями ножного управления"^^xsd:string.
+d:SafetyWorkAction_11_4
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_11;
+  rdfs:label "При работе с копьями высокого давления использовать средства защиты от отдачи"^^xsd:string.
+d:SafetyWorkAction_11_5
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_11;
+  rdfs:label "СИЗ в соответствии с инструкцией по эксплуатации"^^xsd:string.
+d:SafetyWorkAction_11_6
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_11;
+  rdfs:label "Шланги разместить таким образом, чтобы исключить опасность спотыкания"^^xsd:string.
+d:SafetyWorkAction_11_7
+  v-s:deleted true;
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_11;
+  rdfs:label "Работник ознакомлен с инструкцией по эксплуатации?"^^xsd:string.
+d:SafetyWorkAction_11_8
+  v-s:deleted true;
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_11;
+  rdfs:label "Рабочая площадка имеет ограждение?"^^xsd:string.
+d:SafetyWorkAction_11_9
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_11;
+  rdfs:label "Установить предупреждающие знаки на всех входах на площадку"^^xsd:string.
+d:SafetyWorkAction_11_10
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_11;
+  rdfs:label "Применять предохранительный щиток для защиты лица и глаз"^^xsd:string.
+
+d:SafetyWorkAction_12
+  a v-s:SafetyWorkAction;
+  rdfs:label "Водолазные работы"^^xsd:string.
+d:SafetyWorkAction_12_1                                             
+  v-s:deleted true;
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_12;
+  rdfs:label "Согласованны ли водолазные работы с руководителем Группы Монди по безопасности?"^^xsd:string.
+d:SafetyWorkAction_12_2
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_12;
+  rdfs:label "Выявлены факторы риска, составлена оценка рисков и согласованы меры контроля"^^xsd:string.
+d:SafetyWorkAction_12_3
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_12;
+  rdfs:label "Водолазы обладают квалификацией, необходимой для проведения водолазных работ"^^xsd:string.
+d:SafetyWorkAction_12_4
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_12;
+  rdfs:label "Обеспечить защиту от падения предметов в зону погружения и подхода к ней"^^xsd:string.
+d:SafetyWorkAction_12_5
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_12;
+  rdfs:label "Наличие систем коммуникации у водолазов и руководителя водолазных работ"^^xsd:string.
+d:SafetyWorkAction_12_6
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_12;
+  rdfs:label "Применяется система работы с напарником (не менее двух водолазов)"^^xsd:string.
+d:SafetyWorkAction_12_7
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_12;
+  rdfs:label "Присутствие наблюдающего водолаза на поверхности на случай аварийной ситуации"^^xsd:string.
+d:SafetyWorkAction_12_8
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_12;
+  rdfs:label "Наличие в зоне погружения аварийно-спасательного оборудования"^^xsd:string.
+d:SafetyWorkAction_12_9
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_12;
+  rdfs:label "Провести предварительное тестирование водолазов на состояние алкогольного опьянения"^^xsd:string.
+d:SafetyWorkAction_12_10
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_12;
+  rdfs:label "Водолазные костюмы и оборудование осмотрены и признаны безопасными для использования"^^xsd:string.
+d:SafetyWorkAction_12_11
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_12;
+  rdfs:label "Обеспечен безопасный спуск водолаза в зону погружения"^^xsd:string.
+d:SafetyWorkAction_12_12
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_12;
+  rdfs:label "Очищены и проверены воздушные фильтры"^^xsd:string.
+d:SafetyWorkAction_12_13
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_12;
+  rdfs:label "Подача воздуха осуществляется компрессором с поверхности"^^xsd:string.
+d:SafetyWorkAction_12_14
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_12;
+  rdfs:label "Выполнена предварительная оценка риска перед погружением с согласованием руководителя водолазных работ"^^xsd:string.
+d:SafetyWorkAction_12_15
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_12;
+  rdfs:label "Качество подаваемого воздуха проверено и соответствует нормам"^^xsd:string.
+d:SafetyWorkAction_12_16
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_12;
+  rdfs:label "Вокруг зоны погружения отсутствует оборудование работающее на горючем топливе"^^xsd:string.
+d:SafetyWorkAction_12_17
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_12;
+  rdfs:label "Присутствие дежурных аварийно-спасательных служб на площадке"^^xsd:string.
+d:SafetyWorkAction_12_18
+  v-s:deleted true;
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_12;
+  rdfs:label "Оформлен чек-лист?"^^xsd:string.
+d:SafetyWorkAction_12_19
+  v-s:deleted true;
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_12;
+  rdfs:label "Применение спиртового раствора исключено?"^^xsd:string.
+
+d:SafetyWorkAction_13
+  a v-s:SafetyWorkAction;
+  rdfs:label "Демонтаж зданий и сооружений"^^xsd:string.
+d:SafetyWorkAction_13_1
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_13;
+  rdfs:label "Определены и обозначены (промаркированы) все коммуникации в зоне демонтажных работ"^^xsd:string.
+d:SafetyWorkAction_13_2
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_13;
+  rdfs:label "У входа на место производства работ вывесить предупреждающие знаки"^^xsd:string.
+d:SafetyWorkAction_13_3
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_13;
+  rdfs:label "Места для курения и отдыха персонала расположены вне опасной зоны"^^xsd:string.
+d:SafetyWorkAction_13_4
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_13;
+  rdfs:label "Безопасные пути перемещения транспорта и пешеходов обозначены или оснащены защитными навесами, где это необходимо"^^xsd:string.
+d:SafetyWorkAction_13_5
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_13;
+  rdfs:label "Не допускать наличие строительного мусора ближе 1м от краев на различных отметках"^^xsd:string.
+d:SafetyWorkAction_13_6
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_13;
+  rdfs:label "Проведена блокировка энергии"^^xsd:string.
+d:SafetyWorkAction_13_7
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_13;
+  rdfs:label "Не разрешается проведение нескольких работ друг над другом на различной высоте"^^xsd:string.
+d:SafetyWorkAction_13_8
+  v-s:deleted true;
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_13;
+  rdfs:label "Имеется в наличии утвержденный ППР?"^^xsd:string.
+d:SafetyWorkAction_13_9
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_13;
+  rdfs:label "Обеспечено временное освещение рабочей зоны"^^xsd:string.
+d:SafetyWorkAction_13_10
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_13;
+  rdfs:label "Обеспечены зоны проходов не менее 0.8 м."^^xsd:string.
+d:SafetyWorkAction_13_11
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_13;
+  rdfs:label "Зону демонтажных работ оградить и доступ к ней ограничить"^^xsd:string.
+d:SafetyWorkAction_13_12
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_13;
+  rdfs:label "Подлежащие демонтажу оборудование, его части, конструкции проверить на отсутствие мешающих демонтажу связей"^^xsd:string.
+d:SafetyWorkAction_13_13
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_13;
+  rdfs:label "Определить и обозначить расстояние размещения тяжелой техники от места проведения работ"^^xsd:string.
+
+d:SafetyWorkAction_14
+  a v-s:SafetyWorkAction;
+  rdfs:label "Работы на электрооборудовании под напряжением 380В и выше (работы без снятия/подачи электроэнергии)"^^xsd:string.
+d:SafetyWorkAction_14_1
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_14;
+  rdfs:label "Предоставлены пригодные для работ измерительные приборы и оборудование"^^xsd:string.
+d:SafetyWorkAction_14_2
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_14;
+  rdfs:label "Использование изолирующих и защитных материалов для защиты работников, включая экраны, ограждения, коврики или иное спецоборудование"^^xsd:string.
+d:SafetyWorkAction_14_3
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_14;
+  rdfs:label "Наличие изолированного инструмента или иных неэлектропроводящих устройств и приспособлений (таких как клещи для плавких предохранителей, штанга для работы под напряжением, ключи и отвертки с диэлектрической изоляцией и т.д.)"^^xsd:string.
+d:SafetyWorkAction_14_4
+  v-s:deleted true;
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_14;
+  rdfs:label "Все работники обеспечены соответствующими СИЗ?"^^xsd:string.
+d:SafetyWorkAction_14_5
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_14;
+  rdfs:label "Не допускаются все электропроводящие украшения и одежда"^^xsd:string.
+d:SafetyWorkAction_14_6
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_14;
+  rdfs:label "Рабочее место свободить от воды и токопроводящей пыли, провести уборка"^^xsd:string.
+d:SafetyWorkAction_14_7
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_14;
+  rdfs:label "Вывесить предупреждающие знаки, запрещен несанкционированный вход на место производства работ"^^xsd:string.
+d:SafetyWorkAction_14_8
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_14;
+  rdfs:label "Оборудование осмотрено и не имеет повреждений"^^xsd:string.
+
+d:SafetyWorkAction_15
+  a v-s:SafetyWorkAction;
+  rdfs:label "Работа с материалами, содержащими асбест"^^xsd:string.
+d:SafetyWorkAction_15_1
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_15;
+  rdfs:label "Использовать инструмент и технику, образующих низкий уровень пыли"^^xsd:string.
+d:SafetyWorkAction_15_2
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_15;
+  rdfs:label "Рабочую зону ограждить для предотвращения утечки асбестовой пыли"^^xsd:string.
+d:SafetyWorkAction_15_3
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_15;
+  rdfs:label "В изолированной зоне производится очистка воздуха за счет системы вентиляции с отрицательным давлением с высокоэффективными воздушными фильтрами"^^xsd:string.
+d:SafetyWorkAction_15_4
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_15;
+  rdfs:label "Установлены предупреждающие знаки на всех входах на площадку"^^xsd:string.
+d:SafetyWorkAction_15_5
+  v-s:deleted true;
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_15;
+  rdfs:label "Имеется в наличии утвержденный ППР?"^^xsd:string.
+d:SafetyWorkAction_15_6
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_15;
+  rdfs:label "Воздействие пыли, содержащей асбест, на рабочего не должна превышать определенный лимит"^^xsd:string.
+d:SafetyWorkAction_15_7
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_15;
+  rdfs:label "Материалы, содержащие асбест, убираются в мешки и маркируются"^^xsd:string.
+d:SafetyWorkAction_15_8
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_15;
+  rdfs:label "Персоналу выданы средства защиты органов дыхания, соответствующая спецодежда и проведено обучение по их использованию"^^xsd:string.
+
+d:SafetyWorkAction_16
+  a v-s:SafetyWorkAction;
+  rdfs:label "Работа в замкнутом пространстве"^^xsd:string.
+d:SafetyWorkAction_16_1
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_16;
+  rdfs:label "Провести замеры воздуха в зоне работ"^^xsd:string.
+d:SafetyWorkAction_16_2
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_16;
+  rdfs:label "Предусмотреть естественную/принудительную вентиляция"^^xsd:string.
+d:SafetyWorkAction_16_3
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_16;
+  rdfs:label "Предусмотрено освещение во взрывозащищенном исполнении с напряжением не более 12В"^^xsd:string.
+d:SafetyWorkAction_16_4
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_16;
+  rdfs:label "Согласован План аварийно-спасательных мероприятий"^^xsd:string.
+d:SafetyWorkAction_16_5
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_16;
+  rdfs:label "Наблюдающий имеет средство связи со службами спасения"^^xsd:string.
+d:SafetyWorkAction_16_6
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_16;
+  rdfs:label "Определен способ коммуникации наблюдающего с находящимися внутри людьми (рация, мобильный телефон и т. д.)"^^xsd:string.
+d:SafetyWorkAction_16_7
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_16;
+  rdfs:label "Шланговый противогаз находится у входа в замкнутое пространство"^^xsd:string.
+d:SafetyWorkAction_16_8
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_16;
+  rdfs:label "Предусмотрен искробезопасный инструмент"^^xsd:string.
+d:SafetyWorkAction_16_9
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_16;
+  rdfs:label "Наблюдающий регистрирует время входа/выхода членов бригады в замкнутое пространство"^^xsd:string.
+d:SafetyWorkAction_16_10
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_16;
+  rdfs:label "Используется индивидуальный сигнализатор уровня кислорода"^^xsd:string.
+d:SafetyWorkAction_16_11
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_16;
+  rdfs:label "Предусмотрены меры контроля не санкционированного доступа"^^xsd:string.
+d:SafetyWorkAction_16_12
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_16;
+  rdfs:label "Все отложения удалены, перед допуском людей, проведена оценка наличия отложений внутри емкостей"^^xsd:string.
+d:SafetyWorkAction_16_13
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_16;
+  rdfs:label "Отсутствует превышение предельно-допустимой концентрации вредных веществ в воздухе рабочей зоны"^^xsd:string.
+d:SafetyWorkAction_16_14
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_16;
+  rdfs:label "При работе с электроинструментом применяется УЗО"^^xsd:string.
+
+
+d:SafetyWorkAction_17
+  a v-s:SafetyWorkAction;
+  rdfs:label "Меры безопасности при проведении газоопасных работ (природный газ)"^^xsd:string.
+d:SafetyWorkAction_17_1
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_17;
+  rdfs:label "Применять инструмент из цветного металла, исключающий искрообразование"^^xsd:string.
+d:SafetyWorkAction_17_2
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_17;
+  rdfs:label "Обильно смазать солидолом или другой аналогичной смазкой рабочую часть инструмента из черного металла"^^xsd:string.
+d:SafetyWorkAction_17_3
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_17;
+  rdfs:label "Не допускать использование электрических инструментов, дающих искрение"^^xsd:string.
+d:SafetyWorkAction_17_4
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_17;
+  rdfs:label "Применять обувь без стальных подковок и гвоздей"^^xsd:string.
+d:SafetyWorkAction_17_5
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_17;
+  rdfs:label "Применять переносные светильники во взрывозащищенном исполнении напряжением до двенадцати вольт"^^xsd:string.
+d:SafetyWorkAction_17_6
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_17;
+  rdfs:label "При концентрации газа в помещении, превышающей десять процентов НКПРП, работы должны быть приостановлены"^^xsd:string.
+d:SafetyWorkAction_17_7
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_17;
+  rdfs:label "При содержании кислорода более одного процента по объему розжиг горелок не допускается"^^xsd:string.
+d:SafetyWorkAction_17_8
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_17;
+  rdfs:label "Вблизи мест проведения газоопасных работ вывесить или выставить предупредительные знаки Огнеопасно - газ"^^xsd:string.
+d:SafetyWorkAction_17_9
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_17;
+  rdfs:label "Оградить места проведения работ"^^xsd:string.
+d:SafetyWorkAction_17_10
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_17;
+  rdfs:label "Принять меры, исключающие допуск на место проведения газоопасной работы лиц, не занятых ее выполнением"^^xsd:string.
+d:SafetyWorkAction_17_11
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_17;
+  rdfs:label "Работать в шланговых или кислородно-изолирующих противогазах"^^xsd:string.
+d:SafetyWorkAction_17_12
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_17;
+  rdfs:label "Входить в газоопасное место можно только с разрешения лица, ответственного за проведение работ, и в средствах индивидуальной защиты, надетых за пределами опасной зоны"^^xsd:string.
+d:SafetyWorkAction_17_13
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_17;
+  rdfs:label "Работа должна начинаться в присутствии лица, ответственного за проведение работ"^^xsd:string.
+d:SafetyWorkAction_17_14
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_17;
+  rdfs:label "Постоянное присутствие лица, ответственного за проведение работ на месте производства работ"^^xsd:string.
+d:SafetyWorkAction_17_15
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_17;
+  rdfs:label "Устройства для подключения передвижного и переносного электрооборудования разместить вне взрывоопасной зоны"^^xsd:string.
+d:SafetyWorkAction_17_16
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_17;
+  rdfs:label "Обеспечить непрерывный контроль состояния воздушной среды"^^xsd:string.
+d:SafetyWorkAction_17_17
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_17;
+  rdfs:label "Снаружи с наветренной стороны должны находиться по два человека для страховки на каждого работающего в колодцах и котлованах и недопущения к месту работы посторонних лиц"^^xsd:string.
+d:SafetyWorkAction_17_18
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_17;
+  rdfs:label "Для предотвращения скольжения и искрения при опирании на твердое основание лестницы должны иметь резиновые упоры"^^xsd:string.
+
+
+
+d:SafetyWorkAction_18
+  a v-s:SafetyWorkAction;
+  rdfs:label "Меры безопасности при проведении газоопасных работ (по подразделению)"^^xsd:string.
+d:SafetyWorkAction_18_1
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "К проведению газоопасных работ следует приступать только после выполнения всех подготовительных работ и мероприятий, предусмотренных нарядом-допуском на проведение газоопасных работ и производственными инструкциями."^^xsd:string.
+d:SafetyWorkAction_18_2
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Не допускается увеличивать объем и характер работ, предусмотренных нарядом-допуском."^^xsd:string.
+d:SafetyWorkAction_18_3
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Не допускается совмещение газоопасных работ и огневых работ в одном помещении, а также в непосредственной близости на открытой площадке в случае возможного выделения в зону работ пожаровзрывоопасных веществ."^^xsd:string.
+d:SafetyWorkAction_18_4
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Обеспечить последовательность и режим выполнения газоопасной работы."^^xsd:string.
+d:SafetyWorkAction_18_5
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Обеспечить контроль за состоянием воздушной среды"^^xsd:string.
+d:SafetyWorkAction_18_6
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Обеспечить непрерывный контроль состояния воздушной среды;"^^xsd:string.
+d:SafetyWorkAction_18_7
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Обеспечить принятие мер, исключающих допуск на место проведения газоопасной работы лиц, не занятых ее выполнением."^^xsd:string.
+d:SafetyWorkAction_18_8
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Перед началом проведения газоопасных работ провести опрос каждого исполнителя о самочувствии. Не допускается привлекать к выполнению газоопасных работ лиц, заявивших о недомогании."^^xsd:string.
+d:SafetyWorkAction_18_9
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Входить в газоопасное место только с разрешения лица, ответственного за проведение работ, и в средствах индивидуальной защиты, надетых за пределами опасной зоны."^^xsd:string.
+d:SafetyWorkAction_18_10
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Работу начинать в присутствии лица, ответственного за проведение работ."^^xsd:string.
+d:SafetyWorkAction_18_11
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Ответственный за проведение работ должен постоянно присутствовать на месте производства газоопасных работ."^^xsd:string.
+d:SafetyWorkAction_18_12
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Представитель службы Пожгазсервис должен постоянно присутствовать на месте производства газоопасных работ."^^xsd:string.
+d:SafetyWorkAction_18_13
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Применять переносные светильники во взрывозащищенном исполнении, соответствующие по исполнению категории и группе взрывоопасной смеси;"^^xsd:string.
+d:SafetyWorkAction_18_14
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Применять средства связи во взрывозащищенном исполнении;"^^xsd:string.
+d:SafetyWorkAction_18_15
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Применять инструмент из материала, исключающего возможность искрообразования;"^^xsd:string.
+d:SafetyWorkAction_18_16
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Применять обувь, исключающую возможность искрообразования;"^^xsd:string.
+d:SafetyWorkAction_18_17
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Применять средства индивидуальной защиты органов дыхания."^^xsd:string.
+d:SafetyWorkAction_18_18
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Разместить устройства для подключения передвижного и переносного электрооборудования вне взрывоопасной зоны."^^xsd:string.
+d:SafetyWorkAction_18_19
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Начинать работу внутри емкости (аппарата) при температуре внутри не выше тридцати градусов Цельсия."^^xsd:string.
+d:SafetyWorkAction_18_20
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Применять шланговые противогазы."^^xsd:string.
+d:SafetyWorkAction_18_21
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Применять кислородно-изолирующие противогазы."^^xsd:string.
+d:SafetyWorkAction_18_22
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Применять воздушные изолирующие аппараты."^^xsd:string.
+d:SafetyWorkAction_18_23
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Срок единовременного пребывания работающего в средствах защиты органов дыхания лица не более тридцати минут."^^xsd:string.
+d:SafetyWorkAction_18_24
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Не допускать использование фильтрующих противогазов при работе внутри емкости (аппарата)."^^xsd:string.
+d:SafetyWorkAction_18_25
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Работающий в емкости (аппарате) должен использовать предохранительный пояс или страховочную привязь с сигнально-спасательной веревкой."^^xsd:string.
+d:SafetyWorkAction_18_26
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Применять средства связи и сигнализации на месте проведения работ"^^xsd:string.
+d:SafetyWorkAction_18_27
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Применять сигнально-спасательные веревки"^^xsd:string.
+d:SafetyWorkAction_18_28
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "При отсутствии зрительной связи между работающим и наблюдающим применять систему подачи условных сигналов."^^xsd:string.
+d:SafetyWorkAction_18_29
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Обеспечить непрерывную гарантированную подачу свежего воздуха в емкость (аппарат), обеспечивающую нормальный воздушный режим в аппарате;"^^xsd:string.
+d:SafetyWorkAction_18_30
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Обеспечить наличие у места проведения работ средств сигнализации и связи (световой, звуковой, радиотелефонной);"^^xsd:string.
+d:SafetyWorkAction_18_31
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Обеспечить наличие у каждого работающего в емкости (аппарате) предохранительного пояса или страховочной привязи с сигнально-спасательной веревкой."^^xsd:string.
+d:SafetyWorkAction_18_32
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Для спуска работника в емкость (аппарат), работы внутри емкости (аппарате) и подъема из нее (него) применять переносные лестницы из неискрящих материалов."^^xsd:string.
+d:SafetyWorkAction_18_33
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Проверить исправность, устойчивость и надежность закрепления лестницы по месту работы в присутствии лица, ответственного за проведение газоопасных работ."^^xsd:string.
+d:SafetyWorkAction_18_34
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Инструменты и материалы подавать в емкость способом, исключающим их падение и травмирование работников."^^xsd:string.
+d:SafetyWorkAction_18_35
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "При возникновении обстоятельств, угрожающих безопасности работника внутри емкости (признаки недомогания, попытка снять маску противогаза, обрыв сигнальной веревки, неисправность шланга, остановка воздуходувки), работу следует прекратить, а работника из емкости эвакуировать."^^xsd:string.
+d:SafetyWorkAction_18_36
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Обеспечить принудительное удаление выделяемых вредных и пожаровзрывоопасных веществ при  нанесении защитных покрытий на внутренние поверхности емкостей (аппаратов)"^^xsd:string.
+d:SafetyWorkAction_18_37
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "После окончания работ внутри емкости (аппарата) лицу, ответственному за проведение газоопасных работ, перед закрытием люков убедиться в отсутствии в емкости (аппарате) работников, инструментов, материалов, посторонних предметов, затем закрыть люки и произвести запись в наряде-допуске на проведение газоопасных работ об окончании газоопасных работ."^^xsd:string.
+d:SafetyWorkAction_18_38
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_18;
+  rdfs:label "Лицу, ответственному за проведение газоопасных работ, поставить в известность работников, занятых ведением технологического процесса, об окончании газоопасных работ и произвести запись в журнале ведения технологического процесса и наряде-допуске на проведение газоопасных работ."^^xsd:string.
+
+
+d:SafetyWorkAction_19
+  a v-s:SafetyWorkAction;
+  rdfs:label "Мероприятия по подготовке объекта к проведению газоопасных работ (по подразделению)"^^xsd:string.
+d:SafetyWorkAction_19_1
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_19;
+  rdfs:label "Снять давление с оборудования, работающего под избыточным давлением"^^xsd:string.
+d:SafetyWorkAction_19_2
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_19;
+  rdfs:label "Удалить из оборудования опасные вещества,"^^xsd:string.
+d:SafetyWorkAction_19_3
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_19;
+  rdfs:label "Исключить поступление в оборудование опасных веществ из смежных технологических систем,"^^xsd:string.
+d:SafetyWorkAction_19_4
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_19;
+  rdfs:label "Исключить возможные источники искрообразования."^^xsd:string.
+d:SafetyWorkAction_19_5
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_19;
+  rdfs:label "Место проведения газоопасной работы в пределах площади, где возможно поступление паров и газов опасных веществ, обозначить (оградить), установить предупреждающие знаки Газ или Газоопасные работы."^^xsd:string.
+d:SafetyWorkAction_19_6
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_19;
+  rdfs:label "Выставить посты в целях исключения допуска посторонних лиц в опасную зону."^^xsd:string.
+d:SafetyWorkAction_19_7
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_19;
+  rdfs:label "Электроприводы движущихся механизмов, а также другие электроприемники в местах проведения работ отключить от источников питания видимым разрывом (разрыв электрической цепи). На пусковых устройствах вывесить плакаты Не включать: работают люди!"^^xsd:string.
+d:SafetyWorkAction_19_8
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_19;
+  rdfs:label "Отключение (подключение) электропривода от источника питания осуществлять электротехническиму персоналу."^^xsd:string.
+d:SafetyWorkAction_19_9
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_19;
+  rdfs:label "Перед началом проведения газоопасной работы провести лабораторный или экспресс-анализ воздушной среды на содержание кислорода (в закрытых помещениях, внутри емкостей (аппаратов), котлованах) и опасных веществ, указанных в перечне газоопасных работ, согласно месту и характеру работы, с записью результатов в наряде-допуске."^^xsd:string.
+d:SafetyWorkAction_19_10
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_19;
+  rdfs:label "Лицу, ответственному за подготовку газоопасной работы, проверить наличие и исправность средств индивидуальной защиты, инструментов, приспособлений и средств обеспечения безопасности исполнителей работ."^^xsd:string.
+d:SafetyWorkAction_19_11
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_19;
+  rdfs:label "Лицу, ответственному за проведение газоопасной работы, провести инструктаж исполнителей работ и проверить их умение пользоваться средствами индивидуальной защиты, знание безопасных приемов работы и методов оказания первой помощи пострадавшим с отметкой в наряде-допуске."^^xsd:string.
+d:SafetyWorkAction_19_12
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_19;
+  rdfs:label "После окончания подготовительных работ лицу, ответственному за подготовку газоопасных работ, проверить полноту и качество выполненных работ и сдать объект лицу, ответственному за проведение газоопасной работы, с подписью в наряде-допуске."^^xsd:string.
+d:SafetyWorkAction_19_13
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_19;
+  rdfs:label "Отключить емкость (аппарат) от действующего оборудования, систем трубопроводов и коммуникаций с помощью стандартных заглушек согласно схеме, прилагаемой к наряду-допуску."^^xsd:string.
+d:SafetyWorkAction_19_14
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_19;
+  rdfs:label "Освободить емкость (аппарат) от опасных веществ, согласно схеме, прилагаемой к наряду-допуску."^^xsd:string.
+d:SafetyWorkAction_19_15
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_19;
+  rdfs:label "Промыть емкость (аппарат), согласно схеме, прилагаемой к наряду-допуску."^^xsd:string.
+d:SafetyWorkAction_19_16
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_19;
+  rdfs:label "Пропарить емкость (аппарат), согласно схеме, прилагаемой к наряду-допуску."^^xsd:string.
+d:SafetyWorkAction_19_17
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_19;
+  rdfs:label "Продуть емкость (аппарат) инертным газом, согласно схеме, прилагаемой к наряду-допуску."^^xsd:string.
+d:SafetyWorkAction_19_18
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_19;
+  rdfs:label "Продуть емкость (аппарат) воздухом, согласно схеме, прилагаемой к наряду-допуску."^^xsd:string.
+d:SafetyWorkAction_19_19
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_19;
+  rdfs:label "Перед началом проведения работ внутри емкостей (аппаратов) произвести в них анализ воздушной среды на содержание кислорода и опасных веществ (паров, газов) с записью результатов в наряде-допуске."^^xsd:string.
+d:SafetyWorkAction_19_20
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_19;
+  rdfs:label "Вывесить предупреждающие плакаты Газ, Газоопасные работы на емкости (аппарате) перед началом проведения работ."^^xsd:string.
+d:SafetyWorkAction_19_21
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_19;
+  rdfs:label "Отключить электропривод перемешивающих устройств внутри емкости (аппарата) от источников питания видимым разрывом, а также вывесить плакат Не включать: работают люди! в электрораспределительном устройстве."^^xsd:string.
+d:SafetyWorkAction_19_22
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_19;
+  rdfs:label "Охладить нагретую емкость (аппарат) до температуры не выше тридцати градусов Цельсия."^^xsd:string.
+d:SafetyWorkAction_19_23
+  a v-s:SafetyWorkAction;
+  v-s:parentUnit d:SafetyWorkAction_19;
+  rdfs:label "При выполнении работ внутри емкости (аппарата) с температурой внутри выше тридцати градусов Цельсия, обеспечить непрерывную принудительную обдувку свежим воздухом, применение термозащитных костюмов, теплоизолирующей обуви, перерывов в работе."^^xsd:string."^^xsd:string.
+
+
+

@@ -1,0 +1,4485 @@
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[36mBackend tests [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39mclient: websocket opened ws://localhost:8088/ccus
+client: websocket closed ws://localhost:8088/ccus
+[90m• [39m[32m✓ 46
+[39m
+
+
+> veda-client@1.0.1 test-frontend
+> testcafe --speed 0.9 chrome:headless ./tests/testcafe
+
+ Running tests in:
+ - Chrome 105.0.5195.125 / Linux 0.0
+
+ test Attributive Search
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[31m
+
+! #019 Nested groups with restrictions & cycles 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.addToGroup (file:///home/itiu/work/veda/source-web/tests/backend/helpers.js:301:17)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test019.js:31:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[31m
+
+! #033 Check membership isExclusive & ignoreExclusive 
+
+[39m[33mAssertionError [ERR_ASSERTION]: Missing expected rejection.
+[39m[90m
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.test_fail_read (file:///home/itiu/work/veda/source-web/tests/backend/helpers.js:350:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test033.js:20:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #033 Check membership isExclusive & ignoreExclusive 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.test_success_read (file:///home/itiu/work/veda/source-web/tests/backend/helpers.js:345:31)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test033.js:23:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[90m• [39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[90m• [39m[31m
+
+! #033 Check membership isExclusive & ignoreExclusive 
+
+[39m[33mAssertionError [ERR_ASSERTION]: Missing expected rejection.
+[39m[90m
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.test_fail_read (file:///home/itiu/work/veda/source-web/tests/backend/helpers.js:350:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test033.js:20:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[90m• [39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[90m• [39m[31m
+
+! #033 Check membership isExclusive & ignoreExclusive 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.test_success_read (file:///home/itiu/work/veda/source-web/tests/backend/helpers.js:345:31)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test033.js:23:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[90m• [39m[31m
+
+! #033 Check membership isExclusive & ignoreExclusive 
+
+[39m[33mAssertionError [ERR_ASSERTION]: Missing expected rejection.
+[39m[90m
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.test_fail_read (file:///home/itiu/work/veda/source-web/tests/backend/helpers.js:350:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test033.js:20:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[90m• [39m[31m
+
+! #033 Check membership isExclusive & ignoreExclusive 
+
+[39m[33mAssertionError [ERR_ASSERTION]: Missing expected rejection.
+[39m[90m
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.test_fail_read (file:///home/itiu/work/veda/source-web/tests/backend/helpers.js:350:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test033.js:20:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[31m
+
+! #033 Check membership isExclusive & ignoreExclusive 
+
+[39m[33mAssertionError [ERR_ASSERTION]: Missing expected rejection.
+[39m[90m
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.test_fail_read (file:///home/itiu/work/veda/source-web/tests/backend/helpers.js:350:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test033.js:20:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39mclient: websocket opened ws://localhost:8088/ccus
+[90m• [39mclient: websocket opened ws://localhost:8088/ccus
+client: websocket closed ws://localhost:8088/ccus
+[90m• [39m[32m✓ 46
+[39m
+
+client: websocket closed ws://localhost:8088/ccus
+[90m• [39m[32m✓ 46
+[39m
+
+
+> veda-client@1.0.1 test-frontend
+> testcafe --speed 0.9 chrome:headless ./tests/testcafe
+
+
+> veda-client@1.0.1 test-frontend
+> testcafe --speed 0.9 chrome:headless ./tests/testcafe
+
+ Running tests in:
+ - Chrome 105.0.5195.125 / Linux 0.0
+
+ test Attributive Search
+ Running tests in:
+ - Chrome 105.0.5195.125 / Linux 0.0
+
+ test Attributive Search
+ ✓ testAttributiveSearch
+ ✓ testAttributiveSearch
+ ✓ testSearchOrderBy
+
+ test Comment
+ ✓ testSearchOrderBy
+
+ test Comment
+ ✖ testComment
+
+   1) AssertionError: expected 4 to deeply equal 2
+
+      + expected - actual
+
+      -4
+      +2
+
+
+      Browser: Chrome 105.0.5195.125 / Linux 0.0
+
+         32 |    .wait(1000)
+         33 |    .click('div[typeof="v-s:Comment"] button[id="save"]')
+         34 |    // ccus timeout
+         35 |    .wait(3000)
+         36 |    // check buttons
+       > 37 |    .expect(Selector('#reply').count).eql(2)
+         38 |    .expect(Selector('#edit-comment').count).eql(2)
+         39 |    .expect(Selector('a[id="edit-comment"][style="display:
+      none;"]').count).eql(1)
+         40 |    .expect(Selector('a[id="delete"][style="display:
+      none;"]').count).eql(1)
+         41 |
+      .expect(Selector('a[id="delete"][about="v-s:Delete"]').count).eql(2)
+         42 |
+      .click(Selector('a[id="delete"][about="v-s:Delete"]').nth(1)) //
+      delete reply-comment
+
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testComment.js:37:39)
+         at asyncGeneratorStep
+      (/home/itiu/work/veda/source-web/tests/testcafe/testComment.js:3:314)
+         at _next
+      (/home/itiu/work/veda/source-web/tests/testcafe/testComment.js:3:652)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testComment.js:3:817)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testComment.js:3:558)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testComment.js:9:5)
+
+
+ test div controls
+ ✖ testComment
+
+   1) AssertionError: expected 4 to deeply equal 2
+
+      + expected - actual
+
+      -4
+      +2
+
+
+      Browser: Chrome 105.0.5195.125 / Linux 0.0
+
+         32 |    .wait(1000)
+         33 |    .click('div[typeof="v-s:Comment"] button[id="save"]')
+         34 |    // ccus timeout
+         35 |    .wait(3000)
+         36 |    // check buttons
+       > 37 |    .expect(Selector('#reply').count).eql(2)
+         38 |    .expect(Selector('#edit-comment').count).eql(2)
+         39 |    .expect(Selector('a[id="edit-comment"][style="display:
+      none;"]').count).eql(1)
+         40 |    .expect(Selector('a[id="delete"][style="display:
+      none;"]').count).eql(1)
+         41 |
+      .expect(Selector('a[id="delete"][about="v-s:Delete"]').count).eql(2)
+         42 |
+      .click(Selector('a[id="delete"][about="v-s:Delete"]').nth(1)) //
+      delete reply-comment
+
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testComment.js:37:39)
+         at asyncGeneratorStep
+      (/home/itiu/work/veda/source-web/tests/testcafe/testComment.js:3:314)
+         at _next
+      (/home/itiu/work/veda/source-web/tests/testcafe/testComment.js:3:652)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testComment.js:3:817)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testComment.js:3:558)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testComment.js:9:5)
+
+
+ test div controls
+ ✓ testDivControls
+
+ test Creating Net Interface
+ ✓ testDivControls
+
+ test Creating Net Interface
+ ✓ testCreatingNetInterface
+
+ test Delete And Recovery
+ ✓ testCreatingNetInterface
+
+ test Delete And Recovery
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+sh: 1: /tmp/test6649276757.sh: Text file busy
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+npm ERR! code ENOENT
+npm ERR! syscall chmod
+npm ERR! path /tmp/test6649276757.sh
+npm ERR! errno -2
+npm ERR! enoent ENOENT: no such file or directory, chmod '/tmp/test6649276757.sh'
+npm ERR! enoent This is related to npm not being able to find a file.
+npm ERR! enoent 
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/itiu/.npm/_logs/2022-09-26T11_46_06_589Z-debug-0.log
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test
+> npm run test-backend && npm run test-frontend
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[36mBackend tests [39m[36mBackend tests [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[90m• [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[90m• [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[36mBackend tests [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[90m• [39m[90m• [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[90m• [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[36mBackend tests [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[36mBackend tests [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[90m• [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[90m• [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[90m• [39m[90m• [39m[90m• [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[36mBackend tests [39m[36mBackend tests [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[36mBackend tests [39m[90m• [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[36mBackend tests [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[90m• [39m[90m• [39m[90m• [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[36mBackend tests [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[90m• [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[36mBackend tests [39m[36mBackend tests [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[36mBackend tests [39m[36mBackend tests [39m[90m• [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[36mBackend tests [39m[36mBackend tests [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[36mBackend tests [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[36mBackend tests [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[90m• [39m[90m• [39m[90m• [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[90m• [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[90m• [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[36mBackend tests [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[90m• [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[90m• [39m[36mBackend tests [39m[90m• [39m[36mBackend tests [39m[36mBackend tests [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[36mBackend tests [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[90m• [39m[36mBackend tests [39m[36mBackend tests [39m[90m• [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[90m• [39m[36mBackend tests [39m
+> veda-client@1.0.1 test-backend
+> node ./tests/backend/index.js
+
+[36mBackend tests [39m[36mBackend tests [39m[90m• [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[90m• [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[90m• [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[90m• [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[90m• [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[36mBackend tests [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[31m
+
+! #004 Attributive search 
+
+[39m[33mAssertionError [ERR_ASSERTION]: false == true
+[39m[90m
+    at Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test004.js:99:5)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[90m• [39m[31m
+
+! #004 Attributive search 
+
+[39m[33mAssertionError [ERR_ASSERTION]: false == true
+[39m[90m
+    at Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test004.js:105:5)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m ✖ testDeleteAndRecovery
+
+   1) The specified selector does not match any element in the DOM tree.
+
+       > | Selector('veda-control[property="*"] .form-control')
+
+      Browser: Chrome 105.0.5195.125 / Linux 0.0
+
+         31 |    .click(startFormSuggestion)
+         32 |    .typeText(labelInput, timeStamp)
+         33 |    .click(saveBtn)
+         34 |    .wait(3000)
+         35 |    .click(fulltextSearch)
+       > 36 |    .typeText(fulltextQueryInput, queryStartForm)
+         37 |    .click(searchBtn)
+         38 |    .wait(3000)
+         39 |    .click(searchResult)
+         40 |    .click(deleteBtn)
+         41 |    .wait(3000)
+
+         at <anonymous>
+
+   (/home/itiu/work/veda/source-web/tests/testcafe/testDeleteAndRecovery.js:36:6)
+         at asyncGeneratorStep
+
+   (/home/itiu/work/veda/source-web/tests/testcafe/testDeleteAndRecovery.js:3:314)
+         at _next
+
+   (/home/itiu/work/veda/source-web/tests/testcafe/testDeleteAndRecovery.js:3:652)
+         at <anonymous>
+
+   (/home/itiu/work/veda/source-web/tests/testcafe/testDeleteAndRecovery.js:3:817)
+         at <anonymous>
+
+   (/home/itiu/work/veda/source-web/tests/testcafe/testDeleteAndRecovery.js:3:558)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testDeleteAndRecovery.js:24:5)
+
+
+ test DropDown
+[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m ✖ testDeleteAndRecovery
+
+   1) The specified selector does not match any element in the DOM tree.
+
+       > | Selector('veda-control[property="*"] .form-control')
+
+      Browser: Chrome 105.0.5195.125 / Linux 0.0
+
+         31 |    .click(startFormSuggestion)
+         32 |    .typeText(labelInput, timeStamp)
+         33 |    .click(saveBtn)
+         34 |    .wait(3000)
+         35 |    .click(fulltextSearch)
+       > 36 |    .typeText(fulltextQueryInput, queryStartForm)
+         37 |    .click(searchBtn)
+         38 |    .wait(3000)
+         39 |    .click(searchResult)
+         40 |    .click(deleteBtn)
+         41 |    .wait(3000)
+
+         at <anonymous>
+
+   (/home/itiu/work/veda/source-web/tests/testcafe/testDeleteAndRecovery.js:36:6)
+         at asyncGeneratorStep
+
+   (/home/itiu/work/veda/source-web/tests/testcafe/testDeleteAndRecovery.js:3:314)
+         at _next
+
+   (/home/itiu/work/veda/source-web/tests/testcafe/testDeleteAndRecovery.js:3:652)
+         at <anonymous>
+
+   (/home/itiu/work/veda/source-web/tests/testcafe/testDeleteAndRecovery.js:3:817)
+         at <anonymous>
+
+   (/home/itiu/work/veda/source-web/tests/testcafe/testDeleteAndRecovery.js:3:558)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testDeleteAndRecovery.js:24:5)
+
+
+ test DropDown
+[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m ✖ testDropDown
+
+   1) The element that matches the specified selector is not visible.
+
+      Browser: Chrome 105.0.5195.125 / Linux 0.0
+
+          1 |import {Selector, t} from 'testcafe';
+          2 |
+          3 |export default class Basic {
+          4 |  async login (login, password) {
+          5 |    await t
+       >  6 |      .click('#login')
+          7 |      .pressKey('ctrl+a delete')
+          8 |      .typeText('#login', login)
+          9 |      .click('#password')
+         10 |      .pressKey('ctrl+a delete')
+         11 |      .typeText('#password', password)
+
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:6:8)
+         at asyncGeneratorStep
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:285)
+         at _next
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:623)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:788)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:529)
+         at Basic.login
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:4:33)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testDropDown.js:8:9)
+         at asyncGeneratorStep
+      (/home/itiu/work/veda/source-web/tests/testcafe/testDropDown.js:3:314)
+         at _next
+      (/home/itiu/work/veda/source-web/tests/testcafe/testDropDown.js:3:652)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testDropDown.js:3:817)
+
+
+   2) undefinedUnhandled promise rejection:
+
+        { code: 'E26', isTestCafeError: true, callsite: CallsiteRecord {
+      filename: '/home/itiu/work/veda/source-web/tests/testcafe/basic.js',
+      lineNum: 5, callsiteFrameIdx: 5, stackFrames: [
+      [Object],    [Object],    [Object],
+      [Object],    [Object],    [Object],
+      CallSite {}, [Object],    [Object],
+      [Object],    CallSite {}, [Object],
+      [Object],    [Object],    CallSite {},
+      [Object],    [Object],    [Object],
+      CallSite {}, [Object],    [Object],
+      [Object],    [Object],    [Object],
+      [Object],    [Object],    CallSite {},
+      [Object]
+      ], isV8Frames: true }, id: 'GWdsF30' }
+
+      Browser: Chrome 105.0.5195.125 / Linux 0.0
+
+
+ test Journal
+[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m ✖ testDropDown
+
+   1) The element that matches the specified selector is not visible.
+
+      Browser: Chrome 105.0.5195.125 / Linux 0.0
+
+          1 |import {Selector, t} from 'testcafe';
+          2 |
+          3 |export default class Basic {
+          4 |  async login (login, password) {
+          5 |    await t
+       >  6 |      .click('#login')
+          7 |      .pressKey('ctrl+a delete')
+          8 |      .typeText('#login', login)
+          9 |      .click('#password')
+         10 |      .pressKey('ctrl+a delete')
+         11 |      .typeText('#password', password)
+
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:6:8)
+         at asyncGeneratorStep
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:285)
+         at _next
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:623)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:788)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:529)
+         at Basic.login
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:4:33)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testDropDown.js:8:9)
+         at asyncGeneratorStep
+      (/home/itiu/work/veda/source-web/tests/testcafe/testDropDown.js:3:314)
+         at _next
+      (/home/itiu/work/veda/source-web/tests/testcafe/testDropDown.js:3:652)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testDropDown.js:3:817)
+
+
+   2) undefinedUnhandled promise rejection:
+
+        { code: 'E26', isTestCafeError: true, callsite: CallsiteRecord {
+      filename: '/home/itiu/work/veda/source-web/tests/testcafe/basic.js',
+      lineNum: 5, callsiteFrameIdx: 5, stackFrames: [
+      [Object],    [Object],    [Object],
+      [Object],    [Object],    [Object],
+      CallSite {}, [Object],    [Object],
+      [Object],    CallSite {}, [Object],
+      [Object],    [Object],    CallSite {},
+      [Object],    [Object],    [Object],
+      CallSite {}, [Object],    [Object],
+      [Object],    [Object],    [Object],
+      [Object],    [Object],    CallSite {},
+      [Object]
+      ], isV8Frames: true }, id: '4P1DQaZ' }
+
+      Browser: Chrome 105.0.5195.125 / Linux 0.0
+
+
+ test Journal
+[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m ✖ testJournal
+
+   1) A JavaScript error occurred on "http://127.0.0.1:8080/".
+      Repeat test actions in the browser and check the console for errors.
+      To ignore client-side JavaScript errors, enable the
+      "--skip-js-errors" CLI option, or set the "skipJsErrors"
+      configuration file property to "true".
+      If the website only throws this error when you test it with
+      TestCafe, please create a new issue at:
+
+   "https://github.com/DevExpress/testcafe/issues/new?template=bug-report.md".
+
+      JavaScript error details:
+      Error: Error loading
+      http://127.0.0.1:8080/js/browser/app_presenter.js from
+      http://127.0.0.1:8080/js/browser/main.js (SystemJS Error#3
+      https://github.com/systemjs/systemjs/blob/main/docs/errors.md#3)
+          at HTMLScriptElement.<anonymous>
+      (http://127.0.0.1:8080/node_modules/systemjs/dist/system.min.js:5:7334)
+
+      Browser: Chrome 105.0.5195.125 / Linux 0.0
+
+          1 |import {Selector, t} from 'testcafe';
+          2 |
+          3 |export default class Basic {
+          4 |  async login (login, password) {
+          5 |    await t
+       >  6 |      .click('#login')
+          7 |      .pressKey('ctrl+a delete')
+          8 |      .typeText('#login', login)
+          9 |      .click('#password')
+         10 |      .pressKey('ctrl+a delete')
+         11 |      .typeText('#password', password)
+
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:6:8)
+         at asyncGeneratorStep
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:285)
+         at _next
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:623)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:788)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:529)
+         at Basic.login
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:4:33)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testJournal.js:8:9)
+         at asyncGeneratorStep
+      (/home/itiu/work/veda/source-web/tests/testcafe/testJournal.js:3:314)
+         at _next
+      (/home/itiu/work/veda/source-web/tests/testcafe/testJournal.js:3:652)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testJournal.js:3:817)
+
+
+   2) undefinedUnhandled promise rejection:
+
+        { code: 'E1', isTestCafeError: true, callsite: CallsiteRecord {
+      filename: '/home/itiu/work/veda/source-web/tests/testcafe/basic.js',
+      lineNum: 5, callsiteFrameIdx: 5, stackFrames: [
+      [Object],    [Object],    [Object],
+      [Object],    [Object],    [Object],
+      CallSite {}, [Object],    [Object],
+      [Object],    CallSite {}, [Object],
+      [Object],    [Object],    CallSite {},
+      [Object],    [Object],    [Object],
+      CallSite {}, [Object],    [Object],
+      [Object],    [Object],    [Object],
+      [Object],    [Object],    [Object]
+      ], isV8Frames: true }, errStack: 'Error: Error loading
+      http://127.0.0.1:8080/js/browser/app_presenter.js from
+      http://127.0.0.1:8080/js/browser/main.js (SystemJS Error#3
+      https://github.com/systemjs/systemjs/blob/main/docs/errors.md#3)\n
+      at HTMLScriptElement.<anonymous>
+
+   (http://127.0.0.1:8080/node_modules/systemjs/dist/system.min.js:5:7334)',
+      pageDestUrl: 'http://127.0.0.1:8080/', id: 'hP_c8GN' }
+
+      Browser: Chrome 105.0.5195.125 / Linux 0.0
+
+
+ test language
+[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m ✖ testJournal
+
+   1) A JavaScript error occurred on "http://127.0.0.1:8080/".
+      Repeat test actions in the browser and check the console for errors.
+      To ignore client-side JavaScript errors, enable the
+      "--skip-js-errors" CLI option, or set the "skipJsErrors"
+      configuration file property to "true".
+      If the website only throws this error when you test it with
+      TestCafe, please create a new issue at:
+
+   "https://github.com/DevExpress/testcafe/issues/new?template=bug-report.md".
+
+      JavaScript error details:
+      Error: Error loading
+      http://127.0.0.1:8080/js/browser/app_presenter.js from
+      http://127.0.0.1:8080/js/browser/main.js (SystemJS Error#3
+      https://github.com/systemjs/systemjs/blob/main/docs/errors.md#3)
+          at HTMLScriptElement.<anonymous>
+      (http://127.0.0.1:8080/node_modules/systemjs/dist/system.min.js:5:7334)
+
+      Browser: Chrome 105.0.5195.125 / Linux 0.0
+
+          1 |import {Selector, t} from 'testcafe';
+          2 |
+          3 |export default class Basic {
+          4 |  async login (login, password) {
+          5 |    await t
+       >  6 |      .click('#login')
+          7 |      .pressKey('ctrl+a delete')
+          8 |      .typeText('#login', login)
+          9 |      .click('#password')
+         10 |      .pressKey('ctrl+a delete')
+         11 |      .typeText('#password', password)
+
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:6:8)
+         at asyncGeneratorStep
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:285)
+         at _next
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:623)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:788)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:529)
+         at Basic.login
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:4:33)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testJournal.js:8:9)
+         at asyncGeneratorStep
+      (/home/itiu/work/veda/source-web/tests/testcafe/testJournal.js:3:314)
+         at _next
+      (/home/itiu/work/veda/source-web/tests/testcafe/testJournal.js:3:652)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testJournal.js:3:817)
+
+
+   2) undefinedUnhandled promise rejection:
+
+        { code: 'E1', isTestCafeError: true, callsite: CallsiteRecord {
+      filename: '/home/itiu/work/veda/source-web/tests/testcafe/basic.js',
+      lineNum: 5, callsiteFrameIdx: 5, stackFrames: [
+      [Object],    [Object],    [Object],
+      [Object],    [Object],    [Object],
+      CallSite {}, [Object],    [Object],
+      [Object],    CallSite {}, [Object],
+      [Object],    [Object],    CallSite {},
+      [Object],    [Object],    [Object],
+      CallSite {}, [Object],    [Object],
+      [Object],    [Object],    [Object],
+      [Object],    [Object],    CallSite {},
+      [Object]
+      ], isV8Frames: true }, errStack: 'Error: Error loading
+      http://127.0.0.1:8080/js/browser/app_presenter.js from
+      http://127.0.0.1:8080/js/browser/main.js (SystemJS Error#3
+      https://github.com/systemjs/systemjs/blob/main/docs/errors.md#3)\n
+      at HTMLScriptElement.<anonymous>
+
+   (http://127.0.0.1:8080/node_modules/systemjs/dist/system.min.js:5:7334)',
+      pageDestUrl: 'http://127.0.0.1:8080/', id: '68LMe1r' }
+
+      Browser: Chrome 105.0.5195.125 / Linux 0.0
+
+
+ test language
+[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m ✖ testLanguage
+
+   1) The element that matches the specified selector is not visible.
+
+      Browser: Chrome 105.0.5195.125 / Linux 0.0
+
+          1 |import {Selector, t} from 'testcafe';
+          2 |
+          3 |export default class Basic {
+          4 |  async login (login, password) {
+          5 |    await t
+       >  6 |      .click('#login')
+          7 |      .pressKey('ctrl+a delete')
+          8 |      .typeText('#login', login)
+          9 |      .click('#password')
+         10 |      .pressKey('ctrl+a delete')
+         11 |      .typeText('#password', password)
+
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:6:8)
+         at asyncGeneratorStep
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:285)
+         at _next
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:623)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:788)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:529)
+         at Basic.login
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:4:33)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testLanguage.js:8:9)
+         at asyncGeneratorStep
+      (/home/itiu/work/veda/source-web/tests/testcafe/testLanguage.js:3:314)
+         at _next
+      (/home/itiu/work/veda/source-web/tests/testcafe/testLanguage.js:3:652)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testLanguage.js:3:817)
+
+
+   2) undefinedUnhandled promise rejection:
+
+        { code: 'E26', isTestCafeError: true, callsite: CallsiteRecord {
+      filename: '/home/itiu/work/veda/source-web/tests/testcafe/basic.js',
+      lineNum: 5, callsiteFrameIdx: 5, stackFrames: [
+      [Object],    [Object],    [Object],
+      [Object],    [Object],    [Object],
+      CallSite {}, [Object],    [Object],
+      [Object],    CallSite {}, [Object],
+      [Object],    [Object],    CallSite {},
+      [Object],    [Object],    [Object],
+      CallSite {}, [Object],    [Object],
+      [Object],    [Object],    [Object],
+      [Object],    [Object],    CallSite {},
+      [Object]
+      ], isV8Frames: true }, id: 'fWUDMGn' }
+
+      Browser: Chrome 105.0.5195.125 / Linux 0.0
+
+
+ test Login
+[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m ✖ testLanguage
+
+   1) The element that matches the specified selector is not visible.
+
+      Browser: Chrome 105.0.5195.125 / Linux 0.0
+
+          1 |import {Selector, t} from 'testcafe';
+          2 |
+          3 |export default class Basic {
+          4 |  async login (login, password) {
+          5 |    await t
+       >  6 |      .click('#login')
+          7 |      .pressKey('ctrl+a delete')
+          8 |      .typeText('#login', login)
+          9 |      .click('#password')
+         10 |      .pressKey('ctrl+a delete')
+         11 |      .typeText('#password', password)
+
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:6:8)
+         at asyncGeneratorStep
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:285)
+         at _next
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:623)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:788)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:529)
+         at Basic.login
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:4:33)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testLanguage.js:8:9)
+         at asyncGeneratorStep
+      (/home/itiu/work/veda/source-web/tests/testcafe/testLanguage.js:3:314)
+         at _next
+      (/home/itiu/work/veda/source-web/tests/testcafe/testLanguage.js:3:652)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testLanguage.js:3:817)
+
+
+   2) undefinedUnhandled promise rejection:
+
+        { code: 'E26', isTestCafeError: true, callsite: CallsiteRecord {
+      filename: '/home/itiu/work/veda/source-web/tests/testcafe/basic.js',
+      lineNum: 5, callsiteFrameIdx: 5, stackFrames: [
+      [Object],    [Object],    [Object],
+      [Object],    [Object],    [Object],
+      CallSite {}, [Object],    [Object],
+      [Object],    CallSite {}, [Object],
+      [Object],    [Object],    CallSite {},
+      [Object],    [Object],    [Object],
+      CallSite {}, [Object],    [Object],
+      [Object],    [Object],    [Object],
+      [Object],    [Object],    CallSite {},
+      [Object]
+      ], isV8Frames: true }, id: 'e3m-kOX' }
+
+      Browser: Chrome 105.0.5195.125 / Linux 0.0
+
+
+ test Login
+[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m ✖ testLogin
+
+   1) A JavaScript error occurred on "http://127.0.0.1:8080/".
+      Repeat test actions in the browser and check the console for errors.
+      To ignore client-side JavaScript errors, enable the
+      "--skip-js-errors" CLI option, or set the "skipJsErrors"
+      configuration file property to "true".
+      If the website only throws this error when you test it with
+      TestCafe, please create a new issue at:
+
+   "https://github.com/DevExpress/testcafe/issues/new?template=bug-report.md".
+
+      JavaScript error details:
+      ReferenceError: System is not defined
+          at HTMLDocument.<anonymous> (http://127.0.0.1:8080/:62:9)
+
+      Browser: Chrome 105.0.5195.125 / Linux 0.0
+
+
+ test Person
+[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m ✓ testLogin
+
+ test Person
+[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:23:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[90m• [39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:38:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:38:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:38:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:38:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[33mBackendError: Not authorized
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:38:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[33mBackendError: Not authorized
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:38:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:38:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:38:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:38:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:38:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:38:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:38:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:38:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:23:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:23:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:38:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:38:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[90m• [39m[90m• [39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:23:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:38:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:23:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:23:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[90m• [39m[90m• [39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[90m• [39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:38:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[90m• [39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[33mBackendError: Not authorized
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:38:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[33mBackendError: Not authorized
+[39m[90m• [39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:38:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:38:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:38:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:38:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:23:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[90m• [39m[90m• [39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[90m• [39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:38:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:38:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[90m• [39m[90m• [39m[90m• [39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[90m• [39m[90m• [39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:38:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[90m• [39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[90m• [39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[90m• [39m[90m• [39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[90m• [39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[90m• [39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[90m• [39m[90m• [39m[31m
+
+! #012 Store, read and delete 3 individuals 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test012.js:53:30)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #013 User1 stores 3 individuals (one of the individuals contains an invalid field [author]).
+       User1 finds 2 individuals, and user2 should not find anything. 
+
+[39m[33mAssertionError [ERR_ASSERTION]: false == true
+[39m[90m
+    at Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test013.js:64:5)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[31m
+
+! #013 User1 stores 3 individuals (one of the individuals contains an invalid field [author]).
+       User1 finds 2 individuals, and user2 should not find anything. 
+
+[39m[33mAssertionError [ERR_ASSERTION]: false == true
+[39m[90m
+    at Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test013.js:64:5)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #013 User1 stores 3 individuals (one of the individuals contains an invalid field [author]).
+       User1 finds 2 individuals, and user2 should not find anything. 
+
+[39m[33mAssertionError [ERR_ASSERTION]: false == true
+[39m[90m
+    at Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test013.js:64:5)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[31m
+
+! #013 User1 stores 3 individuals (one of the individuals contains an invalid field [author]).
+       User1 finds 2 individuals, and user2 should not find anything. 
+
+[39m[33mAssertionError [ERR_ASSERTION]: false == true
+[39m[90m
+    at Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test013.js:64:5)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #013 User1 stores 3 individuals (one of the individuals contains an invalid field [author]).
+       User1 finds 2 individuals, and user2 should not find anything. 
+
+[39m[33mAssertionError [ERR_ASSERTION]: false == true
+[39m[90m
+    at Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test013.js:64:5)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #013 User1 stores 3 individuals (one of the individuals contains an invalid field [author]).
+       User1 finds 2 individuals, and user2 should not find anything. 
+
+[39m[33mAssertionError [ERR_ASSERTION]: false == true
+[39m[90m
+    at Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test013.js:64:5)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #013 User1 stores 3 individuals (one of the individuals contains an invalid field [author]).
+       User1 finds 2 individuals, and user2 should not find anything. 
+
+[39m[33mAssertionError [ERR_ASSERTION]: false == true
+[39m[90m
+    at Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test013.js:73:5)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #013 User1 stores 3 individuals (one of the individuals contains an invalid field [author]).
+       User1 finds 2 individuals, and user2 should not find anything. 
+
+[39m[33mAssertionError [ERR_ASSERTION]: false == true
+[39m[90m
+    at Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test013.js:64:5)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[31m
+
+! #013 User1 stores 3 individuals (one of the individuals contains an invalid field [author]).
+       User1 finds 2 individuals, and user2 should not find anything. 
+
+[39m[33mAssertionError [ERR_ASSERTION]: false == true
+[39m[90m
+    at Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test013.js:64:5)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[31m
+
+! #013 User1 stores 3 individuals (one of the individuals contains an invalid field [author]).
+       User1 finds 2 individuals, and user2 should not find anything. 
+
+[39m[33mAssertionError [ERR_ASSERTION]: false == true
+[39m[90m
+    at Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test013.js:64:5)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #013 User1 stores 3 individuals (one of the individuals contains an invalid field [author]).
+       User1 finds 2 individuals, and user2 should not find anything. 
+
+[39m[33mAssertionError [ERR_ASSERTION]: false == true
+[39m[90m
+    at Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test013.js:73:5)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[31m
+
+! #013 User1 stores 3 individuals (one of the individuals contains an invalid field [author]).
+       User1 finds 2 individuals, and user2 should not find anything. 
+
+[39m[33mAssertionError [ERR_ASSERTION]: false == true
+[39m[90m
+    at Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test013.js:64:5)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[31m
+
+! #013 User1 stores 3 individuals (one of the individuals contains an invalid field [author]).
+       User1 finds 2 individuals, and user2 should not find anything. 
+
+[39m[33mAssertionError [ERR_ASSERTION]: false == true
+[39m[90m
+    at Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test013.js:64:5)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[31m
+
+! #013 User1 stores 3 individuals (one of the individuals contains an invalid field [author]).
+       User1 finds 2 individuals, and user2 should not find anything. 
+
+[39m[33mAssertionError [ERR_ASSERTION]: false == true
+[39m[90m
+    at Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test013.js:73:5)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #013 User1 stores 3 individuals (one of the individuals contains an invalid field [author]).
+       User1 finds 2 individuals, and user2 should not find anything. 
+
+[39m[33mAssertionError [ERR_ASSERTION]: false == true
+[39m[90m
+    at Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test013.js:64:5)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[31m
+
+! #013 User1 stores 3 individuals (one of the individuals contains an invalid field [author]).
+       User1 finds 2 individuals, and user2 should not find anything. 
+
+[39m[33mAssertionError [ERR_ASSERTION]: false == true
+[39m[90m
+    at Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test013.js:64:5)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[90m• [39m[90m• [39m[90m• [39m[31m
+
+! #015 Individual as a group 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.test_success_read (file:///home/itiu/work/veda/source-web/tests/backend/helpers.js:345:31)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test015.js:10:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[31m
+
+! #016 Nested groups 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.test_success_read (file:///home/itiu/work/veda/source-web/tests/backend/helpers.js:345:31)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test016.js:10:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[90m• [39m[31m
+
+! #016 Nested groups 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.test_success_read (file:///home/itiu/work/veda/source-web/tests/backend/helpers.js:345:31)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test016.js:10:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[90m• [39m[90m• [39m[90m• [39m[90m• [39m[31m
+
+! #017 Nested groups with restrictions (1) 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.test_success_read (file:///home/itiu/work/veda/source-web/tests/backend/helpers.js:345:31)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test017.js:18:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #017 Nested groups with restrictions (1) 
+
+[39m[31m
+
+! #017 Nested groups with restrictions (1) 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.test_success_read (file:///home/itiu/work/veda/source-web/tests/backend/helpers.js:345:31)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test017.js:18:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.test_success_read (file:///home/itiu/work/veda/source-web/tests/backend/helpers.js:345:31)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test017.js:18:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+node:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[90m• [39m[31m
+
+! #017 Nested groups with restrictions (1) 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.test_success_read (file:///home/itiu/work/veda/source-web/tests/backend/helpers.js:345:31)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test017.js:14:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #017 Nested groups with restrictions (1) 
+
+[39m[33mAssertionError [ERR_ASSERTION]: false == true
+[39m[90m
+    at Function.check_rights_success (file:///home/itiu/work/veda/source-web/tests/backend/helpers.js:363:5)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test017.js:42:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+[31m
+
+! #017 Nested groups with restrictions (1) 
+
+[39m[33mBackendError: Not authorized
+[39m[90m
+    at call_server (file:///home/itiu/work/veda/source-web/js/browser/backend_browser.js:325:9)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.test_success_read (file:///home/itiu/work/veda/source-web/tests/backend/helpers.js:345:31)
+    at async Object.fn (file:///home/itiu/work/veda/source-web/tests/backend/test017.js:14:5)
+    at async Function.self.run (/home/itiu/work/veda/source-web/node_modules/baretest/baretest.js:31:9)
+    at async file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:10[39mnode:internal/process/promises:246
+          triggerUncaughtException(err, true /* fromPromise */);
+          ^
+
+AssertionError [ERR_ASSERTION]: false == true
+    at file:///home/itiu/work/veda/source-web/tests/backend/index.js:23:3
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '=='
+}
+ ✖ testPerson
+
+   1) AssertionError: expected '2' to deeply equal '1'
+
+      + expected - actual
+
+      -2
+      +1
+
+
+      Browser: Chrome 105.0.5195.125 / Linux 0.0
+
+         13 |
+      .expect(Selector('#user-info').innerText).contains('Администратор2
+      .')
+         14 |    .navigateTo( pageForNavigateFromConfig )
+         15 |    .wait(2000)
+         16 |    .typeText('veda-control#comment', timeStamp)
+         17 |    .click('button#search-button')
+       > 18 |    .expect(Selector('.stats-top
+      span[property="v-fs:authorized"]').innerText).eql('1');
+         19 |});
+         20 |
+
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testPerson.js:18:80)
+         at asyncGeneratorStep
+      (/home/itiu/work/veda/source-web/tests/testcafe/testPerson.js:3:314)
+         at _next
+      (/home/itiu/work/veda/source-web/tests/testcafe/testPerson.js:3:652)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testPerson.js:3:817)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testPerson.js:3:558)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testPerson.js:8:5)
+
+
+ test Rights
+ ✖ testPerson
+
+   1) AssertionError: expected '2' to deeply equal '1'
+
+      + expected - actual
+
+      -2
+      +1
+
+
+      Browser: Chrome 105.0.5195.125 / Linux 0.0
+
+         13 |
+      .expect(Selector('#user-info').innerText).contains('Администратор2
+      .')
+         14 |    .navigateTo( pageForNavigateFromConfig )
+         15 |    .wait(2000)
+         16 |    .typeText('veda-control#comment', timeStamp)
+         17 |    .click('button#search-button')
+       > 18 |    .expect(Selector('.stats-top
+      span[property="v-fs:authorized"]').innerText).eql('1');
+         19 |});
+         20 |
+
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testPerson.js:18:80)
+         at asyncGeneratorStep
+      (/home/itiu/work/veda/source-web/tests/testcafe/testPerson.js:3:314)
+         at _next
+      (/home/itiu/work/veda/source-web/tests/testcafe/testPerson.js:3:652)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testPerson.js:3:817)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testPerson.js:3:558)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testPerson.js:8:5)
+
+
+ test Rights
+ ✓ testRights
+
+ test search
+ ✓ testRights
+
+ test search
+ ✓ testSearch
+
+ test Search Range Of Dates
+ ✓ testSearch
+
+ test Search Range Of Dates
+ ✖ testSearchRangeOfDates
+
+ ✖ testSearchRangeOfDates
+
+   1) AssertionError: expected '5' to deeply equal '1'
+
+      + expected - actual
+
+      -5
+      +1
+
+
+      Browser: Chrome 105.0.5195.125 / Linux 0.0
+
+         41 |      .click('ul.nav.navbar-nav.navbar-right
+      li[about="v-fs:MultiFunctionalSearch"]')
+         42 |      .click('veda-control[property="*"] input[type="text"]')
+         43 |      .pressKey('ctrl+a delete')
+         44 |      .typeText('veda-control[property="*"]
+      input[type="text"]', query)
+         45 |      .click('span.input-group-btn
+      button[about="v-fs:Find"]')
+       > 46 |      .expect(Selector('small.stats-top.pull-right
+      span.badge[property="v-fs:authorized"]').innerText).eql(eql);
+         47 |  }
+         48 |
+         49 |  async createTestUI (label, timeStamp) {
+         50 |    const number =
+      Selector('veda-control[property="v-ui:testInteger"]
+      select.form-control').find('option').withText('2');
+         51 |    const checkbox =
+      Selector('veda-control[rel="v-ui:testLink"]
+      div.checkbox').find('label').withText('Спецификация тестового
+      объектного свойства');
+
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:46:104)
+         at asyncGeneratorStep
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:285)
+         at _next
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:623)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:788)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:529)
+         at Basic.fullTextSearch
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:39:37)
+         at <anonymous>
+
+   (/home/itiu/work/veda/source-web/tests/testcafe/testSearchRangeOfDates.js:13:9)
+         at asyncGeneratorStep
+
+   (/home/itiu/work/veda/source-web/tests/testcafe/testSearchRangeOfDates.js:3:314)
+         at _next
+
+   (/home/itiu/work/veda/source-web/tests/testcafe/testSearchRangeOfDates.js:3:652)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testSearchRangeOfDates.js:3:817)
+
+
+   2) undefinedUnhandled promise rejection:
+
+        ExternalAssertionLibraryError { code: 'E53', isTestCafeError:
+      true, callsite: CallsiteRecord { filename:
+      '/home/itiu/work/veda/source-web/tests/testcafe/basic.js', lineNum:
+      45, callsiteFrameIdx: 5, stackFrames: [
+      [Object],    [Object],    [Object],
+      [Object],    [Object],    [Object],
+      CallSite {}, [Object],    [Object],
+      [Object],    CallSite {}, [Object],
+      [Object],    [Object],    CallSite {},
+      [Object],    [Object],    [Object],
+      CallSite {}, [Object],    [Object],
+      [Object],    [Object],    [Object],
+      [Object],    [Object],    CallSite {},
+      [Object]
+      ], isV8Frames: true }, errMsg: "AssertionError: expected '5' to
+      deeply equal '1'", diff: '<span
+      class="diff-removed">-5</span>\n<span
+      class="diff-added">+1</span>\n<span
+      class="diff-not-modified"></span>', id: 'XzdQ_u1' }
+
+      Browser: Chrome 105.0.5195.125 / Linux 0.0
+
+
+ test Simple Net
+   1) AssertionError: expected '5' to deeply equal '1'
+
+      + expected - actual
+
+      -5
+      +1
+
+
+      Browser: Chrome 105.0.5195.125 / Linux 0.0
+
+         41 |      .click('ul.nav.navbar-nav.navbar-right
+      li[about="v-fs:MultiFunctionalSearch"]')
+         42 |      .click('veda-control[property="*"] input[type="text"]')
+         43 |      .pressKey('ctrl+a delete')
+         44 |      .typeText('veda-control[property="*"]
+      input[type="text"]', query)
+         45 |      .click('span.input-group-btn
+      button[about="v-fs:Find"]')
+       > 46 |      .expect(Selector('small.stats-top.pull-right
+      span.badge[property="v-fs:authorized"]').innerText).eql(eql);
+         47 |  }
+         48 |
+         49 |  async createTestUI (label, timeStamp) {
+         50 |    const number =
+      Selector('veda-control[property="v-ui:testInteger"]
+      select.form-control').find('option').withText('2');
+         51 |    const checkbox =
+      Selector('veda-control[rel="v-ui:testLink"]
+      div.checkbox').find('label').withText('Спецификация тестового
+      объектного свойства');
+
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:46:104)
+         at asyncGeneratorStep
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:285)
+         at _next
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:623)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:788)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:1:529)
+         at Basic.fullTextSearch
+      (/home/itiu/work/veda/source-web/tests/testcafe/basic.js:39:37)
+         at <anonymous>
+
+   (/home/itiu/work/veda/source-web/tests/testcafe/testSearchRangeOfDates.js:13:9)
+         at asyncGeneratorStep
+
+   (/home/itiu/work/veda/source-web/tests/testcafe/testSearchRangeOfDates.js:3:314)
+         at _next
+
+   (/home/itiu/work/veda/source-web/tests/testcafe/testSearchRangeOfDates.js:3:652)
+         at <anonymous>
+      (/home/itiu/work/veda/source-web/tests/testcafe/testSearchRangeOfDates.js:3:817)
+
+
+   2) undefinedUnhandled promise rejection:
+
+        ExternalAssertionLibraryError { code: 'E53', isTestCafeError:
+      true, callsite: CallsiteRecord { filename:
+      '/home/itiu/work/veda/source-web/tests/testcafe/basic.js', lineNum:
+      45, callsiteFrameIdx: 5, stackFrames: [
+      [Object],    [Object],    [Object],
+      [Object],    [Object],    [Object],
+      CallSite {}, [Object],    [Object],
+      [Object],    CallSite {}, [Object],
+      [Object],    [Object],    CallSite {},
+      [Object],    [Object],    [Object],
+      CallSite {}, [Object],    [Object],
+      [Object],    [Object],    [Object],
+      [Object],    [Object],    CallSite {},
+      [Object]
+      ], isV8Frames: true }, errMsg: "AssertionError: expected '5' to
+      deeply equal '1'", diff: '<span
+      class="diff-removed">-5</span>\n<span
+      class="diff-added">+1</span>\n<span
+      class="diff-not-modified"></span>', id: 'AgIWLwa' }
+
+      Browser: Chrome 105.0.5195.125 / Linux 0.0
+
+
+ test Simple Net
+ ✓ testSimpleNet
+
+ test Simple Net2
+ ✓ testSimpleNet
+
+ test Simple Net2
+ ✓ testSimpleNet2
+
+ test Simple Net3
+ ✓ testSimpleNet2
+
+ test Simple Net3
+ ✓ testSimpleNet3
+ ✓ testSimpleNet3
+ test Simple Net Low Priority
+
+
+ test Simple Net Low Priority
+ ✓ testSimpleNetLowPriority
+
+
+ 7/18 failed (8m 47s)
+ ✓ testSimpleNetLowPriority
+
+
+ 8/18 failed (8m 47s)

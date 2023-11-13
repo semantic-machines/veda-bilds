@@ -1,0 +1,75 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix v-s: <http://semantic-machines.com/veda/veda-schema/> .
+@prefix v-ui: <http://semantic-machines.com/veda/veda-ui/> .
+@prefix v-fc: <http://semantic-machines.com/veda/veda-function-create/> .
+@prefix v-fs: <http://semantic-machines.com/veda/veda-function-search/> .
+@prefix v-ft: <http://semantic-machines.com/veda/veda-function-tasks/> .
+
+@prefix v-app: <http://semantic-machines.com/veda/veda-application/> .
+<http://semantic-machines.com/veda/veda-application>
+  rdf:type owl:Ontology ;
+  rdfs:label "Онтология приложения системы Веда"@ru ;
+  rdfs:label "Veda system application ontology"@en ;
+#  owl:versionInfo "1.1" ;
+  v-s:loadPriority 9 ;
+.
+
+v-s:Application
+  rdf:type owl:Class ;
+  rdfs:subClassOf v-s:Aspect ;
+  rdfs:subClassOf v-s:Controlled ;
+  rdfs:label "Приложение"@ru ;
+  rdfs:label "Application"@en ;
+.
+
+v-s:hasSettings
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Настройки"@ru ;
+  rdfs:label "Settings"@en ;
+  rdfs:domain v-s:Application ;
+  rdfs:range v-s:Settings ;
+.
+
+v-s:attachmentBlank
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Бланки"@ru ;
+  rdfs:label "Blanks"@en ;
+  rdfs:domain v-s:Application ;
+  rdfs:range v-s:File ;
+.
+
+v-s:Settings
+  rdf:type owl:Class ;
+  rdfs:label "Настройки"@ru ;
+  rdfs:label "Settings"@en ;
+.
+
+v-s:forApplication
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Приложение"@ru ;
+  rdfs:label "Application"@en ;
+  rdfs:domain v-s:Settings ;
+  rdfs:range v-s:Application ;
+.
+
+v-s:ManualBundle
+  rdf:type v-s:Bundle ;
+  rdfs:label "Инструкции"@ru ;
+  rdfs:label "User manuals"@en ;
+.
+v-s:ApplicationSmallCardTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон для приложения"@ru ;
+  rdfs:label "Application small card template"@en ;
+  v-ui:template "v-s_ApplicationSmallCardTemplate.js" ;
+.
+v-s:ApplicationTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон для класса Приложение"@ru ;
+  rdfs:label "Template for Application class"@en ;
+  v-ui:forClass v-s:Application ;
+  v-ui:template "v-s_ApplicationTemplate.js" ;
+.

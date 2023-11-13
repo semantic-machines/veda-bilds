@@ -1,0 +1,50 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix v-s: <http://semantic-machines.com/veda/veda-schema/> .
+@prefix v-ui: <http://semantic-machines.com/veda/veda-ui/> .
+@prefix d: <http://semantic-machines.com/veda/veda-data/> .
+@prefix cfg: <http://semantic-machines.com/veda/config/> .
+
+<http://semantic-machines.com/veda/veda-contractorProfile-ui>
+  rdf:type owl:Ontology ;
+  rdfs:label "Онтология системы Veda. Досье контрагента. Интерфейс."@ru ;
+  rdfs:label "Veda system ontology. ContractorProfile. UI."@en ;
+  v-s:loadPriority 6 ;
+.
+# --------------------------------------------------------------- СТРОКИ --
+v-s:AddOKVEDName
+  rdf:type v-s:Bundle ;
+  rdfs:label "Возможные виды деятельности компании по выписке из ЕГРЮЛ"@ru ;
+  rdfs:label "Possible activities of the company"@en ;
+.
+v-s:AddOKVEDNameCoordinated
+  rdf:type v-s:Bundle ;
+  rdfs:label "Согласованние видов деятельности компании"@ru ;
+  rdfs:label "Coordinated activities of the company"@en ;
+.
+v-s:AddOKVEDNameRequested
+  rdf:type v-s:Bundle ;
+  rdfs:label "Проверяемые виды деятельности для Mondi, включая субподряд"@ru ;
+  rdfs:label "Coordinated activities of the company"@en ;
+.
+v-s:AddRegistrNamberReestr
+  rdf:type v-s:Bundle ;
+  rdfs:label "Регистрационный номер контрагента"@ru ;
+  rdfs:label "Registration number of the counterparty"@en ;
+.
+v-s:AddDateactions
+  rdf:type v-s:Bundle ;
+  rdfs:label "Период действия документа"@ru ;
+  rdfs:label "The period of validity of the document"@en ;
+.
+
+
+# --------------------------------------------------------------- ШАБЛОНЫ --
+v-s:PriceTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон для класса v-s:Price внутри v-s:ContractorCategoryRequest"@ru ;
+  rdfs:label "Template for v-s:Price class in v-s:ContractorCategoryRequest"@en ;
+  v-ui:template "v-s_PriceTemplate.js" ;
+.

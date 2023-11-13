@@ -1,0 +1,79 @@
+#!/bin/bash
+#APPDIR="./"
+ARGS="$@"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$APPDIR/usr/lib"
+
+function install {
+	echo "INSTALL VEDA"
+	mkdir $PWD/logs
+	mkdir $PWD/data
+	mkdir $PWD/data/tarantool
+	mkdir $PWD/install-tools
+
+	cat -v $APPDIR/veda.version
+
+	cp $APPDIR/control-stop.sh $PWD
+	cp $APPDIR/control-start.sh $PWD
+	cp -r $APPDIR/install-tools $PWD
+	cp $APPDIR/veda.properties $PWD
+	cp $APPDIR/veda.modules $PWD
+	echo "extract files into \"./ontology\" folder"
+	cp -r $APPDIR/ontology $PWD
+	echo "extract files into \"./public\" folder"
+	cp -r $APPDIR/public $PWD
+	cp -r $APPDIR/source $PWD
+	cp -r $APPDIR/CHANGELOG.txt $PWD
+	echo "FINISH"
+}
+
+function update_frontend {
+	echo "UPDATE FRONTEND"
+	echo "clean \"./public\" folder"
+	rm -r $PWD/public
+	echo "extract files into \"./public\" folder"
+	cp -r $APPDIR/public $PWD
+	echo "FINISH"
+}
+
+if [ -f $PWD/ontology/config.ttl ]; then
+
+    if [ -z "$ARGS" ]
+    then
+	echo
+	echo "usage ./Veda-x86_64.AppImage.X.Y.Z [options]"
+	echo
+	echo "--install			install Veda to local folder"
+	echo "--update-frontend		update frontend: extract and replace ./public"
+	echo
+	echo "To start [Veda] use ./control-start.sh"
+	echo "To stop [Veda] use ./control-stop.sh"
+	exit
+    fi
+
+    if [[ $ARGS == "--start" ]]; then
+	$APPDIR/veda --id=AI1 no-watchdog
+    fi
+
+    if [[ $ARGS == "--install" ]]; then
+
+	read -p "all data in this copy of [Veda] will be lost, are you sure? " -n 1 -r
+	echo
+	if [[ $REPLY =~ ^[Yy]$ ]]
+	then
+	    install
+	fi
+    fi
+
+    if [[ $ARGS == "--update-frontend" ]]; then
+
+	read -p "all data in folder [./public] will be replaced, are you sure? " -n 1 -r
+	echo
+	if [[ $REPLY =~ ^[Yy]$ ]]
+	then
+	    update_frontend
+	fi
+    fi
+
+else
+    install
+fi

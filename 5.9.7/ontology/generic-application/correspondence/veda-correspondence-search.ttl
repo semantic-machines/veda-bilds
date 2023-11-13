@@ -1,0 +1,94 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix v-s: <http://semantic-machines.com/veda/veda-schema/> .
+@prefix v-ui: <http://semantic-machines.com/veda/veda-ui/> .
+@prefix vdi: <http://semantic-machines.com/veda/veda-index/> .
+@prefix v-fc: <http://semantic-machines.com/veda/veda-function-create/> .
+@prefix v-fs: <http://semantic-machines.com/veda/veda-function-search/> .
+@prefix cfg: <http://semantic-machines.com/veda/config/> .
+
+<http://semantic-machines.com/veda/veda-correspondence-registries>
+  rdf:type owl:Ontology ;
+  rdfs:label "Онтология системы Veda. Корреспонденция. Реестры."@ru ;
+  rdfs:label "Veda system ontology. Correspondence. Registries."@en ;
+#  owl:versionInfo "1.3" ;
+  v-s:loadPriority 6 ;
+.
+
+# Letter registries ----------------------------------------------------
+
+v-s:IncomingLetterSearch
+  a v-fs:AttributiveSearch;
+  rdfs:label "Входящие письма"@ru ;
+  rdfs:label "Incoming letters"@en ;
+  v-fs:searchBlank v-s:IncomingLetterSearchBlank ;
+  v-fs:searchBlankTemplate v-s:LetterTemplate ;
+  v-fs:searchResultTemplate v-s:LetterSearchResultTemplate ;
+  v-fs:sortOrder "'v-s:created' desc" ;
+.
+v-s:OutgoingLetterSearch
+  a v-fs:AttributiveSearch;
+  rdfs:label "Исходящие письма"@ru ;
+  rdfs:label "Outgoing letters"@en ;
+  v-fs:searchBlank v-s:OutgoingLetterSearchBlank ;
+  v-fs:searchBlankTemplate v-s:LetterTemplate ;
+  v-fs:searchResultTemplate v-s:LetterSearchResultTemplate ;
+  v-fs:sortOrder "'v-s:created' desc" ;
+.
+
+# Letter registries blanks ---------------------------------------------
+
+v-s:IncomingLetterSearchBlank
+  rdf:type v-fc:Blank ;
+  rdfs:label "Входящее письмо"@ru ;
+  rdfs:label "Incoming letter"@en ;
+  v-fc:targetType v-s:IncomingLetter ;
+  v-s:sender v-s:SenderCorrespondentSearchBlank ;
+  v-s:recipient v-s:RecipientCorrespondentSearchBlank ;
+  v-s:hasLetterRegistrationRecordSender v-s:LetterRegistrationRecordSenderSearchBlank ;
+  v-s:hasLetterRegistrationRecordRecipient v-s:LetterRegistrationRecordRecipientSearchBlank ;
+.
+v-s:OutgoingLetterSearchBlank
+  rdf:type v-fc:Blank ;
+  rdfs:label "Исходящее письмо"@ru ;
+  rdfs:label "Outgoing letter"@en ;
+  v-fc:targetType v-s:OutgoingLetter ;
+  v-s:sender v-s:SenderCorrespondentSearchBlank ;
+  v-s:recipient v-s:RecipientCorrespondentSearchBlank ;
+  v-s:hasLetterRegistrationRecordSender v-s:LetterRegistrationRecordSenderSearchBlank ;
+  v-s:hasLetterRegistrationRecordRecipient v-s:LetterRegistrationRecordRecipientSearchBlank ;
+.
+v-s:SenderCorrespondentSearchBlank
+  a v-fc:Blank ;
+  rdfs:label "Корреспондент"@ru ;
+  rdfs:label "Correspondent"@en ;
+  v-fc:targetType v-s:Correspondent ;
+.
+v-s:RecipientCorrespondentSearchBlank
+  a v-fc:Blank ;
+  rdfs:label "Корреспондент"@ru ;
+  rdfs:label "Correspondent"@en ;
+  v-fc:targetType v-s:Correspondent ;
+.
+v-s:LetterRegistrationRecordSenderSearchBlank
+  rdf:type v-fc:Blank ;
+  rdfs:label "Бланк регистрационной записи отправителя"@ru ;
+  rdfs:label "Registration record sender blank"@en ;
+  v-fc:targetType v-s:LetterRegistrationRecordSender ;
+.
+v-s:LetterRegistrationRecordRecipientSearchBlank
+  rdf:type v-fc:Blank ;
+  rdfs:label "Бланк регистрационной записи получателя"@ru ;
+  rdfs:label "Registration record recipient blank"@en ;
+  v-fc:targetType v-s:LetterRegistrationRecordRecipient ;
+.
+
+# Letter registry templates --------------------------------------------
+v-s:LetterSearchResultTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон результатов реестра Локальный нормативный документ"@ru ;
+  rdfs:label "Local regulatory document registry result template"@en ;
+  v-ui:template "v-s_LetterSearchResultTemplate.js" ;
+.

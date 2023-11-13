@@ -1,0 +1,209 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix v-s: <http://semantic-machines.com/veda/veda-schema/> .
+@prefix v-ui: <http://semantic-machines.com/veda/veda-ui/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix v-fc: <http://semantic-machines.com/veda/veda-function-create/> .
+@prefix v-fs: <http://semantic-machines.com/veda/veda-function-search/> .
+@prefix v-ft: <http://semantic-machines.com/veda/veda-function-tasks/> .
+@prefix d: <http://semantic-machines.com/veda/veda-data/> .
+@prefix cfg: <http://semantic-machines.com/veda/config/> .
+
+<http://semantic-machines.com/veda/veda-layout>
+  rdf:type owl:Ontology ;
+  rdfs:label "Онтология разметки системы Веда"@ru ;
+  rdfs:label "Veda system layout ontology"@en ;
+  #owl:versionInfo "0.2" ;
+  v-s:loadPriority 9 ;
+.
+
+### LAYOUT ###
+
+v-s:Layout
+  rdf:type rdfs:Resource ;
+  rdfs:subClassOf v-s:SystemThing ;
+  rdfs:label "Макет"@ru ;
+  rdfs:label "Layout"@en ;
+  v-ui:hasTemplate v-s:LayoutTemplate ;
+.
+v-s:LayoutTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон макета"@ru ;
+  rdfs:label "Layout template"@en ;
+  v-ui:template "v-s_LayoutTemplate.js" ;
+.
+v-s:LayoutTemplate_contacts
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон макета"@ru ;
+  rdfs:label "Layout template"@en ;
+  v-ui:template "v-s_LayoutTemplate_contacts.js" ;
+.
+v-s:LayoutTemplate_search
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон макета"@ru ;
+  rdfs:label "Layout template"@en ;
+  v-ui:template "v-s_LayoutTemplate_search.js" ;
+.
+
+### MENU ###
+
+v-s:Menu
+  rdf:type owl:Class ;
+  rdfs:subClassOf v-s:SystemThing ;
+  rdfs:label "Меню"@ru ;
+  rdfs:label "Menu"@en ;
+.
+v-s:menuItem
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Пункт меню"@ru ;
+  rdfs:label "Menu item"@en ;
+  rdfs:domain v-s:Menu ;
+  rdfs:range v-s:Menu ;
+.
+v-s:staticLink
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "Статическая ссылка"@ru ;
+  rdfs:label "Static link"@en ;
+  rdfs:domain v-s:Menu ;
+  rdfs:range xsd:string ;
+.
+v-s:objectLink
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Ссылка на индивид"@ru ;
+  rdfs:label "Link to individual"@en ;
+  rdfs:domain v-s:Menu ;
+  rdfs:range rdfs:Resource ;
+.
+v-s:MenuItemViewTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон пункта Меню"@ru ;
+  rdfs:label "Menu item template"@en ;
+  v-ui:template "v-s_MenuItemViewTemplate.js"
+.
+v-s:MenuTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон класса Меню"@ru ;
+  rdfs:label "Menu class template"@en ;
+  v-ui:template "v-s_MenuTemplate.js"
+.
+v-s:PsStrings
+  rdf:type v-ui:DatatypePropertySpecification ;
+  v-ui:forProperty rdfs:label, v-s:staticLink ;
+  v-ui:forClass v-s:Menu ;
+  rdfs:label "Спецификация rdfs:label, v-s:staticLink для класса Меню"@ru ;
+  rdfs:label "Rdfs:label, v-s:staticLink specification for Menu class"@en ;
+  v-ui:maxCardinality "1"^^xsd:integer ;
+.
+v-s:PsMenuItem
+  rdf:type v-ui:ObjectPropertySpecification ;
+  v-ui:forProperty v-s:menuItem ;
+  v-ui:forClass v-s:Menu ;
+  rdfs:label "Спецификация v-s:menuItem для класса v-s:Menu"@ru ;
+  rdfs:label "V-l:menuItem specification for v-s:Menu class"@en ;
+  v-ui:queryPrefix "('rdf:type' == 'v-s:Menu')"^^xsd:string ;
+.
+
+### MAIN PAGE ###
+
+v-s:Main
+  rdf:type rdfs:Resource ;
+  rdfs:label "Главная страница"@ru ;
+  rdfs:label "Main page"@en ;
+  v-ui:hasTemplate v-s:MainTemplate ;
+.
+v-s:MainTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон для класса Приветственный аспект"@ru ;
+  rdfs:label "Template for Welcome aspect class"@en ;
+  v-ui:template "v-s_MainTemplate.js" ;
+.
+
+### STRINGS ###
+
+v-s:SemanticMachines
+  rdf:type v-s:Bundle ;
+  rdfs:label "Смысловые машины"@ru ;
+  rdfs:label "Semantic machines"@en ;
+.
+v-s:License
+  rdf:type v-s:Bundle ;
+  rdfs:label "Лицензия"@ru ;
+  rdfs:label "License"@en ;
+.
+v-s:WelcomeToVeda
+  rdf:type v-s:Bundle ;
+  rdfs:label "Добро пожаловать в Veda!"@ru ;
+  rdfs:label "Welcome to Veda!"@en ;
+.
+v-s:VedaDescription
+  rdf:type v-s:Bundle ;
+  rdfs:label """Платформа для разработки web-приложений уровня предприятий."""@ru ;
+  rdfs:label """Enterprise application development platform."""@en ;
+.
+v-s:PoweredBy
+  rdf:type v-s:Bundle ;
+  rdfs:label "Сделано на платформе"@ru ;
+  rdfs:label "Powered by"@en ;
+.
+v-s:VedaPlatform
+  rdf:type v-s:Bundle ;
+  rdfs:label "Veda" ;
+.
+
+### INDIVIDUALS ###
+
+v-s:MainMenu
+  rdf:type v-s:Menu ;
+  rdfs:label "Главное меню"@ru ;
+  rdfs:label "Main menu"@en ;
+  v-s:menuItem v-s:Inbox ;
+  v-s:menuItem v-s:Outbox ;
+  v-s:menuItem v-s:Completed ;
+  v-s:menuItem v-s:Divider ;
+  v-s:menuItem v-s:Create ;
+  v-s:menuItem v-s:Find ;
+  v-s:menuItem v-s:Divider ;
+  v-s:menuItem v-s:Administration ;
+.
+v-s:Divider
+  rdf:type v-s:Menu ;
+  rdfs:label "Разделитель"@ru ;
+  rdfs:label "Divider"@en ;
+.
+v-s:Inbox
+  rdf:type v-s:Menu ;
+  rdfs:label "Входящие"@ru ;
+  rdfs:label "Inbox"@en ;
+  v-s:objectLink v-ft:Inbox ;
+.
+v-s:Outbox
+  rdf:type v-s:Menu ;
+  rdfs:label "Исходящие"@ru ;
+  rdfs:label "Outbox"@en ;
+  v-s:objectLink v-ft:Outbox ;
+.
+v-s:Completed
+  rdf:type v-s:Menu ;
+  rdfs:label "Выполненные"@ru ;
+  rdfs:label "Completed"@en ;
+  v-s:objectLink v-ft:Completed ;
+.
+v-s:Create
+  rdf:type v-s:Menu ;
+  rdfs:label "Создать"@ru ;
+  rdfs:label "Create"@en ;
+  v-s:objectLink v-fc:CreateByType ;
+.
+v-s:Find
+  rdf:type v-s:Menu ;
+  rdfs:label "Найти"@ru ;
+  rdfs:label "Find"@en ;
+  v-s:objectLink v-fs:FulltextSearch ;
+.
+v-s:Administration
+  rdf:type v-s:Menu ;
+  rdfs:label "Администрование"@ru ;
+  rdfs:label "Administration"@en ;
+  v-s:objectLink v-s:AdministrationAspect ;
+.

@@ -1,0 +1,50 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix d: <http://semantic-machines.com/veda/veda-data/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix v-s: <http://semantic-machines.com/veda/veda-schema/> .
+@prefix v-ui: <http://semantic-machines.com/veda/veda-ui/> .
+
+<http://semantic-machines.com/veda/veda-classSpecification-ui>
+  rdf:type owl:Ontology ;
+  rdfs:label "Онтология системы Veda. Спецификация класса. Интерфейс."@ru ;
+  rdfs:label "Veda system ontology. Class specification. UI."@en ;
+#  owl:versionInfo "1.3" ;
+  v-s:loadPriority 6 ;
+.
+v-s:ClassSpecificationTemplate
+  rdf:type v-ui:ClassTemplate ;
+  v-ui:forClass v-s:ClassSpecification ;
+  rdfs:label "Шаблон для класса v-s:ClassSpecification"@ru ;
+  rdfs:label "Template for v-s:ClassSpecification class"@en ;
+  v-ui:template "v-s_ClassSpecificationTemplate.js" ;
+.
+
+v-ui:TS_PropertySpecification
+  rdf:type v-ui:TemplateSpecification;
+  v-s:loadPriority "10"^^xsd:integer;
+  v-ui:defaultTemplate v-s:PropertySpecificationTemplate;
+  v-ui:forClass v-ui:PropertySpecification;
+.
+v-ui:TS_DatatypePropertySpecification
+  rdf:type v-ui:TemplateSpecification;
+  v-s:loadPriority "10"^^xsd:integer;
+  v-ui:defaultTemplate v-s:PropertySpecificationTemplate;
+  v-ui:forClass v-ui:DatatypePropertySpecification;
+.
+v-ui:TS_ObjectPropertySpecification
+  rdf:type v-ui:TemplateSpecification;
+  v-s:loadPriority "10"^^xsd:integer;
+  v-ui:defaultTemplate v-s:PropertySpecificationTemplate;
+  v-ui:forClass v-ui:DatatypePropertySpecification;
+.
+v-s:PropertySpecificationTemplate
+  rdf:type v-ui:ClassTemplate ;
+  v-ui:forClass v-ui:PropertySpecification;
+  v-ui:forClass v-ui:ObjectPropertySpecification;
+  v-ui:forClass v-ui:DatatypePropertySpecification;
+  rdfs:label "Шаблон для класса v-ui:PropertySpecification"@ru ;
+  rdfs:label "Template for v-ui:PropertySpecification class"@en ;
+  v-ui:template "v-s_PropertySpecificationTemplate.js" ;
+.
