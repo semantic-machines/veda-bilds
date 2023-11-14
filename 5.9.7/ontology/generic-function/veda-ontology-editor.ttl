@@ -1,0 +1,664 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix v-s: <http://semantic-machines.com/veda/veda-schema/> .
+@prefix v-wf: <http://semantic-machines.com/veda/veda-workflow/> .
+@prefix v-ui: <http://semantic-machines.com/veda/veda-ui/> .
+@prefix v-fc: <http://semantic-machines.com/veda/veda-function-create/> .
+@prefix v-fs: <http://semantic-machines.com/veda/veda-function-search/> .
+@prefix td: <http://semantic-machines.com/veda/test-data/> .
+
+<http://semantic-machines.com/veda/veda-ontology-editor>
+  rdf:type owl:Ontology ;
+  rdfs:label "Редактор онтологии системы Веда"@ru ;
+  rdfs:label "Veda system ontology editor"@en ;
+#  owl:versionInfo "3.4" ;
+  v-s:loadPriority 8 ;
+.
+
+# ---------------------------------------------------------------------- BUNDLES --
+v-s:PropertiesBundle
+  rdf:type v-s:Bundle;
+  rdfs:label "Свойства"@ru ;
+  rdfs:label "Properties"@en ;
+.
+v-s:SuperClassesBundle
+  rdf:type v-s:Bundle;
+  rdfs:label "Супер классы"@ru ;
+  rdfs:label "Super classes"@en ;
+.
+v-s:SuperPropertiesBundle
+  rdf:type v-s:Bundle;
+  rdfs:label "Супер свойства"@ru ;
+  rdfs:label "Super properties"@en ;
+.
+v-s:SpecificationsBundle
+  rdf:type v-s:Bundle;
+  rdfs:label "Спецификации"@ru ;
+  rdfs:label "Specifications"@en ;
+.
+
+
+
+# --------------------------------------------------------------------- МОДЕЛИ --
+
+#---------------------------------------------------------------- Модель класса Class --
+v-ui:ClassClassModel
+  rdf:type v-ui:ClassModel;
+  rdfs:label "Модель класса Class"@ru ;
+  rdfs:label "Class class model"@en ;
+  v-ui:forClass owl:Class ;
+  v-ui:forClass rdfs:Class ;
+  v-s:script """
+  this.addProperty = function (property) {
+    if (property instanceof String || typeof property === "string" ) {
+      property = new veda.IndividualModel( property.valueOf() );
+    }
+    if ( !(property instanceof veda.IndividualModel) ) { return; }
+    property.addDomain(this);
+    this.domainProperties[property.id] = property;
+  };
+
+  this.createProperty = function () {
+    var property = new veda.IndividualModel();
+    property["rdf:type"] = [ new veda.IndividualModel("rdf:Property") ];
+    property.addDomain(self);
+    this.domainProperties[property.id] = property;
+  };
+
+  this.isSubClassOf = function (_super) {
+    return this.getSuperClasses().then(function (superClasses) {
+      var result = false;
+      for (var i = 0, superClass; (superClass = superClasses[i]) && !result; i++) {
+        result = _super === superClass.id;
+      }
+      return result;
+    });
+  };
+
+  this.getSuperClasses = function () {
+    return this.prefetch(Infinity, "rdfs:subClassOf").then(function (superClasses) {
+      return superClasses.slice(1);
+    });
+  };
+  """ ;
+.
+
+#-------------------------------------------------------------- Модель класса Property --
+v-ui:PropertyClassModel
+  rdf:type v-ui:ClassModel ;
+  rdfs:label "Модель класса Property"@ru ;
+  rdfs:label "Property class model"@en ;
+  v-ui:forClass rdf:Property ;
+  v-ui:forClass owl:DatatypeProperty ;
+  v-ui:forClass owl:ObjectProperty ;
+  v-s:script """
+  this.setDomain = function () {
+    var domain = [];
+    for (var i = 0; i < arguments.length; i++) {
+      if (arguments[i] instanceof veda.IndividualModel) {
+        domain.push( arguments[i] );
+      } else if ( arguments[i] instanceof String ) {
+        domain.push( new veda.IndividualModel( arguments[i].valueOf() ) );
+      } else if ( typeof arguments[i] === "string" ) {
+        domain.push( new veda.IndividualModel( arguments[i] ) );
+      }
+    }
+    this["rdfs:domain"] = domain;
+    this.save();
+  }
+
+  this.addDomain = function (_class) {
+    if (_class instanceof String || typeof _class === "string" ) {
+      _class = new veda.IndividualModel( _class.valueOf() );
+    }
+    if ( !(_class instanceof veda.IndividualModel) ) { return; }
+    var filtered = this["rdfs:domain"].filter( function (domainClass) {
+      return domainClass.id === _class.id;
+    });
+    if ( !filtered.length ) {
+      this["rdfs:domain"] = this["rdfs:domain"].concat(_class);
+      this.save();
+    }
+  };
+
+  this.removeDomain = function (_class) {
+    if (_class instanceof String || typeof _class === "string" ) {
+      _class = new veda.IndividualModel( _class.valueOf() );
+    }
+    if ( !(_class instanceof veda.IndividualModel) ) { return; }
+    this["rdfs:domain"] = this["rdfs:domain"].filter( function (domainClass) {
+      return domainClass.id !== _class.id;
+    });
+    this.save();
+  };
+
+  this.setRange = function () {
+    var range = [];
+    for (var i = 0; i < arguments.length; i++) {
+      if (arguments[i] instanceof veda.IndividualModel) {
+        range.push( arguments[i] );
+      } else if ( arguments[i] instanceof String ) {
+        range.push( new veda.IndividualModel( arguments[i].valueOf() ) );
+      } else if ( typeof arguments[i] === "string" ) {
+        range.push( new veda.IndividualModel( arguments[i] ) );
+      }
+    }
+    this["rdfs:range"] = range;
+    this.save();
+  };
+
+  this.addRange = function (_class) {
+    if (_class instanceof String || typeof _class === "string" ) {
+      _class = new veda.IndividualModel( _class.valueOf() );
+    }
+    if ( !(_class instanceof veda.IndividualModel) ) { return; }
+    var filtered = this["rdfs:range"].filter( function (rangeClass) {
+      return rangeClass.id === _class.id;
+    });
+    if ( !filtered.length ) {
+      this["rdfs:range"] = this["rdfs:range"].concat(_class);
+      this.save();
+    }
+  };
+
+  this.removeRange = function (_class) {
+    if (_class instanceof String || typeof _class === "string" ) {
+      _class = new veda.IndividualModel( _class.valueOf() );
+    }
+    if ( !(_class instanceof veda.IndividualModel) ) { return; }
+    this["rdfs:range"] = this["rdfs:range"].filter( function (rangeClass) {
+      return rangeClass.id !== _class.id;
+    });
+    this.save();
+  };
+  """ ;
+.
+
+
+
+# --------------------------------------------------------------------- СПЕЦИФИКАЦИИ --
+v-s:ClassLabelSpec
+  rdf:type v-ui:PropertySpecification;
+  v-ui:forClass rdfs:Class ;
+  v-ui:forProperty rdfs:label ;
+  v-ui:minCardinality 1;
+.
+v-s:ClassSubClassOfSpec
+  rdf:type v-ui:PropertySpecification;
+  v-ui:forClass owl:Class ;
+  v-ui:forProperty rdfs:subClassOf ;
+  v-ui:minCardinality 0;
+  v-ui:maxCardinality 100;
+.
+v-ui:PsTypeClassSpec
+  rdf:type v-ui:ObjectPropertySpecification ;
+  rdfs:label "Спецификация типа для класса Resource"@ru ;
+  rdfs:label "Type specification for Resource class"@en ;
+  v-ui:forClass owl:Class ;
+  v-ui:forClass rdfs:Class ;
+  v-ui:forProperty rdf:type ;
+  v-ui:optionValue owl:Class ;
+  v-ui:optionValue rdfs:Class ;
+  v-ui:minCardinality 1 ;
+  v-ui:maxCardinality 1 ;
+.
+
+
+v-s:PropertySubPropertyOfSpec
+  rdf:type v-ui:PropertySpecification;
+  v-ui:forClass rdf:Property ;
+  v-ui:forProperty rdfs:subPropertyOf ;
+  v-ui:minCardinality 0;
+  v-ui:maxCardinality 100;
+.
+v-ui:PsTypePropertySpec
+  rdf:type v-ui:ObjectPropertySpecification ;
+  rdfs:label "Спецификация типа для класса Resource"@ru ;
+  rdfs:label "Type specification for Resource class"@en ;
+  v-ui:forProperty rdf:type ;
+  v-ui:forClass rdf:Property ;
+  v-ui:forClass owl:ObjectProperty ;
+  v-ui:forClass owl:DatatypeProperty ;
+  v-ui:optionValue rdf:Property ;
+  v-ui:optionValue owl:ObjectProperty ;
+  v-ui:optionValue owl:DatatypeProperty ;
+  v-ui:minCardinality 1 ;
+  v-ui:maxCardinality 1 ;
+.
+v-ui:PsMandatoryPropertiesForPropertySpec
+  rdf:type v-ui:ObjectPropertySpecification ;
+  rdfs:label "Спецификация свойств для класса PropertySpecifications"@ru ;
+  rdfs:label "Properties specification for PropertySpecifications class"@en ;
+  v-ui:forClass v-ui:PropertySpecification ;
+  v-ui:forProperty v-ui:forProperty ;
+  v-ui:forProperty v-ui:forClass ;
+  v-ui:minCardinality 1 ;
+  v-ui:maxCardinality 100 ;
+.
+
+v-ui:PsMultiValuePropertiesForObjectPropertySpec
+  rdf:type v-ui:ObjectPropertySpecification ;
+  rdfs:label "Спецификация свойств для класса PropertySpecifications"@ru ;
+  rdfs:label "Properties specification for PropertySpecifications class"@en ;
+  v-ui:forClass v-ui:ObjectPropertySpecification ;
+  v-ui:forProperty v-ui:treeRoot ;
+  v-ui:forProperty v-ui:treeOutProperty ;
+  v-ui:forProperty v-ui:treeInProperty ;
+  v-ui:forProperty v-ui:treeAllowedClass ;
+  v-ui:forProperty v-ui:treeSelectableClass ;
+  v-ui:forProperty v-ui:treeSelectableFilter ;
+  v-ui:forProperty v-ui:treeDisplayedProperty ;
+  v-ui:minCardinality 0 ;
+  v-ui:maxCardinality 100 ;
+.
+
+v-ui:PsForClassSpec
+  rdf:type v-ui:ObjectPropertySpecification ;
+  rdfs:label "Спецификация типа для класса Resource"@ru ;
+  rdfs:label "Type specification for Resource class"@en ;
+  v-ui:forClass v-ui:ClassTemplate ;
+  v-ui:forProperty v-ui:forClass ;
+  v-ui:tooltip "Ссылка на объект типа Класс."@ru ;
+  v-ui:tooltip "Link to object of type Class"@en ;
+  v-ui:queryPrefix "('rdf:type'=='owl:Class' || 'rdf:type'=='rdfs:Class')"^^xsd:string ;
+  v-ui:minCardinality 0 ;
+  v-ui:maxCardinality 100 ;
+.
+
+v-s:PropertySpecificationSearch
+  rdf:type v-fs:AttributiveSearch ;
+  rdfs:label "Спецификации свойств"@ru ;
+  rdfs:label "Property specifications"@en ;
+  v-fs:searchBlank v-s:PropertySpecificationSearchBlank ;
+  v-fs:searchOnLoad false ;
+  v-fs:loadAll true ;
+.
+
+v-s:PropertySpecificationSearchBlank
+  rdf:type v-fc:Blank ;
+  rdfs:label "Спецификация свойства"@ru ;
+  rdfs:label "Property specification"@en ;
+  v-fc:targetType v-ui:PropertySpecification ;
+  v-fc:targetType v-ui:DatatypePropertySpecification ;
+  v-fc:targetType v-ui:ObjectPropertySpecification ;
+.
+
+
+# ---------------------------------------------------------------------- ШАБЛОНЫ --
+
+#---------------------------------------------------------------- Общий шаблон онтологии --
+v-ui:CommonOntologyTemplate
+  rdf:type v-ui:ClassTemplate;
+  rdfs:label "Общий шаблон онтологии"@ru ;
+  rdfs:label "Common ontology template"@en ;
+  v-ui:template "v-ui_CommonOntologyTemplate.js" ;
+.
+#-------------------------------------------------------------- Шаблон класса Class --
+v-ui:ClassClassTemplate
+  rdf:type v-ui:ClassTemplate;
+  rdfs:label "Шаблон класса Class"@ru ;
+  rdfs:label "Class class template"@en ;
+  v-ui:forClass owl:Class ;
+  v-ui:forClass rdfs:Class ;
+  v-ui:template "v-ui_ClassClassTemplate.js" ;
+.
+
+#------------------------------------------------------------ Шаблон класса rdf:Property --
+v-ui:PropertyClassTemplate
+  rdf:type v-ui:ClassTemplate;
+  rdfs:label "Шаблон класса rdf:Property"@ru ;
+  rdfs:label "rdf:Property class template"@en ;
+  v-ui:forClass rdf:Property ;
+  v-ui:forClass owl:DatatypeProperty ;
+  v-ui:forClass owl:ObjectProperty ;
+  v-ui:template "v-ui_PropertyClassTemplate.js" ;
+.
+
+
+#------------------------------------------------------ Шаблон класса v-ui:PropertySpecification --
+v-s:TS_PropertySpecification
+  rdf:type v-ui:TemplateSpecification;
+  v-s:loadPriority "15"^^xsd:integer;
+  v-ui:defaultTemplate v-ui:PropertySpecificationTemplate;
+  v-ui:forClass v-ui:PropertySpecification
+.
+v-ui:CS_PropertySpecification 
+  rdf:type v-s:ClassSpecification ;
+  rdfs:label "Спецификация класса v-ui:PropertySpecification "@ru, "Class specification v-ui:PropertySpecification "@en;
+  v-ui:forClass v-ui:PropertySpecification ;
+  v-s:shelfLife 9999;
+  v-ui:defaultTemplate v-ui:PropertySpecificationTemplate;
+  v-s:loadPriority 15 ;
+.
+v-ui:PropertySpecificationTemplate
+  rdf:type v-ui:ClassTemplate;
+  rdfs:label "Шаблон класса v-ui:PropertySpecification"@ru ;
+  rdfs:label "v-ui:PropertySpecification class template"@en ;
+  v-ui:forClass v-ui:PropertySpecification ;
+  v-ui:template "v-ui_PropertySpecificationTemplate.js" ;
+.
+
+#------------------------------------------------ Шаблон класса v-ui:DatatypePropertySpecification --
+v-s:TS_DatatypePropertySpecification
+  rdf:type v-ui:TemplateSpecification;
+  v-s:loadPriority "15"^^xsd:integer;
+  v-ui:defaultTemplate v-ui:DatatypePropertySpecificationTemplate;
+  v-ui:forClass v-ui:DatatypePropertySpecification
+.
+v-s:CS_DatatypePropertySpecification
+  rdf:type v-s:ClassSpecification ;
+  rdfs:label "Спецификация класса v-ui:DatatypePropertySpecification "@ru, "Class specification v-ui:DatatypePropertySpecification "@en;
+  v-ui:forClass v-ui:DatatypePropertySpecification ;
+  v-s:shelfLife 9999;
+  v-ui:defaultTemplate v-ui:DatatypePropertySpecificationTemplate;
+  v-s:loadPriority 15 ;
+.
+v-ui:DatatypePropertySpecificationTemplate
+  rdf:type v-ui:ClassTemplate;
+  rdfs:label "Шаблон класса v-ui:DatatypePropertySpecification"@ru ;
+  rdfs:label "v-ui:PropertySpecification class template"@en ;
+  v-ui:forClass v-ui:DatatypePropertySpecification ;
+  v-ui:template "v-ui_DatatypePropertySpecificationTemplate.js" ;
+.
+
+#-------------------------------------------------- Шаблон класса v-ui:ObjectPropertySpecification --
+v-s:TS_ObjectPropertySpecification
+  rdf:type v-ui:TemplateSpecification;
+  v-s:loadPriority "15"^^xsd:integer;
+  v-ui:defaultTemplate v-ui:ObjectPropertySpecificationTemplate;
+  v-ui:forClass v-ui:ObjectPropertySpecification
+.
+v-ui:CS_ObjectPropertySpecification 
+  rdf:type v-s:ClassSpecification ;
+  rdfs:label "Спецификация класса v-s:ObjectPropertySpecification  "@ru, "Class specification v-s:ObjectPropertySpecification "@en;
+  v-ui:forClass v-ui:ObjectPropertySpecification  ;
+  v-s:shelfLife 9999;
+  v-ui:defaultTemplate v-ui:ObjectPropertySpecificationTemplate;
+  v-s:loadPriority 15 ;
+.
+v-ui:ObjectPropertySpecificationTemplate
+  rdf:type v-ui:ClassTemplate;
+  rdfs:label "Шаблон класса v-ui:ObjectPropertySpecification"@ru ;
+  rdfs:label "v-ui:PropertySpecification class template"@en ;
+  v-ui:forClass v-ui:ObjectPropertySpecification ;
+  v-ui:template "v-ui_ObjectPropertySpecificationTemplate.js" ;
+.
+
+#------------------------------------------------------- Шаблон класса v-ui:ClassTemplate --
+v-s:TS_ClassTemplate
+  rdf:type v-ui:TemplateSpecification;
+  v-s:loadPriority "15"^^xsd:integer;
+  v-ui:defaultTemplate v-ui:ClassTemplateTemplate;
+  v-ui:forClass v-ui:ClassTemplate
+.
+v-s:CS_ClassTemplateTemplate
+  rdf:type v-s:ClassSpecification ;
+  rdfs:label "Спецификация класса v-ui:ClassTemplate "@ru, "Class specification v-ui:ClassTemplate "@en;
+  v-ui:forClass v-ui:ClassTemplate ;
+  v-s:shelfLife 9999;
+  v-ui:defaultTemplate v-ui:ClassTemplateTemplate;
+  v-s:loadPriority 15 ;
+.
+v-ui:ClassTemplateTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон для класса -Шаблон класса-"@ru ;
+  rdfs:label "Template for -Class template- class"@en ;
+  v-ui:forClass v-ui:ClassTemplate ;
+  v-ui:template "v-ui_ClassTemplateTemplate.js" ;
+.
+
+#------------------------------------------------------- Шаблон класса v-ui:ClassModel --
+v-s:TS_ClassModel
+  rdf:type v-ui:TemplateSpecification;
+  v-s:loadPriority "15"^^xsd:integer;
+  v-ui:defaultTemplate v-ui:ClassModelTemplate;
+  v-ui:forClass v-ui:ClassModel
+.
+v-s:CS_ClassModel
+  rdf:type v-s:ClassSpecification ;
+  rdfs:label "Спецификация класса v-ui:ClassModel "@ru, "Class specification v-ui:ClassModel "@en;
+  v-ui:forClass v-ui:ClassModel ;
+  v-s:shelfLife 9999;
+  v-ui:defaultTemplate v-ui:ClassModelTemplate;
+  v-s:loadPriority 15 ;
+.
+v-ui:ClassModelTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон для класса v-ui:ClassModel"@ru ;
+  rdfs:label "Template for v-ui:ClassModel class"@en ;
+  v-ui:forClass v-ui:ClassModel ;
+  v-ui:template "v-ui_ClassModelTemplate.js" ;
+.
+
+#---------------------------------------------------------- Шаблон класса v-s:Event --
+v-s:TS_Event
+  rdf:type v-ui:TemplateSpecification;
+  v-s:loadPriority "15"^^xsd:integer;
+  v-ui:defaultTemplate v-ui:EventTemplate;
+  v-ui:forClass v-s:Event
+.
+v-s:CS_Event
+  rdf:type v-s:ClassSpecification ;
+  rdfs:label "Спецификация класса v-s:Event"@ru, "Class specification v-s:Event"@en;
+  v-ui:forClass v-s:Event ;
+  v-s:shelfLife 9999;
+  v-ui:defaultTemplate v-ui:EventTemplate;
+  v-s:loadPriority 15 ;
+.
+v-ui:EventTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон для класса v-s:Event"@ru ;
+  rdfs:label "Template for v-s:Event class"@en ;
+  v-ui:forClass v-ui:ClassTemplate ;
+  v-ui:template "v-ui_EventTemplate.js" ;
+.
+
+#--------------------------------------------------------- Шаблон класса v-s:Module --
+v-s:TS_Module
+  rdf:type v-ui:TemplateSpecification;
+  v-s:loadPriority "15"^^xsd:integer;
+  v-ui:defaultTemplate v-ui:ModuleTemplate;
+  v-ui:forClass v-s:Module
+.
+v-s:CS_Module
+  rdf:type v-s:ClassSpecification ;
+  rdfs:label "Спецификация класса v-s:Module "@ru, "Class specification v-s:Module "@en;
+  v-ui:forClass v-s:Module ;
+  v-s:shelfLife 9999;
+  v-ui:defaultTemplate v-ui:ModuleTemplate;
+  v-s:loadPriority 15 ;
+.
+v-ui:ModuleTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон для 'v-s:Module'"@ru ;
+  rdfs:label "Template for 'v-s:Module'"@en ;
+  v-ui:forClass v-s:Module ;
+  v-ui:template "v-ui_ModuleTemplate.js" ;
+.
+
+# -- ПРАВА --
+
+
+
+
+v-s:RightsApplication
+  rdf:type v-s:Application ;
+  rdfs:label "Управление правами"@ru ;
+  rdfs:label "Rights management"@en ;
+  v-s:shortLabel "Права"@ru ;
+  v-s:shortLabel "Rights"@en ;
+  #v-s:hasImage v-s:OrganizationStructureImage ;
+  #v-s:hasIcon v-s:OrganizationStructureIcon ;
+  v-ui:hasTemplate v-s:ApplicationTemplate ;
+  v-s:hasCreate v-s:MembershipCreate ;
+  v-s:hasCreate v-s:PermissionStatementCreate ;
+  v-s:hasRegistry v-s:MembershipRegistry ;
+  v-s:hasRegistry v-s:PermissionStatementRegistry ;
+  v-s:hasRegistry v-s:GroupGeneratorRegistry ;
+  v-s:hasRegistry v-s:PermissionGeneratorRegistry ;
+.
+
+
+
+#--------------------------------------------------------- ШАБЛОНЫ/БЛАНКИ ДЛЯ КЛАССА v-s:Membership --
+v-s:MembershipCreate
+  a v-fc:Create ;
+  rdfs:label "Запись о включении в группу"@ru ;
+  rdfs:label "Membership"@en ;
+  v-fc:hasBlank v-s:MembershipBlank ;
+.
+v-s:MembershipBlank
+  a v-fc:Blank ;
+  rdfs:label "Запись о включении в группу"@ru ;
+  rdfs:label "Membership"@en ;
+  v-fc:targetType v-s:Membership ;
+.
+
+v-s:MembershipRegistry
+  a v-fs:AttributiveSearch ;
+  rdfs:label "Записи о включении в группу"@ru ;
+  rdfs:label "Memberships"@en ;
+  v-fs:searchBlank v-s:MembershipRegistryBlank ;
+  v-fs:searchBlankTemplate v-s:MembershipRegistryTemplate ;
+  v-fs:searchResultTemplate v-s:MembershipRegistryResultTemplate ;
+  v-fs:searchOnLoad false;
+  v-fs:queryLanguage "sql"^^xsd:string;
+.
+v-s:MembershipRegistryBlank
+  rdf:type v-fc:Blank ;
+  rdfs:label "Запись о включении в группу"@ru ;
+  rdfs:label "Membership"@en ;
+  v-fc:targetType v-s:Membership ;
+.
+v-s:TS_Membership
+  rdf:type v-ui:TemplateSpecification;
+  v-s:loadPriority "15"^^xsd:integer;
+  v-ui:defaultTemplate v-ui:MembershipTemplate;
+  v-ui:forClass v-s:Membership
+.
+v-s:CS_Membership
+  rdf:type v-s:ClassSpecification ;
+  rdfs:label "Спецификация класса v-s:Membership "@ru, "Class specification v-s:Membership "@en;
+  v-ui:forClass v-s:Membership ;
+  v-s:shelfLife 9999;
+  v-ui:defaultTemplate v-ui:MembershipTemplate;
+  v-s:loadPriority 15 ;
+.
+v-ui:MembershipTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон для класса v-s:PermissionStatement"@ru ;
+  rdfs:label "Template for v-s:PermissionStatement class"@en ;
+  v-ui:forClass v-s:Membership ;
+  v-ui:template "v-ui_MembershipTemplate.js" ;
+.
+v-s:MembershipRegistryTemplate
+  rdf:type v-ui:ClassTemplate ;
+  v-ui:forClass v-s:Membership ;
+  rdfs:label "Шаблон для класса v-s:Membership"@ru ;
+  rdfs:label "Template for v-s:Membership class"@en ;
+  v-ui:template "v-s_MembershipRegistryTemplate.js" ;
+.
+v-s:MembershipRegistryResultTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон результатов реестра v-s:MembershipRegistry"@ru ;
+  rdfs:label "v-s:MembershipRegistry registry result template"@en ;
+  v-ui:template "v-s_MembershipRegistryResultTemplate.js" ;
+.
+
+
+#------------------------------------------------------- ШАБЛОНЫ/БЛАНКИ ДЛЯ КЛАССА v-s:PermissionStatement --
+v-s:PermissionStatementCreate
+  a v-fc:Create ;
+  rdfs:label "Запись о выдаче прав"@ru ;
+  rdfs:label "Permission"@en ;
+  v-fc:hasBlank v-s:PermissionStatementBlank ;
+.
+v-s:PermissionStatementBlank
+  a v-fc:Blank ;
+  rdfs:label "Право"@ru ;
+  rdfs:label "Permission"@en ;
+  v-fc:targetType v-s:PermissionStatement ;
+.
+
+
+v-s:PermissionStatementRegistry
+  a v-fs:AttributiveSearch ;
+  rdfs:label "Запись о выдаче прав"@ru ;
+  rdfs:label "Permission"@en ;
+  v-fs:searchBlank v-s:PermissionStatementRegistryBlank ;
+  v-fs:searchBlankTemplate v-s:PermissionStatementRegistryTemplate ;
+  v-fs:searchResultTemplate v-s:PermissionStatementRegistryResultTemplate ;
+  v-fs:searchOnLoad false;
+  v-fs:queryLanguage "sql"^^xsd:string;
+.
+v-s:PermissionStatementRegistryBlank
+  rdf:type v-fc:Blank ;
+  rdfs:label "Запись о выдаче прав"@ru ;
+  rdfs:label "Permission"@en ;
+  v-fc:targetType v-s:PermissionStatement ;
+.
+
+v-s:TS_PermissionStatement
+  rdf:type v-ui:TemplateSpecification;
+  v-s:loadPriority "15"^^xsd:integer;
+  v-ui:defaultTemplate v-ui:PermissionStatementTemplate;
+  v-ui:forClass v-s:PermissionStatement
+.
+v-s:CS_PermissionStatement
+  rdf:type v-s:ClassSpecification ;
+  rdfs:label "Спецификация класса v-s:PermissionStatement "@ru, "Class specification v-s:PermissionStatement "@en;
+  v-ui:forClass v-s:PermissionStatement ;
+  v-s:shelfLife 9999;
+  v-ui:defaultTemplate v-ui:PermissionStatementTemplate;
+  v-s:loadPriority 15 ;
+.
+v-ui:PermissionStatementTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон для класса v-s:PermissionStatement"@ru ;
+  rdfs:label "Template for v-s:PermissionStatement class"@en ;
+  v-ui:forClass v-s:PermissionStatement ;
+  v-ui:template "v-ui_PermissionStatementTemplate.js" ;
+.
+v-s:PermissionStatementRegistryTemplate
+  rdf:type v-ui:ClassTemplate ;
+  v-ui:forClass v-s:PermissionStatement;
+  rdfs:label "Шаблон для класса v-s:PermissionStatement"@ru ;
+  rdfs:label "Template for v-s:PermissionStatement class"@en ;
+  v-ui:template "v-s_PermissionStatementRegistryTemplate.js" ;
+.
+v-s:PermissionStatementRegistryResultTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон результатов реестра v-s:PermissionStatementRegistry"@ru ;
+  rdfs:label "v-s:PermissionStatementRegistry registry result template"@en ;
+  v-ui:template "v-s_PermissionStatementRegistryResultTemplate.js" ;
+.
+
+
+#---------------------------------------------------------- ШАБЛОНЫ/БЛАНКИ ДЛЯ КЛАССА v-s:Group --
+v-s:TS_Group
+  rdf:type v-ui:TemplateSpecification;
+  v-s:loadPriority "15"^^xsd:integer;
+  v-ui:defaultTemplate v-ui:GroupTemplate;
+  v-ui:forClass v-s:Group
+.
+v-s:CS_Group
+  rdf:type v-s:ClassSpecification ;
+  rdfs:label "Спецификация класса v-s:Group  "@ru, "Class specification v-s:Group  "@en;
+  v-ui:forClass v-s:Group ;
+  v-s:shelfLife 9999;
+  v-ui:defaultTemplate v-ui:GroupTemplate;
+  v-s:loadPriority 15 ;
+.
+v-ui:GroupTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон для класса v-s:Group"@ru ;
+  rdfs:label "Template for v-s:Group class"@en ;
+  v-ui:forClass v-s:Group ;
+  v-ui:template "v-ui_GroupTemplate.js" ;
+.
+
+
+
+

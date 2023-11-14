@@ -1,0 +1,220 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix v-s: <http://semantic-machines.com/veda/veda-schema/> .
+@prefix v-ui: <http://semantic-machines.com/veda/veda-ui/> .
+@prefix v-fc: <http://semantic-machines.com/veda/veda-function-create/> .
+@prefix v-fs: <http://semantic-machines.com/veda/veda-function-search/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix mnd-s: <http://semantic-machines.com/veda/mondi-schema/> .
+
+<http://semantic-machines.com/veda/veda-function-contacts>
+  rdf:type owl:Ontology ;
+  rdfs:label "Онтология функции контакты"@ru ;
+  rdfs:label "Contacts function ontology"@en ;
+  v-s:loadPriority 9 ;
+.
+v-s:ContactsFunction
+  rdf:type owl:Class ;
+  rdfs:subClassOf v-s:Function ;
+  rdfs:label "Функция управления контактами"@ru ;
+  rdfs:label "Contacts management function"@en ;
+.
+
+v-s:managedOrganization
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Организация"@ru ;
+  rdfs:label "Organization"@en ;
+  rdfs:domain v-s:ContactsFunction ;
+  rdfs:range v-s:Organization ;
+.
+
+v-s:PSmanagedOrganization
+  rdf:type v-ui:ObjectPropertySpecification ;
+  rdfs:label "Спецификация свойства v-s:managedOrganization для класса v-s:ContactsFunction"@ru ;
+  rdfs:label "v-s:managedOrganization property specification for v-s:ContactsFunction class"@en ;
+  v-ui:forClass v-s:ContactsFunction ;
+  v-ui:forProperty v-s:managedOrganization ;
+  v-ui:minCardinality 0 ;
+  v-ui:maxCardinality 1 ;
+  v-ui:queryPrefix "('rdf:type' == 'v-s:Organization' || 'rdf:type'=='v-s:Subsidiary')"^^xsd:string ;
+  v-ui:placeholder "Выберите организацию"@ru ;
+  v-ui:placeholder "Choose organization"@en ;
+  v-ui:sort "'rdfs:label' asc" ;
+.
+
+v-s:Contacts
+  rdf:type v-s:ContactsFunction ;
+  rdfs:label "Контакты"@ru ;
+  rdfs:label "Contacts"@en ;
+  rdfs:comment "Организационная структура"@ru ;
+  rdfs:comment "Organization chart"@en ;
+  v-ui:hasTemplate v-s:ContactsTemplate ;
+.
+
+v-s:ContactsSearch
+  rdf:type v-fs:AttributiveSearch ;
+  rdfs:label "Поиск"@ru ;
+  rdfs:label "Search"@en ;
+  v-fs:searchBlank v-s:ContactsSearchRegistryBlank ;
+  v-fs:searchBlankTemplate v-s:ContactsSearchBlankTemplate ;
+  v-fs:searchResultTemplate v-s:ContactsSearchResultTemplate ;
+  v-fs:sortOrder "'rdfs:label' asc";
+.
+
+v-s:ContactsSearchRegistryBlank
+  a v-fc:Blank ;
+  rdfs:label "Бланк поиска контактов"@ru ;
+  rdfs:label "Contacts search blank"@en ;
+  v-fc:targetType v-s:Person ;
+.
+
+v-s:ContactsBundle
+  rdf:type v-s:Bundle;
+  rdfs:label "Контакты"@ru ;
+  rdfs:label "Contacts"@en ;
+.
+v-s:SpecialCallsBundle
+  rdf:type v-s:Bundle;
+  rdfs:label "Спец"@ru ;
+  rdfs:label "Spec"@en ;
+.
+v-s:SpecialBundle
+  rdf:type v-s:Bundle;
+  rdfs:label "Специальные"@ru ;
+  rdfs:label "Special"@en ;
+.
+v-s:GroupBundle
+  rdf:type v-s:Bundle;
+  rdfs:label "Групповые"@ru ;
+  rdfs:label "Group"@en ;
+.
+
+v-s:AllContactsBundle
+  rdf:type v-s:Bundle;
+  rdfs:label "Все"@ru ;
+  rdfs:label "All"@en ;
+.
+
+v-s:SearchTextBundle
+  rdf:type v-s:Bundle;
+  rdfs:label "Фамилия, должность, телефон, email"@ru ;
+  rdfs:label "Name, position, phone, email"@en ;
+.
+
+v-s:FastInputBundle
+  rdf:type v-s:Bundle;
+  rdfs:label "Быстрое заполнение"@ru ;
+  rdfs:label "Fast input"@en ;
+.
+v-s:ContactsTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон функции контакты"@ru ;
+  rdfs:label "Contacts function template"@en ;
+  v-ui:template "v-s_ContactsTemplate.js"
+.
+v-s:FavoriteContactTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон избранных контактов"@ru ;
+  rdfs:label "Favorite contacts template"@en ;
+  v-ui:template "v-s_FavoriteContactTemplate.js"
+.
+v-s:SpecialCallsContactTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон избранных контактов"@ru ;
+  rdfs:label "Favorite contacts template"@en ;
+  v-ui:template "v-s_SpecialCallsContactTemplate.js";
+.
+v-ui:CompactCommunicationMeanTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "CompactCommunicationMeanTemplate"@ru ;
+  rdfs:label "CompactCommunicationMeanTemplate"@en ;
+  v-ui:template "v-ui_CompactCommunicationMeanTemplate.js"
+.
+v-s:ContactCardTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон функции контакты"@ru ;
+  rdfs:label "Contacts function template"@en ;
+  v-ui:template "v-s_ContactCardTemplate.js"
+.
+v-s:ContactsStructureTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон функции контакты"@ru ;
+  rdfs:label "Contacts function template"@en ;
+  v-ui:template "v-s_ContactsStructureTemplate.js"
+.
+v-s:ContactsSearchResultTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон отображения результатов поиска для контактов"@ru ;
+  rdfs:label "Contacts search result template"@en ;
+  v-ui:template "v-s_ContactsSearchResultTemplate.js" ;
+.
+v-s:OrganizationUnitTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон отображения единицы организационной структуры"@ru ;
+  rdfs:label "Organization unit template"@en ;
+  v-ui:forClass v-s:OrganizationUnit ;
+  v-ui:template "v-s_OrganizationUnitTemplate.js" ;
+.
+v-s:OrganizationUnitContentTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон отображения единицы организационной структуры"@ru ;
+  rdfs:label "Organization unit template"@en ;
+  v-ui:forClass v-s:OrganizationUnit ;
+  v-ui:template "v-s_OrganizationUnitContentTemplate.js" ;
+.
+
+v-s:ContactsInUnitSearch
+  rdf:type v-fs:AttributiveSearch ;
+  rdfs:label "Поиск"@ru ;
+  rdfs:label "Search"@en ;
+  v-fs:searchBlank v-s:ContactsInUnitSearchRegistryBlank ;
+  v-fs:searchResultTemplate v-s:ContactsInUnitSearchResultTemplate ;
+  v-fs:sortOrder "'rdf:type.rdfs:label' desc" ;
+  v-fs:searchOnLoad true ;
+.
+
+v-s:ContactsInUnitSearchRegistryBlank
+  a v-fc:Blank ;
+  rdfs:label "Бланк поиска контактов"@ru ;
+  rdfs:label "Contacts search blank"@en ;
+  v-fc:targetType v-s:Appointment ;
+#  v-fc:targetType v-s:Position ;
+  v-fc:targetType v-s:Department ;
+  v-fc:targetType v-s:OrgGroup ;
+.
+v-s:ContactsInUnitSearchResultTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон отображения результатов поиска для контактов"@ru ;
+  rdfs:label "Contacts search result template"@en ;
+  v-ui:template "v-s_ContactsInUnitSearchResultTemplate.js" ;
+.
+v-s:ContactsInUnitSearchResultTemplate_unit
+  rdf:type v-ui:ClassTemplate ;
+  v-ui:template "v-s_ContactsInUnitSearchResultTemplate_unit.js" ;
+.
+v-s:ContactsInUnitSearchResultTemplate_unit_mailbox
+  rdf:type v-ui:ClassTemplate ;
+  v-ui:template "v-s_ContactsInUnitSearchResultTemplate_unit_mailbox.js" ;
+.
+v-s:AppointmentContactTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон отображения контакта персоны"@ru ;
+  rdfs:label "Person contact template"@en ;
+  v-ui:forClass v-s:Person ;
+  v-ui:template "v-s_AppointmentContactTemplate.js" ;
+.
+v-s:PositionContactTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон отображения контакта персоны"@ru ;
+  rdfs:label "Person contact template"@en ;
+  v-ui:forClass v-s:Person ;
+  v-ui:template "v-s_PositionContactTemplate.js" ;
+.
+v-s:DepartmentContactTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон отображения единицы организационной структуры"@ru ;
+  rdfs:label "Organization unit template"@en ;
+  v-ui:forClass v-s:Department ;
+  v-ui:template "v-s_DepartmentContactTemplate.js" ;
+.

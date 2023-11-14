@@ -1,0 +1,630 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix v-s: <http://semantic-machines.com/veda/veda-schema/> .
+@prefix v-ui: <http://semantic-machines.com/veda/veda-ui/> .
+@prefix v-fs: <http://semantic-machines.com/veda/veda-function-search/> .
+@prefix v-fc: <http://semantic-machines.com/veda/veda-function-create/> .
+@prefix v-wf: <http://semantic-machines.com/veda/veda-workflow/> .
+@prefix vdi: <http://semantic-machines.com/veda/veda-index/> .
+@prefix cfg: <http://semantic-machines.com/veda/config/> .
+@prefix bpmn: <http://semantic-machines.com/veda/veda-bpmn/> .
+
+@prefix v-ft: <http://semantic-machines.com/veda/veda-function-tasks/> .
+<http://semantic-machines.com/veda/veda-function-tasks>
+  rdf:type owl:Ontology ;
+  rdfs:label "Онтология функции 'Задачи' системы Веда"@ru ;
+  rdfs:label "Veda system function 'Tasks' ontology"@en ;
+#  owl:versionInfo "0.1" ;
+  v-s:loadPriority 9 ;
+.
+########## BUNDLE ###########
+v-s:TaskBundle
+  rdf:type v-s:Bundle ;
+  rdfs:label "Задачи"@ru ;
+  rdfs:label "Tasks"@en ;
+.
+
+v-ft:ToJournalBundle
+  rdf:type v-s:Bundle ;
+  rdfs:label "Перейти к журналу"@ru ;
+  rdfs:label "To journal"@en ;
+.
+########## TASKS INDEX ###########
+
+v-ft:UserTaskFormIndex_1
+  rdf:type vdi:ClassIndex ;
+  vdi:forClass v-wf:DecisionForm ;
+  vdi:forProperty v-wf:to ;
+  vdi:forProperty v-wf:from ;
+  vdi:forProperty v-wf:onDocument ;
+  vdi:inherited_index v-ft:UserTaskFormIndex_1_1 ;
+.
+v-ft:UserTaskFormIndex_1_1
+  rdf:type vdi:ClassIndex ;
+  vdi:indexed_field rdf:type ;
+  vdi:indexed_field rdfs:label ;
+  vdi:indexed_field v-s:occupation ;
+  vdi:indexed_field v-s:employee ;
+.
+v-ft:UserTaskFormIndex_2
+  rdf:type vdi:ClassIndex ;
+  vdi:forClass v-wf:DecisionForm ;
+  vdi:forProperty v-wf:takenDecision ;
+  vdi:inherited_index v-ft:UserTaskFormIndex_2_1 ;
+.
+v-ft:UserTaskFormIndex_2_1
+  rdf:type vdi:ClassIndex ;
+  vdi:indexed_field v-s:created ;
+.
+########## TASKS COUNTERS ###########
+
+v-ft:TaskCounter
+  rdf:type owl:Class ;
+  rdfs:subClassOf v-s:SystemThing ;
+  rdfs:label "Счетчик задач"@ru ;
+  rdfs:label "Task counter"@en ;
+  v-ui:hasModel v-ft:TaskCounterModel;
+.
+v-ft:forceUpdate
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain v-ft:TaskCounter ;
+  rdfs:range xsd:boolean ;
+  rdfs:label "обновить принудительно"@ru ;
+  rdfs:label "force update"@en ;
+.
+v-ft:inboxCount
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain v-ft:TaskCounter ;
+  rdfs:range xsd:integer ;
+  rdfs:label "количество входящих"@ru ;
+  rdfs:label "inbox сount"@en ;
+.
+v-ft:inboxWeekCount
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain v-ft:TaskCounter ;
+  rdfs:range xsd:integer ;
+  rdfs:label "количество входящих на текущую неделю"@ru ;
+  rdfs:label "inbox сount for current week"@en ;
+.
+v-ft:outboxCount
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain v-ft:TaskCounter ;
+  rdfs:range xsd:integer ;
+  rdfs:label "количество исходящих"@ru ;
+  rdfs:label "outbox сount"@en ;
+.
+v-ft:completedCount
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain v-ft:TaskCounter ;
+  rdfs:range xsd:integer ;
+  rdfs:label "количество выполненных"@ru ;
+  rdfs:label "completed сount"@en ;
+.
+
+v-ft:Event_UpdateTaskCounter
+  rdf:type v-s:Event ;
+  v-s:author cfg:VedaSystemAppointment ;
+  rdfs:label "Скрипт обновления счетчиков задач" ;
+  v-s:triggerByType v-wf:DecisionForm ;
+  v-s:runAt "V8.LowPriority" ;
+  v-s:deleted true ;
+  v-s:disabled true ;
+  v-s:script """
+/* Available variables:
+ * ticket = superuser ticket
+ * document = captured document
+ * user_uri = user whose actions triggered event
+ * prev_state = previous state of the captured document
+ * _event_id = id of the event to prevent cycles in triggers. Must be passed to every function that modifies DB.
+ * parent_script_id = id of the parent script that triggered this event.
+ * parent_document_id = id of the document that triggered this event.
+ * super_classes = super classes of the document.
+ */
+
+// Update task counter on task
+var task = document,
+    task_uri = document["@"],
+    to_uris = task["v-wf:to"] && task["v-wf:to"].map(function (to) {return to.data}),
+    from_uris = task["v-wf:from"] && task["v-wf:from"].map(function (from) {return from.data}),
+    isNew = !prev_state,
+    isCompleted = !isNew && !veda.Util.hasValue(prev_state, "v-wf:isCompleted", {type: "Boolean", data: true}) && veda.Util.hasValue(task, "v-wf:isCompleted", {type: "Boolean", data: true}),
+    isDeleted = !isNew && !veda.Util.hasValue(prev_state, "v-s:deleted", {type: "Boolean", data: true}) && veda.Util.hasValue(task, "v-s:deleted", {type: "Boolean", data: true});
+
+// print("************************** START **************************");
+
+if ( !isNew && !isDeleted && !isCompleted ) { return; }
+
+var today = new Date(),
+    monday = getMonday(today),
+    sunday = getSunday(today);
+var isThisWeekTask = veda.Util.hasValue(task, "v-wf:dateGiven") && (monday < new Date(task["v-wf:dateGiven"][0].data) && new Date(task["v-wf:dateGiven"][0].data) < sunday);
+
+// print("task =", task_uri, "| from =", from_uris, "| to =", to_uris, "| isNew =", isNew, "| isDeleted =", isDeleted, "| isCompleted =", isCompleted, "| isThisWeekTask =", isThisWeekTask);
+
+to_uris && to_uris.map(function (to_uri) {
+  // get or create task counter
+  var toCounter_uri = "d:taskCounter_" + to_uri.split(':').join('_');
+  var toCounter = get_individual(ticket, toCounter_uri) || createTaskCounter(to_uri);
+
+  if ( veda.Util.hasValue(toCounter, "rdf:type", { type: "Uri", data: "rdfs:Resource"} ) ) {
+    toCounter["rdf:type"] = [{ type: "Uri", data: "v-ft:TaskCounter" }];
+  }
+
+  var toInboxCount = toCounter["v-ft:inboxCount"] ? toCounter["v-ft:inboxCount"][0] : toCounter["v-ft:inboxCount"] = [{ type: "Integer", data: 0 }],
+      toInboxWeekCount = toCounter["v-ft:inboxWeekCount"] ? toCounter["v-ft:inboxWeekCount"][0] : toCounter["v-ft:inboxWeekCount"] = [{ type: "Integer", data: 0 }],
+      toOutboxCount = toCounter["v-ft:outboxCount"] ? toCounter["v-ft:outboxCount"][0] : toCounter["v-ft:outboxCount"] = [{ type: "Integer", data: 0 }],
+      toCompletedCount = toCounter["v-ft:completedCount"] ? toCounter["v-ft:completedCount"][0] : toCounter["v-ft:completedCount"] = [{ type: "Integer", data: 0 }];
+
+  switch (true) {
+    case isNew:
+      toInboxCount.data++;
+      if (isThisWeekTask) {
+        toInboxWeekCount.data++;
+      }
+      break;
+    case isCompleted:
+      toInboxCount.data--;
+      toCompletedCount.data++;
+      if (isThisWeekTask) {
+        toInboxWeekCount.data--;
+      }
+      break;
+    case isDeleted:
+      toInboxCount.data--;
+      if (isThisWeekTask) {
+        toInboxWeekCount.data--;
+      }
+      break;
+  }
+  put_individual(ticket, toCounter, _event_id);
+//  print("toCounter updated =", JSON.stringify(toCounter));
+});
+
+from_uris && from_uris.map(function (from_uri) {
+  // get or create task counter
+  var fromCounter_uri = "d:taskCounter_" + from_uri.split(':').join('_');
+  var fromCounter = get_individual(ticket, fromCounter_uri) || createTaskCounter(from_uri);
+
+  if ( veda.Util.hasValue(fromCounter, "rdf:type", { type: "Uri", data: "rdfs:Resource"} ) ) {
+    fromCounter["rdf:type"] = [{ type: "Uri", data: "v-ft:TaskCounter" }];
+  }
+
+  var fromInboxCount = fromCounter["v-ft:inboxCount"] ? fromCounter["v-ft:inboxCount"][0] : fromCounter["v-ft:inboxCount"] = [{ type: "Integer", data: 0 }],
+      fromOutboxCount = fromCounter["v-ft:outboxCount"] ? fromCounter["v-ft:outboxCount"][0] : fromCounter["v-ft:outboxCount"] = [{ type: "Integer", data: 0 }],
+      fromCompletedCount = fromCounter["v-ft:completedCount"] ? fromCounter["v-ft:completedCount"][0] : fromCounter["v-ft:completedCount"] = [{ type: "Integer", data: 0 }];
+
+  switch (true) {
+    case isNew:
+      fromOutboxCount.data++;
+      break;
+    case isCompleted:
+      fromOutboxCount.data--;
+      break;
+    case isDeleted:
+      fromOutboxCount.data--;
+      break;
+  }
+  put_individual(ticket, fromCounter, _event_id);
+//  print("fromCounter updated =", JSON.stringify(fromCounter));
+});
+
+//print("************************** END **************************");
+
+function getMonday(date) {
+  var monday = new Date(date);
+  var day = monday.getDay();
+  var diff = monday.getDate() - day + (day === 0 ? -6 : 1); // adjust when day is sunday
+  monday.setDate(diff); monday.setHours(0); monday.setMinutes(0); monday.setSeconds(0); monday.setMilliseconds(0);
+  return monday;
+}
+function getSunday(date) {
+  var monday = getMonday(date);
+  return new Date(monday.valueOf() + 604799999);
+}
+
+function createTaskCounter(owner) {
+  var uri = "d:taskCounter_" + owner.split(':').join('_'),
+      inbox = query(ticket, "('rdf:type' == 'v-wf:DecisionForm' && 'v-wf:isCompleted' == false && 'v-wf:to' == '" + owner + "')").result,
+      inboxCount = inbox[0] ? inbox.length : 0,
+      outbox = query(ticket, "('rdf:type' == 'v-wf:DecisionForm' && 'v-wf:isCompleted' == false && 'v-wf:from' == '" + owner + "')").result,
+      outboxCount = outbox[0] ? outbox.length : 0,
+      completed = query(ticket, "('rdf:type' == 'v-wf:DecisionForm' && 'v-wf:isCompleted' == true && 'v-wf:to' == '" + owner + "')").result,
+      completedCount = completed[0] ? completed.length : 0;
+
+  var today = new Date(),
+      monday = getMonday(today),
+      sunday = getSunday(today);
+
+  var inboxWeek = query(ticket, "('rdf:type' == 'v-wf:DecisionForm' && 'v-wf:isCompleted' == false && 'v-wf:to' == '" + owner + "' && 'v-wf:dateGiven' == [" + monday.toISOString() +  "," + sunday.toISOString() + "])").result,
+      inboxWeekCount = inboxWeek[0] ? inboxWeek.length : 0;
+
+  var taskCounter = {
+    "@": uri,
+    "rdf:type": veda.Util.newUri("v-ft:TaskCounter"),
+    "v-s:owner": veda.Util.newUri(owner),
+    "v-s:created": veda.Util.newDate(today),
+    "v-ft:inboxCount": veda.Util.newInt(inboxCount),
+    "v-ft:inboxWeekCount": veda.Util.newInt(inboxWeekCount),
+    "v-ft:outboxCount": veda.Util.newInt(outboxCount),
+    "v-ft:completedCount": veda.Util.newInt(completedCount),
+    "rdfs:label": veda.Util.newStr("создано автоматически в обработчике v-ft:Event_UpdateTaskCounter")
+  };
+  /*if (inboxCount + outboxCount + completedCount + inboxWeekCount) {
+    print(
+      "Created counter:", uri,
+      "| inboxCount =", inboxCount,
+      "| outboxCount =", outboxCount,
+      "| completedCount =", completedCount,
+      "| inboxWeekCount =", inboxWeekCount
+    );
+  }*/
+  put_individual(ticket, taskCounter, _event_id);
+  return taskCounter;
+}
+  """ ;
+.
+v-ft:FunctionTasksIndicatorTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон индикатора для v-ft:FunctionInbox"@ru ;
+  rdfs:label "V-ft:FunctionInbox indicator template"@en ;
+  v-ui:template "v-ft_FunctionTasksIndicatorTemplate.js" ;
+.
+
+v-s:TS_TaskCounter
+  rdf:type v-ui:TemplateSpecification;
+  v-s:loadPriority "15"^^xsd:integer;
+  v-ui:defaultTemplate v-ft:TaskCounterTemplate;
+  v-ui:forClass v-ft:TaskCounter
+.
+v-ft:TaskCounterTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон индикатора для v-ft:FunctionInbox"@ru ;
+  rdfs:label "V-ft:FunctionInbox indicator template"@en ;
+  v-ui:forClass v-ft:TaskCounter;
+  v-ui:template "v-ft_TaskCounterTemplate.js" ;
+.
+
+v-ft:TaskCounterModel
+  rdf:type v-ui:ClassModel ;
+  rdfs:label "Модель v-ft:TaskCounter"@ru ;
+  rdfs:label "v-ft:TaskCounter model"@en ;
+  v-s:script """
+// Force update outdated counter
+/*function getMonday(date) {
+  var monday = new Date(date);
+  var day = monday.getDay();
+  var diff = monday.getDate() - day + (day === 0 ? -6 : 1); // adjust when day is sunday
+  monday.setDate(diff); monday.setHours(0); monday.setMinutes(0); monday.setSeconds(0); monday.setMilliseconds(0);
+  return monday;
+}
+var monday = getMonday(new Date());
+var created = this["v-s:created"] && this["v-s:created"][0];
+var forceUpdate = !created || created < monday;
+if ( forceUpdate ) {
+  this["v-ft:forceUpdate"] = [true];
+  this.save();
+}*/
+
+  """ ;
+.
+
+########## TASKS AS ATTRIBUTIVE SEARCH IMPELMENTATION ###########
+
+v-ft:PSfrom_to_DecisionForm
+  rdf:type v-ui:ObjectPropertySpecification ;
+  rdfs:label "Спецификация свойств v-wf:to v-wf:from для класса v-wf:DecisionForm"@ru ;
+  rdfs:label "v-wf:to v-wf:from properties specification for v-wf:DecisionForm class"@en ;
+  v-ui:forClass v-wf:DecisionForm ;
+  v-ui:forProperty v-wf:to ;
+  v-ui:forProperty v-wf:from ;
+  v-ui:maxCardinality 1 ;
+  v-ui:queryPrefix "('rdf:type'=='v-s:Appointment' && 'v-s:official'=='true' && 'v-s:employee.v-s:hasAccount.isExists'=='true')" ;
+.
+
+v-ft:Inbox
+  rdf:type v-fs:AttributiveSearch ;
+  rdfs:label "Входящие задачи"@ru ;
+  rdfs:label "Inbox tasks"@en ;
+  v-fs:searchBlank v-ft:InboxBlank ;
+  v-fs:searchBlankTemplate v-ft:TaskBlankTemplate ;
+  v-fs:searchResultTemplate v-ft:InboxResultTemplate ;
+  v-fs:sortOrder "'v-s:created' desc" ;
+  v-ui:hasTemplate v-ft:InboxTemplate ;
+  v-fs:applicableOperation v-ft:MakeDecisionOperation ;
+  v-fs:queryLanguage "vql" ;
+  v-fs:searchOnLoad true ;
+.
+v-ft:InboxBlank
+  rdf:type v-fc:Blank ;
+  rdfs:label "Бланк входящих задач"@ru ;
+  rdfs:label "Blank inbox task"@en ;
+  v-fc:targetType v-wf:DecisionForm ;
+  v-wf:onDocument v-ft:InboxDocumentBlank ;
+  v-wf:takenDecision v-ft:InboxDecisionBlank ;
+  v-wf:isCompleted false ;
+.
+v-ft:InboxDocumentBlank
+  rdf:type v-fc:Blank ;
+  rdfs:label "Бланк документа по входящей задаче"@ru ;
+  rdfs:label "Inbox task document blank "@en ;
+.
+v-ft:InboxDecisionBlank
+  rdf:type v-fc:Blank ;
+  rdfs:label "Бланк решения по входящей задаче"@ru ;
+  rdfs:label "Inbox task decision blank "@en ;
+.
+
+v-ft:Outbox
+  rdf:type v-fs:AttributiveSearch ;
+  rdfs:label "Исходящие задачи"@ru ;
+  rdfs:label "Outbox tasks"@en ;
+  v-fs:searchBlank v-ft:OutboxBlank ;
+  v-fs:searchBlankTemplate v-ft:TaskBlankTemplate ;
+  v-fs:searchResultTemplate v-ft:TaskResultTemplate ;
+  v-fs:sortOrder "'v-s:created' desc"^^xsd:string ;
+  v-ui:hasTemplate v-ft:InboxTemplate ;
+  v-fs:queryLanguage "vql" ;
+  v-fs:searchOnLoad true ;
+.
+v-ft:OutboxBlank
+  rdf:type v-fc:Blank ;
+  rdfs:label "Бланк исходящих задач"@ru ;
+  rdfs:label "Blank outbox task"@en ;
+  v-fc:targetType v-wf:DecisionForm ;
+  v-wf:onDocument v-ft:OutboxDocumentBlank ;
+  v-wf:takenDecision v-ft:OutboxDecisionBlank ;
+  v-wf:isCompleted false ;
+.
+v-ft:OutboxDocumentBlank
+  rdf:type v-fc:Blank ;
+  rdfs:label "Бланк документа по исходящей задаче"@ru ;
+  rdfs:label "Outbox task document blank "@en ;
+.
+v-ft:OutboxDecisionBlank
+  rdf:type v-fc:Blank ;
+  rdfs:label "Бланк решения по исходящей задаче"@ru ;
+  rdfs:label "Outbox task decision blank "@en ;
+.
+
+v-ft:Completed
+  rdf:type v-fs:AttributiveSearch ;
+  rdfs:label "Выполненные входящие"@ru ;
+  rdfs:label "Completed inbox"@en ;
+  v-fs:searchBlank v-ft:CompletedBlank ;
+  v-fs:searchBlankTemplate v-ft:TaskBlankTemplate ;
+  v-fs:searchResultTemplate v-ft:CompletedResultTemplate ;
+  v-fs:sortOrder "'v-s:created' desc"^^xsd:string ;
+  v-ui:hasTemplate v-ft:InboxTemplate ;
+  v-fs:queryLanguage "vql" ;
+  v-fs:searchOnLoad true ;
+.
+v-ft:CompletedBlank
+  rdf:type v-fc:Blank ;
+  rdfs:label "Бланк выполненных задач"@ru ;
+  rdfs:label "Blank completed task"@en ;
+  v-fc:targetType v-wf:DecisionForm ;
+  v-wf:onDocument v-ft:CompletedDocumentBlank ;
+  v-wf:takenDecision v-ft:CompletedDecisionBlank ;
+  v-wf:isCompleted true ;
+.
+v-ft:CompletedDocumentBlank
+  rdf:type v-fc:Blank ;
+  rdfs:label "Бланк документа по выполненной задаче"@ru ;
+  rdfs:label "Completed task document blank "@en ;
+.
+v-ft:CompletedDecisionBlank
+  rdf:type v-fc:Blank ;
+  rdfs:label "Бланк решения по выполненной задаче"@ru ;
+  rdfs:label "Completed task decision blank "@en ;
+.
+
+v-ft:OutboxCompleted
+  rdf:type v-fs:AttributiveSearch ;
+  rdfs:label "Выполненные исходящие"@ru ;
+  rdfs:label "Completed outbox"@en ;
+  v-fs:searchBlank v-ft:OutboxCompletedBlank ;
+  v-fs:searchBlankTemplate v-ft:TaskBlankTemplate ;
+  v-fs:searchResultTemplate v-ft:CompletedResultTemplate ;
+  v-fs:sortOrder "'v-s:created' desc"^^xsd:string ;
+  v-ui:hasTemplate v-ft:InboxTemplate ;
+  v-fs:queryLanguage "vql" ;
+  v-fs:searchOnLoad true ;
+.
+v-ft:OutboxCompletedBlank
+  rdf:type v-fc:Blank ;
+  rdfs:label "Бланк выполненных задач"@ru ;
+  rdfs:label "Blank completed task"@en ;
+  v-fc:targetType v-wf:DecisionForm ;
+  v-wf:onDocument v-ft:OutboxCompletedDocumentBlank ;
+  v-wf:takenDecision v-ft:OutboxCompletedDecisionBlank ;
+  v-wf:isCompleted true ;
+.
+v-ft:OutboxCompletedDocumentBlank
+  rdf:type v-fc:Blank ;
+  rdfs:label "Бланк документа по выполненной исходящей задаче"@ru ;
+  rdfs:label "Completed outbox task document blank "@en ;
+.
+v-ft:OutboxCompletedDecisionBlank
+  rdf:type v-fc:Blank ;
+  rdfs:label "Бланк решения по выполненной исходящей задаче"@ru ;
+  rdfs:label "Completed outbox task decision blank "@en ;
+.
+
+v-ft:MyBundle
+  rdf:type v-s:Bundle ;
+  rdfs:label "Мои"@ru ;
+  rdfs:label "My"@en ;
+.
+v-ft:DocumentTypeBundle
+  rdf:type v-s:Bundle ;
+  rdfs:label "Тип документа"@ru ;
+  rdfs:label "Document type"@en ;
+.
+v-ft:DocumentBundle
+  rdf:type v-s:Bundle ;
+  rdfs:label "Документ"@ru ;
+  rdfs:label "Document"@en ;
+.
+
+v-ft:DecisionDateBundle
+  rdf:type v-s:Bundle ;
+  rdfs:label "Дата выполнения"@ru ;
+  rdfs:label "Complete date"@en ;
+.
+
+v-ft:DecisionCreatorBundle
+  rdf:type v-s:Bundle ;
+  rdfs:label "Выполнил"@ru ;
+  rdfs:label "Decision creator"@en ;
+.
+v-ft:InboxTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон бланка задачи"@ru ;
+  rdfs:label "Task blank template"@en ;
+  v-ui:template "v-ft_InboxTemplate.js" ;
+.
+v-ft:TaskBlankTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон бланка задачи"@ru ;
+  rdfs:label "Task blank template"@en ;
+  v-ui:template "v-ft_TaskBlankTemplate.js" ;
+.
+v-ft:TaskBlankTemplate_onDocument
+  rdf:type v-ui:ClassTemplate ;
+  v-ui:template "v-ft_TaskBlankTemplate_onDocument.js" ;
+.
+v-ft:ActorFilterTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон фильтра актора"@ru ;
+  rdfs:label "Actor filter template"@en ;
+  v-ui:template "v-ft_ActorFilterTemplate.js" ;
+.
+
+v-ft:ReadUnreadBundle
+  rdf:type v-s:Bundle ;
+  rdfs:label "Прочитано / не прочитано"@ru ;
+  rdfs:label "Read / unread"@en ;
+.
+v-ft:RedirectInfo_template
+  rdf:type v-ui:ClassTemplate ;
+  v-ui:template "v-ft_RedirectInfo_template.js";
+.
+v-ft:CompletedResultTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон результата поиска ВЫПОЛНЕННЫХ задач"@ru ;
+  rdfs:label "Complete tasks search results template"@en ;
+  v-ui:template "v-ft_CompletedResultTemplate.js" ;
+.
+v-ft:CompletedResultTemplate_task
+  rdf:type v-ui:ClassTemplate ;
+  v-ui:template "v-ft_CompletedResultTemplate_task.js" ;
+.
+v-ft:TaskResultTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон результата поиска задач"@ru ;
+  rdfs:label "Tasks search results template"@en ;
+  v-ui:template "v-ft_TaskResultTemplate.js" ;
+.
+v-ft:TaskResultTemplate_task
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон результата поиска задач"@ru ;
+  rdfs:label "Tasks search results template"@en ;
+  v-ui:template "v-ft_TaskResultTemplate_task.js" ;
+.
+v-ft:InboxResultTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон результата поиска задач"@ru ;
+  rdfs:label "Tasks search results template"@en ;
+  v-ui:template "v-ft_InboxResultTemplate.js" ;
+.
+v-ft:InboxResultTemplate_task
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон результата поиска задач"@ru ;
+  rdfs:label "Tasks search results template"@en ;
+  v-ui:template "v-ft_InboxResultTemplate_task.js" ;
+.
+
+# Related tasks for document
+
+v-ft:RelatedTasks
+  rdf:type v-fs:AttributiveSearch ;
+  rdfs:label "Связанные задачи"@ru ;
+  rdfs:label "Related tasks"@en ;
+  v-fs:searchResultTemplate v-ft:TaskResultTemplate ;
+  v-fs:sortOrder "'v-wf:from' desc,'v-s:created' desc" ;
+  v-fs:searchOnLoad true ;
+.
+v-ft:TaskRelatedTasksTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон связанных задач для задачи"@ru ;
+  rdfs:label "Related tasks template for task"@en ;
+  v-ui:template "v-ft_TaskRelatedTasksTemplate.js"
+.
+
+
+#################### Inbox operation ######################
+
+v-ft:MakeDecisionOperation
+  rdf:type owl:Class ;
+  rdfs:subClassOf v-s:Operation ;
+  rdfs:label "Принять решение"@ru ;
+  rdfs:label "Make decision"@en ;
+  v-ui:hasModel v-ft:MakeDecisionOperationModel ;
+.
+
+v-ft:MakeDecisionOperationRights
+  rdf:type v-s:PermissionStatement ;
+  v-s:permissionObject v-ft:MakeDecisionOperation ;
+  v-s:permissionSubject cfg:AllUsersGroup ;
+  v-s:canCreate true ;
+.
+
+v-ft:groupDecisionClass
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain v-ft:MakeDecisionOperation ;
+  rdfs:range owl:Class ;
+  rdfs:label "Решение"@ru ;
+  rdfs:label "Decision"@en ;
+.
+
+v-ft:groupDecision
+  rdf:type owl:ObjectProperty ;
+  rdfs:domain v-ft:MakeDecisionOperation ;
+  rdfs:range v-wf:Decision ;
+  rdfs:label "Решение"@ru ;
+  rdfs:label "Decision"@en ;
+.
+
+v-ft:MakeDecisionOperationModel
+  rdf:type v-ui:ClassModel ;
+  rdfs:label "Модель операции 'Групповое выполнение задач'"@ru ;
+  rdfs:label "'Group complete operation' operation model"@en ;
+  v-s:script """
+this.fn = function (task_uri) {
+  var group_decision_uri = veda.Util.getUri(this["v-wf:takenDecision"]);
+  var group_decision = get_individual(veda.ticket, group_decision_uri);
+
+  var task = get_individual(veda.ticket, task_uri);
+  if ( veda.Util.hasValue(this, "v-wf:takenDecision") ) {
+    task["v-wf:takenDecision"] = this["v-ft:groupDecision"];
+    put_individual(veda.ticket, task);
+  }
+};
+  """ ;
+.
+
+v-s:TS_MakeDecisionOperation
+  rdf:type v-ui:TemplateSpecification;
+  v-s:loadPriority "15"^^xsd:integer;
+  v-ui:defaultTemplate v-ft:MakeDecisionOperationTemplate;
+  v-ui:forClass v-ft:MakeDecisionOperation
+.
+
+v-ft:MakeDecisionOperationTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон для класса mnd-s:OperationChangeSupportSpecialist"@ru ;
+  rdfs:label "Template for mnd-s:OperationChangeSupportSpecialist class"@en ;
+  v-ui:template "v-ft_MakeDecisionOperationTemplate.js" ;
+.

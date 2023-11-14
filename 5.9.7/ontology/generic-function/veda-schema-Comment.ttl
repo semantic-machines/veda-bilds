@@ -1,0 +1,136 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix v-s: <http://semantic-machines.com/veda/veda-schema/> .
+@prefix v-ui: <http://semantic-machines.com/veda/veda-ui/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix v-wf: <http://semantic-machines.com/veda/veda-workflow/> .
+@prefix cfg: <http://semantic-machines.com/veda/config/> .
+
+<http://semantic-machines.com/veda/mondi-schema-Comment/>
+  rdf:type owl:Ontology ;
+  rdfs:label "Онтология системы Veda. Комментарии"@ru ;
+  rdfs:label "Veda system ontology. Comment"@en ;
+  v-s:loadPriority 11 ;
+.
+#-- Классы --
+
+v-s:Comment
+  rdf:type owl:Class ;
+  rdfs:subClassOf v-s:UserThing ;
+  rdfs:subClassOf v-s:BackwardLink ;
+  rdfs:subClassOf v-s:Embedded ;
+  rdfs:label "Комментарий"@ru ;
+  rdfs:label "Comment"@en ;
+.
+
+v-s:commentedResource
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Комментируемый ресурс"@ru ;
+  rdfs:label "Commented resource"@en ;
+  rdfs:domain v-s:Comment ;
+  rdfs:range rdfs:Resource ;
+.
+
+#-- Спецификации --
+
+v-s:PsLinkedObjectForComment
+  rdf:type v-ui:PropertySpecification ;
+  v-ui:forClass v-s:Comment;
+  v-ui:forProperty v-s:linkedObject ;
+  v-ui:minCardinality 0 ;
+  v-ui:maxCardinality 100 ;
+  v-ui:queryPrefix "('rdf:type'=='v-s:Document')"^^xsd:string ;
+  rdfs:label "Спецификация свойства v-s:linkedObject для класса v-s:Comment"@ru ;
+  rdfs:label "v-s:linkedObject property specification for v-s:Comment class"@en ;
+.
+
+# ------------------------------------------------------------ УПРАВЛЕНИЕ ПРАВАМИ --
+v-s:Comment_BaseUser
+  rdf:type v-s:Group ;
+  rdfs:label "Основные пользователи Comment" ;
+.
+
+#v-s:Comment_permission1
+#  rdf:type v-s:PermissionStatement ;
+#  v-s:permissionObject v-s:Comment ;
+#  v-s:permissionObject v-s:Comment_group ;
+#  v-s:permissionSubject v-s:Comment_BaseUser ;
+#  v-s:canRead "true"^^xsd:boolean ;
+#  rdfs:label "R. Все пользователи. Индивиды Comment" ;
+#  v-s:deleted "true"^^xsd:boolean ;
+#.
+
+v-s:Comment_permission2
+  rdf:type v-s:PermissionStatement ;
+  v-s:permissionObject v-s:Comment ;
+  v-s:permissionSubject v-s:Comment_BaseUser ;
+  v-s:canCreate "true"^^xsd:boolean ;
+  rdfs:label "C. Все пользователи. Класс Comment" ;
+.
+
+v-s:AllUsersGroup_CommentBaseUser_membership
+  rdf:type v-s:Membership ;
+  v-s:memberOf v-s:Comment_BaseUser ;
+  v-s:resource cfg:AllUsersGroup ;
+  rdfs:label "Все пользователи входят в группу Основные пользователи Comment" ;
+.
+#--------------------- Comments template ---------------------
+
+v-s:AddComment
+  rdf:type v-s:Bundle ;
+  rdfs:label "Добавить"@ru ;
+  rdfs:label "Add"@en ;
+.
+v-s:CS_Comment
+  rdf:type v-s:ClassSpecification ;
+  rdfs:label "Спецификация класса v-s:Comment "@ru, "Class specification v-s:Comment "@en;
+  v-ui:forClass v-s:Comment  ;
+  v-s:shelfLife 9999;
+  v-s:listPropertie v-s:attachment;
+  v-ui:defaultTemplate v-s:CommentsTemplate;
+  v-s:loadPriority 15 ;
+.
+v-s:CommentsTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон для отображения комментариев"@ru ;
+  rdfs:label "Template for comments rendering"@en ;
+  v-ui:template "v-s_CommentsTemplate.js";
+.
+
+v-s:TS_Comment
+  rdf:type v-ui:TemplateSpecification;
+  v-s:loadPriority "15"^^xsd:integer;
+  v-ui:defaultTemplate v-s:SingleCommentTemplate;
+  v-ui:forClass v-s:Comment
+.
+v-s:CS_Comment
+  rdf:type v-s:ClassSpecification ;
+  rdfs:label "Спецификация класса v-s:Comment "@ru, "Class specification v-s:Comment "@en;
+  v-ui:forClass v-s:Comment ;
+  v-s:shelfLife 9999;
+  v-ui:defaultTemplate v-s:SingleCommentTemplate;
+  v-s:loadPriority 15 ;
+.
+v-s:SingleCommentTemplate
+  rdf:type v-ui:ClassTemplate ;
+  v-ui:forClass v-s:Comment ;
+  rdfs:label "Шаблон для класса v-s:Comment"@ru ;
+  rdfs:label "Template for v-s:Comment class"@en ;
+  v-ui:template "v-s_SingleCommentTemplate.js" ;
+.
+v-s:EmbeddedSingleCommentTemplate
+  rdf:type v-ui:ClassTemplate ;
+  v-ui:forClass v-s:Comment ;
+  rdfs:label "Embedded шаблон для класса v-s:Comment"@ru ;
+  rdfs:label "Embedded template for v-s:Comment class"@en ;
+  v-ui:template "v-s_EmbeddedSingleCommentTemplate.js" ;
+.
+v-s:RecursiveCommentTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон для класса v-s:Comment"@ru ;
+  rdfs:label "Template for v-s:Comment class"@en ;
+  v-ui:template "v-s_RecursiveCommentTemplate.js" ;
+.
+
+# ------------  / Comments template ---------------

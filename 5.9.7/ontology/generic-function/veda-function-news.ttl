@@ -1,0 +1,180 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix v-s: <http://semantic-machines.com/veda/veda-schema/> .
+@prefix v-ui: <http://semantic-machines.com/veda/veda-ui/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cfg: <http://semantic-machines.com/veda/config/> .
+@prefix v-fs: <http://semantic-machines.com/veda/veda-function-search/> .
+@prefix v-fc: <http://semantic-machines.com/veda/veda-function-create/> .
+
+<http://semantic-machines.com/veda/veda-function-news>
+  rdf:type owl:Ontology ;
+  rdfs:label "Онтология функции 'Новость' системы Веда"@ru ;
+  rdfs:label "Veda system function 'News' ontology"@en ;
+#  owl:versionInfo "0.2" ;
+  v-s:loadPriority 9 ;
+.
+
+
+# ------------------------------------------------------------ СТРОКИ --
+v-s:NotifyBundle
+  rdf:type v-s:Bundle ;
+  rdfs:label "Уведомить пользователей"@ru ;
+  rdfs:label "Notify users"@en ;
+.
+
+v-s:AllNotificationsBundle
+  rdf:type v-s:Bundle ;
+  rdfs:label "Все уведомления"@ru ;
+  rdfs:label "All notifications"@en ;
+.
+
+# ------------------------------------------------------------ КЛАССЫ --
+
+# ------------------------------------------------------------ Новость --
+v-s:News
+  rdf:type owl:Class ;
+  rdfs:subClassOf v-s:UserThing;
+  rdfs:subClassOf v-s:Codelet;
+  rdfs:subClassOf v-s:Labeled;
+  rdfs:label "Новость"@ru ;
+  rdfs:label "News"@en ;
+  v-s:labelPattern "{@.v-s:title} {@.v-s:created}" ;
+.
+v-s:newsAudience
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "Аудитория новости"@ru ;
+  rdfs:label "News audience"@en ;
+  rdfs:domain v-s:News ;
+  rdfs:range rdfs:Resource ;
+.
+  v-s:PS_newsAudience
+    rdf:type v-ui:ObjectPropertySpecification ;
+    rdfs:label "Спецификация свойства v-s:newsAudience для класса v-s:News"@ru ;
+    rdfs:label "v-s:newsAudience property specification for v-s:News class"@en ;
+    v-ui:forClass v-s:News ;
+    v-ui:forProperty v-s:newsAudience ;
+    v-ui:minCardinality 1 ;
+    v-ui:maxCardinality 100 ;
+    v-ui:queryPrefix "('rdf:type' == 'v-s:OrganizationUnit' || 'rdf:type' === 'v-s:Group')" ;
+  .
+
+# ------------------------------------------------------------ ШАБЛОНЫ --
+
+# ----------------------------------------------------------- v-s:News --
+v-s:TS_News
+  rdf:type v-ui:TemplateSpecification;
+  v-s:loadPriority "15"^^xsd:integer;
+  v-ui:defaultTemplate v-s:NewsTemplate;
+  v-ui:forClass v-s:News
+.
+v-s:NewsTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон для класса v-s:News"@ru ;
+  rdfs:label "v-fc:CreateByBlank template"@en ;
+  v-ui:template "v-s_NewsTemplate.js" ;
+.
+v-s:NewsBlank
+  rdf:type v-fc:Blank ;
+  rdfs:label "Новость"@ru ;
+  rdfs:label "News"@en ;
+  v-fc:targetType v-s:News ;
+.
+
+v-s:NewsCreate
+  rdf:type v-fc:Create ;
+  rdfs:label "Новость"@ru ;
+  rdfs:label "News"@en ;
+  v-fc:hasBlank v-s:NewsBlank ;
+.
+# ----------------------------------------------------- v-s:ClientNotification --
+v-s:ClientNotificationTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон уведомления клиента"@ru ;
+  rdfs:label "Client notification template"@en ;
+  v-ui:template "v-s_ClientNotificationTemplate.js" ;
+.
+# -------------------------------------------------------- v-s:NewsIndicator --
+v-s:NewsIndicatorTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон индикатора новостей"@ru ;
+  rdfs:label "News indicator template"@en ;
+  v-ui:template "v-s_NewsIndicatorTemplate.js"
+.
+
+# ------------------------------------------------------------- ПОИСК --
+
+# ------------------------------------------------------------ Новости --
+v-s:NewsSearchUser
+  rdf:type v-fs:AttributiveSearch ;
+  rdfs:label "Новости"@ru ;
+  rdfs:label "News"@en ;
+  v-fs:searchBlank v-s:NewsBlank ;
+  v-fs:searchResultTemplate v-s:NewsSearchUserResultTemplate ;
+  v-fs:searchOnLoad true ;
+  v-ui:hasTemplate v-fs:AttributiveSearchTemplate ;
+.
+v-s:NewsSearchUserResultTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон отображения результатов поиска Новостей"@ru ;
+  rdfs:label "News search result template"@en ;
+  v-ui:template "v-s_NewsSearchUserResultTemplate.js" ;
+.
+
+
+v-s:NewsSearch
+  rdf:type v-fs:AttributiveSearch ;
+  rdfs:label "Новости"@ru ;
+  rdfs:label "News"@en ;
+  v-fs:searchBlank v-s:NewsBlank ;
+  v-fs:searchBlankTemplate v-s:NewsSearchBlankTemplate ;
+  v-fs:searchResultTemplate v-s:NewsSearchResultTemplate ;
+  v-fs:searchOnLoad true ;
+.
+v-s:NewsSearchBlankTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон бланка поиска новостей"@ru ;
+  rdfs:label "News search blank template"@en ;
+  v-ui:template "v-s_NewsSearchBlankTemplate.js" ;
+.
+v-s:NewsSearchResultTemplate
+  rdf:type v-ui:ClassTemplate ;
+  rdfs:label "Шаблон отображения результатов поиска Новостей"@ru ;
+  rdfs:label "News search result template"@en ;
+  v-ui:template "v-s_NewsSearchResultTemplate.js" ;
+.
+
+# ----------------------------------------------------------- УПРАВЛЕНИЕ ПРАВАМИ --
+
+v-s:News_permission
+  rdf:type v-s:PermissionStatement ;
+  v-s:permissionObject v-s:News_group ;
+  v-s:permissionSubject cfg:AllUsersGroup ;
+  v-s:canRead "true"^^xsd:boolean ;
+  rdfs:label "R. Все пользователи. Класс v-s:News" ;
+.
+
+########## ИНДИВИДЫ ###########
+
+v-s:NewsReloadPage
+  rdf:type v-s:News;
+  rdfs:label "Версия приложения обновилась"@ru;
+  rdfs:label "Application was updated"@en;
+  v-s:title "Версия приложения изменилась!"@ru;
+  v-s:title "Application version changed!"@en;
+  v-s:content """
+  Необходимо обновить страницу.
+
+  Обновить сейчас?
+  """@ru;
+  v-s:content """
+  Page must be reloaded.
+
+  Reload now?
+  """@en;
+  v-s:script """
+veda.trigger('update');
+  """;
+  v-s:newsAudience cfg:AllUsersGroup;
+.
